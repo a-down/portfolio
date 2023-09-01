@@ -36,7 +36,7 @@ export default function Project({ project }) {
 
         <img src={project.browserImg} width='476px' className={'shadow'} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
 
-        <p className={`w-[255px] bg-slate-50 shadow-md shadow-${project.color}`} style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>Hello</p>
+        <p className={`w-[255px] bg-slate-50 shadow-md shadow-${project.color}`} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}>Hello</p>
       </div>
 
       {/* <LanguageDisplay /> */}
