@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
 
-      <div className='w-full h-[100px]  bg-navy opacity-50 shadow-2xl drop-shadow-header header-background-div'>
+      <div className='w-full h-[100px]  bg-navy opacity-50 shadow-2xl drop-shadow-header'>
       </div>
 
       <header className=' w-full h-[100px] absolute top-0'>

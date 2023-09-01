@@ -1,30 +1,20 @@
-import safePawsPhone from '../../assets/project-visuals/safe-paws-phone.png'
-import safePawsBrowser from '../../assets/project-visuals/safe-paws-browser.png'
 
 
-export default function Project() {
-
-  // title
-  // color
-  // phoneImg
-  // browserImg
-  // Repo Link
-  // Deployed Link
-  // techStack: ['asdf', 'asdf', 'asdf']
+export default function Project({ project }) {
 
   return (
     <div className="mx-auto flex flex-col items-center pt-24 px-24 gap-10">
       <div className='text-center'>
-        <h2 className='text-7xl text-safePaws'>Safe Paws</h2>
+        <h2 className='text-7xl' style={{color: `${project.color}`}}>{project.title}</h2>
         <div className="text-gray-200 font-serif text-xl font-thin">
-          <p>- <a href='https://google.com'>Repo</a> - <a href='https://google.com'>Deployed Site</a> -</p>
+          <p>- <a href={project.repoLink} target='_blank'>Repo</a> - <a href={project.deployedLink} target='_blank'>Deployed Site</a> -</p>
         </div>
       </div>
 
       <div className=' flex w-full h-[320px] max-w-[974px] space-between justify-between'>
-        <img src={safePawsPhone} width='147px' className='content-fit shadow-md shadow-safePaws'/>
-        <img src={safePawsBrowser} width='491px' className='shadow-md shadow-safePaws'/>
-        <p className='w-[255px] bg-slate-50 shadow-md shadow-safePaws'>Hello</p>
+        <img src={project.phoneImg} width='147px' className={`shadow-md shadow-${project.color}`}/>
+        <img src={project.browserImg} width='491px' className={'shadow'} style={{dropShadow: '0px 4px 3px #DB7F67'}}/>
+        <p className={`w-[255px] bg-slate-50 shadow-md shadow-${project.color}`}>Hello</p>
       </div>
 
       {/* <LanguageDisplay /> */}
