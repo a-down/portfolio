@@ -12,7 +12,7 @@ export default function Header() {
 
       <header className=' w-full h-[100px] absolute top-0'>
 
-        <div className='h-full items-center flex justify-between mx-32 opacity-100'>
+        <div className='h-full items-center flex justify-between mx-24 opacity-100'>
 
           <div className='flex items-center gap-2'>
             <PiSmileyBold className=' text-gray-300 text-3xl'/>
