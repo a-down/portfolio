@@ -7,7 +7,15 @@ export default function Project({ project }) {
       <div className='text-center'>
         <h2 className='text-7xl' style={{color: `${project.color}`}}>{project.title}</h2>
         <div className="text-gray-200 font-serif text-xl font-thin">
-          <p>- <a href={project.repoLink} target='_blank'>Repo</a> - <a href={project.deployedLink} target='_blank'>Deployed Site</a> -</p>
+          <p>
+            -
+            <a href={project.repoLink} target='_blank' className='hover:text-gray-400'> Repo </a>
+             
+             -
+              
+            <a href={project.deployedLink} target='_blank' className='hover:text-gray-400'> Deployed Site </a> 
+            -
+          </p>
         </div>
       </div>
 
