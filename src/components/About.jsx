@@ -18,7 +18,7 @@ export default function About() {
         </div>
 
         {/* <LanguageDisplay /> */}
-        <div className='w-full bg-red-400 h-[62px]'>
+        <div className='w-full bg-slate-600 h-[62px]'>
 
         </div>
       </div>

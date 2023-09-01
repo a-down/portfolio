@@ -1,5 +1,5 @@
 import projectsBG from '../../assets/backgrounds/projects-bg.svg'
-
+import Project from './Project'
 
 export default function ProjectSection() {
 
@@ -7,12 +7,13 @@ export default function ProjectSection() {
     backgroundImage: `url(${projectsBG})`, 
     backgroundRepeat: 'no-repeat', 
     backgroundSize: 'cover', 
-    backgroundPosition: 'center'
+    backgroundPosition: 'top',
   }
 
   return (
-    <div style={backgroundStyle}>
-      {/* Project */}
+    <div style={backgroundStyle} class='pb-24'>
+      <Project />
+      <Project />
       {/* Project */}
       {/* Project */}
       {/* Project */}
