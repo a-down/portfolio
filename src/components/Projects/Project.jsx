@@ -20,8 +20,8 @@ export default function Project({ project }) {
       </div>
 
       <div className=' flex w-full h-[320px] max-w-[974px] space-between justify-between'>
-        <img src={project.phoneImg} width='147px' className={`shadow-md shadow-${project.color}`}/>
-        <img src={project.browserImg} width='491px' className={'shadow'} style={{dropShadow: '0px 4px 3px #DB7F67'}}/>
+        <img src={project.phoneImg} width='132px' className={`shadow-md shadow-${project.color}`}/>
+        <img src={project.browserImg} width='476px' className={'shadow'} style={{dropShadow: '0px 4px 3px #DB7F67'}}/>
         <p className={`w-[255px] bg-slate-50 shadow-md shadow-${project.color}`}>Hello</p>
       </div>
 
