@@ -3,6 +3,7 @@ import heroBG from './assets/backgrounds/hero-bg.svg'
 import Header from './components/Header'
 import HeroText from './components/Hero'
 import About from './components/About'
+import ProjectsSection from './components/Projects/ProjectsSection'
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
       </div>
 
       <About />
+
+      <ProjectsSection />
     </>
   )
 }
