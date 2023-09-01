@@ -14,7 +14,7 @@ export default function HeroText(){
         <h3 class=' text-3xl font-serif font-thin'>Front End Developer</h3>
         <h4 class=' text-xl font-serif font-thin'>Making the Internet Easier to Use</h4>
 
-        <div className='flex mt-52  gap-4 w-full justify-end mr-48'>
+        <div className='flex mt-52 gap-4 w-full justify-end px-24'>
           <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent hover:text-slate-400'>
             <FaLinkedin className='w-12 h-12 hover:navy'/>
           </a>

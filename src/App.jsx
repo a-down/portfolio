@@ -2,6 +2,7 @@ import { useState } from 'react'
 import heroBG from './assets/backgrounds/hero-bg.svg'
 import Header from './components/Header'
 import HeroText from './components/Hero'
+import About from './components/About'
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Header />
         <HeroText />
       </div>
+
+      <About />
     </>
   )
 }
