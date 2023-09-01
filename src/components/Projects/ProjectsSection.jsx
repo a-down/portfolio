@@ -83,7 +83,7 @@ export default function ProjectSection() {
   return (
     <div style={backgroundStyle} className='pb-24'>
       { projects.map((project) => (
-        <Project project={project} />
+        <Project project={project} key={project.title}/>
       ))}
     </div>
   )
