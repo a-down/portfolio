@@ -23,7 +23,7 @@ import {
 export default function Language({stack, isDark}) {
 
   let badgeColor
-  isDark ? badgeColor = '' : badgeColor = 'bg-slate-100'
+  isDark ? badgeColor = '' : badgeColor = 'bg-navy'
 
   // default icon color if isDark === true
   let iconColor = '#475569'
