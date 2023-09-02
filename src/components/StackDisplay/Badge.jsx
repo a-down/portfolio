@@ -18,7 +18,7 @@ export default function Language({stack, isDark}) {
 
   let badgeColor
 
-  isDark ? badgeColor = 'bg-black' : badgeColor = 'bg-gray-50'
+  isDark ? badgeColor = 'bg-slate-600' : badgeColor = 'bg-gray-50'
 
   const getIcon = (iconName) => {
     switch (iconName) {

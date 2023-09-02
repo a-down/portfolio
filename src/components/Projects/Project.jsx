@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import StackDisplay from '../StackDisplay/StackDisplay'
 
-export default function Project({ project }) {
+export default function Project({ project, stackArr, isDark }) {
   const [ repoLink, setRepoLink ] = useState({color: '#e2e8f0'})
   const [ liveLink, setLiveLink ] = useState({color: '#e2e8f0'})
 
@@ -40,10 +40,8 @@ export default function Project({ project }) {
         <p className={`w-[255px] bg-slate-50 shadow-md shadow-${project.color}`} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}>Hello</p>
       </div>
 
-      {/* <LanguageDisplay /> */}
-      <div className='w-[974px] bg-slate-600 h-[62px]'>
+      <StackDisplay stackArr={stackArr} isDark={isDark}/>
 
-      </div>
     </div>
   )
 }

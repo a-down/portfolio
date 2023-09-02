@@ -30,7 +30,7 @@ export default function ProjectSection() {
       browserImg: safePawsBrowser,
       repoLink: 'https://github.com/a-down/safe-paws',
       deployedLink: 'https://safe-paws-da967720d734.herokuapp.com/',
-      techStack: []
+      techStack: ['HTML', 'CSS', 'JavaScript', /*Handlebars*/, 'Bootstrap', 'Express', /*Sequelize*/, 'Node.js']
     },
     {
       title: 'Tech Blog',
@@ -39,7 +39,7 @@ export default function ProjectSection() {
       browserImg: techBlogBrowser,
       repoLink: 'https://github.com/a-down/tech-blog',
       deployedLink: 'https://a-down-tech-blog-b6cbf85bb984.herokuapp.com',
-      techStack: []
+      techStack: ['HTML', 'CSS', 'JavaScript']
     },
     {
       title: 'GameVerseHub',
@@ -48,7 +48,7 @@ export default function ProjectSection() {
       browserImg: gameVerseHubBrowser,
       repoLink: 'https://github.com/a-down/GameVerseHub',
       deployedLink: 'https://a-down.github.io/GameVerseHub/',
-      techStack: []
+      techStack: ['HTML', 'CSS', 'JavaScript']
     },
     {
       title: 'Weather Dashboard',
@@ -57,7 +57,7 @@ export default function ProjectSection() {
       browserImg: weatherDashboardBrowser,
       repoLink: 'https://github.com/a-down/weather-dashboard',
       deployedLink: 'https://a-down.github.io/weather-dashboard/',
-      techStack: []
+      techStack: ['HTML', 'CSS', 'JavaScript']
     },
     {
       title: 'Code Quiz',
@@ -66,7 +66,7 @@ export default function ProjectSection() {
       browserImg: codeQuizBrowser,
       repoLink: 'https://github.com/a-down/code-quiz',
       deployedLink: 'https://a-down.github.io/code-quiz/',
-      techStack: []
+      techStack: ['HTML', 'CSS', 'JavaScript']
     },
     {
       title: 'Note Taker',
@@ -75,7 +75,7 @@ export default function ProjectSection() {
       browserImg: noteTakerBrowser,
       repoLink: 'https://github.com/a-down/note-taker',
       deployedLink: 'https://a-down-note-taker-a4f5d9c37c25.herokuapp.com/',
-      techStack: []
+      techStack: ['HTML', 'CSS', 'JavaScript']
     },
   ]
 
@@ -83,7 +83,7 @@ export default function ProjectSection() {
   return (
     <div style={backgroundStyle} className='pb-24'>
       { projects.map((project) => (
-        <Project project={project} key={project.title}/>
+        <Project project={project} key={project.title} stackArr={project.techStack} isDark={true}/>
       ))}
     </div>
   )
