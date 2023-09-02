@@ -4,6 +4,7 @@ import StackDisplay from './StackDisplay/StackDisplay'
 
 export default function About() {
 
+  const stackArr = ['React', 'JavaScript', 'HTML', 'CSS', 'Tailwind', 'Bootstrap', 'Chakra', 'jQuery', 'GitHub', 'Node.js', 'Express', 'MongoDB']
 
   return (
     <>
@@ -18,7 +19,7 @@ export default function About() {
           <img src={headshot} className='w-[250px] h-[250px] rounded-2xl shadow-lg'/>
         </div>
 
-        <StackDisplay />
+        <StackDisplay stackArr={stackArr} isDark={false}/>
 
       </div>
     </>

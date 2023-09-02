@@ -14,7 +14,11 @@ import {
 } from 'react-icons/si'
 
 
-export default function Language({stack}) {
+export default function Language({stack, isDark}) {
+
+  let badgeColor
+
+  isDark ? badgeColor = 'bg-black' : badgeColor = 'bg-gray-50'
 
   const getIcon = (iconName) => {
     switch (iconName) {
@@ -73,7 +77,7 @@ export default function Language({stack}) {
 
   return (
     <div>
-      <div className=" w-[64px] h-[64px] bg-gray-50 rounded-xl">
+      <div className={` w-[64px] h-[64px] rounded-xl ${badgeColor}`}>
         {icon}
       </div>
 
