@@ -1,5 +1,9 @@
 import { PiSmileyBold } from 'react-icons/pi'
 
+import { BsEmojiSmile} from 'react-icons/bs'
+
+import { HiOutlineFaceSmile } from 'react-icons/hi2'
+
 
 export default function Header() {
 
@@ -15,7 +19,7 @@ export default function Header() {
         <div className='h-full items-center flex justify-between w-full px-24 opacity-100'>
 
           <div className='flex items-center gap-2'>
-            <PiSmileyBold className=' text-gray-300 text-3xl'/>
+            <HiOutlineFaceSmile className=' text-gray-300 text-3xl'/>
             <h2 className=' text-3xl text-accent'>Alec Downing</h2>
           </div>
 
