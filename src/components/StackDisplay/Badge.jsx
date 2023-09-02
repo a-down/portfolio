@@ -17,75 +17,72 @@ import {
 export default function Language({stack, isDark}) {
 
   let badgeColor
-  isDark ? badgeColor = '' : badgeColor = 'bg-gray-50'
+  isDark ? badgeColor = '' : badgeColor = 'bg-slate-100'
 
-  let iconColor
+  // default icon color if isDark === true
+  let iconColor = '#475569'
 
   const getIcon = (iconName) => {
     switch (iconName) {
       case 'React':
-        isDark ? iconColor = '#475569' : iconColor = '#61DAFB'
+        if (!isDark) iconColor = '#61DAFB'
         return <SiReact className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'JavaScript':
-        isDark ? iconColor = '#475569' : iconColor = '#F7DF1E'
+        if (!isDark) iconColor = '#F7DF1E'
         return <SiJavascript className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'HTML':
-        isDark ? iconColor = '#475569' : iconColor = '#E34F26'
+        if (!isDark) iconColor = '#E34F26'
         return <SiHtml5 className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'CSS':
-        isDark ? iconColor = '#475569' : iconColor = '#1572B6'
+        if (!isDark) iconColor = '#1572B6'
         return <SiCss3 className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
 
       case 'Tailwind':
-        isDark ? iconColor = '#475569' : iconColor = '#06B6D4'
+        if (!isDark) iconColor = '#06B6D4'
         return <SiTailwindcss className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'Bootstrap':
-        isDark ? iconColor = '#475569' : iconColor = '#7952B3'
+        if (!isDark) iconColor = '#7952B3'
         return <SiBootstrap className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'Chakra':
-        isDark ? iconColor = '#475569' : iconColor = '#318795'
+        if (!isDark) iconColor = '#318795'
         return <SiChakraui className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'jQuery':
-        isDark ? iconColor = '#475569' : iconColor = '#0769AD'
+        if (!isDark) iconColor = '#0769AD'
         return <SiJquery className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'GitHub':
-        isDark ? iconColor = '#475569' : iconColor = '#181717'
+        if (!isDark) iconColor = '#181717'
         return <SiGithub className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'Node.js':
-        isDark ? iconColor = '#475569' : iconColor = '#339933'
+        if (!isDark) iconColor = '#339933'
         return <SiNodedotjs className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
       case 'Express':
-        isDark ? iconColor = '#475569' : iconColor = '#000000'
+        if (!isDark) iconColor = '#000000'
         return <SiExpress className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
 
       case 'MongoDB':
-        isDark ? iconColor = '#475569' : iconColor = '47A248'
+        if (!isDark) iconColor = '47A248'
         return <SiMongodb className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
-    }
-
-    if (isDark) {
-      iconColor = '#000000'
     }
   }
 
