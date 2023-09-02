@@ -57,7 +57,7 @@ export default function ProjectSection() {
       browserImg: weatherDashboardBrowser,
       repoLink: 'https://github.com/a-down/weather-dashboard',
       deployedLink: 'https://a-down.github.io/weather-dashboard/',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Github']
+      techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'GitHub']
     },
     {
       title: 'Code Quiz',
@@ -66,7 +66,7 @@ export default function ProjectSection() {
       browserImg: codeQuizBrowser,
       repoLink: 'https://github.com/a-down/code-quiz',
       deployedLink: 'https://a-down.github.io/code-quiz/',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Github']
+      techStack: ['HTML', 'CSS', 'JavaScript', 'GitHub']
     },
     {
       title: 'Note Taker',
@@ -75,7 +75,7 @@ export default function ProjectSection() {
       browserImg: noteTakerBrowser,
       repoLink: 'https://github.com/a-down/note-taker',
       deployedLink: 'https://a-down-note-taker-a4f5d9c37c25.herokuapp.com/',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Express', 'Node.js', 'Github']
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Express', 'Node.js', 'GitHub']
     },
   ]
 
