@@ -18,11 +18,8 @@ export default function About() {
           <img src={headshot} className='w-[250px] h-[250px] rounded-2xl shadow-lg'/>
         </div>
 
-        
-        <div className='w-full bg-slate-600 h-[62px] max-w-[974px]'></div>
-
         <StackDisplay />
-        
+
       </div>
     </>
 
