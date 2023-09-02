@@ -15,7 +15,8 @@ import {
   SiMysql,
   SiSequelize,
   SiBulma,
-  SiHeroku
+  SiHeroku,
+  SiVercel
 } from 'react-icons/si'
 
 
@@ -112,6 +113,11 @@ export default function Language({stack, isDark}) {
       case 'Heroku':
         if (!isDark) iconColor = '#430098'
         return <SiHeroku className=' w-full h-full p-2' style={{color: iconColor}}/>
+        break;
+
+      case 'Vercel':
+        if (!isDark) iconColor = '#000000'
+        return <SiVercel className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
 
     }

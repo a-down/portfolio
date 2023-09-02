@@ -4,6 +4,7 @@ import Header from './components/Header'
 import HeroText from './components/Hero'
 import About from './components/About'
 import ProjectsSection from './components/Projects/ProjectsSection'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
       <About />
 
       <ProjectsSection />
+
+      <Footer />
     </>
   )
 }
