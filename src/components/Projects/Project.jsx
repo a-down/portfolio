@@ -32,12 +32,20 @@ export default function Project({ project, stackArr, isDark }) {
         </div>
       </div>
 
-      <div className=' flex w-full h-[320px] max-w-[974px] space-between justify-between'>
+      <div className=' flex w-full h-[320px] max-w-[974px] space-between justify-between '>
         <img src={project.phoneImg} width='132px' className={`shadow-md shadow-${project.color}`} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
 
-        <img src={project.browserImg} width='476px' className={'shadow'} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
+        <img src={project.browserImg} width='476px' className={'shadow-md'} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
 
-        <p className={`w-[255px] bg-slate-50 shadow-md shadow-${project.color}`} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}>Hello</p>
+        <div className={`w-[255px] bg-slate-50 font-thin font-serif p-3 text-sm flex flex-col gap-3 shrink-0 shadow-md shadow-${project.color}`} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}>
+          <p>{project.description}</p>
+
+          { (project.description2) ?? (
+          <p>{project.description2}</p>
+        )}
+        </div>
+
+
       </div>
 
       <StackDisplay stackArr={stackArr} isDark={isDark}/>

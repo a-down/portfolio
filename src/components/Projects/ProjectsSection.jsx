@@ -30,15 +30,19 @@ export default function ProjectSection() {
       browserImg: safePawsBrowser,
       repoLink: 'https://github.com/a-down/safe-paws',
       deployedLink: 'https://safe-paws-da967720d734.herokuapp.com/',
+      description: 'Safe Paws was a team project that was completed during my Full Stack Certificate Program. We built a website that used server-side rendering (Handlebars) to dynamically deliver the webpage. Visitors to the website can create an account, add and remove pets, and book appointments.',
+      description2: 'I was the front end builder and designer (HTML and CSS), and I also assisted on the backend as needed. I managed the GitHub Repo, resolved conflicts, and approved pull requests.',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
     },
     {
-      title: 'Tech Blog',
+      title: 'Undefined Opinions',
       color: '#3E829A',
       phoneImg: techBlogPhone,
       browserImg: techBlogBrowser,
       repoLink: 'https://github.com/a-down/tech-blog',
       deployedLink: 'https://a-down-tech-blog-b6cbf85bb984.herokuapp.com',
+      description: 'Undefined Options is a full stack web application that allows users to view blog posts posted on the site. Users can also create an account, post and edit their own blog posts, and comment on posts made by others.',
+      description2: 'The blog site uses server-side rendering (Handlebars) to dynamically update the site based on posts in the SQL database and based on the logged-in user. ',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Express', 'Node.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
     },
     {
@@ -48,6 +52,8 @@ export default function ProjectSection() {
       browserImg: gameVerseHubBrowser,
       repoLink: 'https://github.com/a-down/GameVerseHub',
       deployedLink: 'https://a-down.github.io/GameVerseHub/',
+      description: 'GameVerseHub was a team project that was completed during my Full Stack Certificate Program. The site was built to allow users to see featured video games, as we as search for video games by keyword. This site is powered by the RAWG API.',
+      description2: 'I was responsible for client-side JavaScript on the search page. I managed the GitHub Repo, resolved conflicts, and approved pull requests.',
       techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap','GitHub' ]
     },
     {
@@ -57,15 +63,19 @@ export default function ProjectSection() {
       browserImg: weatherDashboardBrowser,
       repoLink: 'https://github.com/a-down/weather-dashboard',
       deployedLink: 'https://a-down.github.io/weather-dashboard/',
+      description: 'The Weather Dashboard was created for users to search for current and future weather by city names using the OpenWeather API. The site saves user searches so they are easy to search again in the future. The site was built with jQuery.',
+      description2: '',
       techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'GitHub']
     },
     {
-      title: 'Code Quiz',
+      title: 'Coding Quiz',
       color: '#F08080',
       phoneImg: codeQuizPhone,
       browserImg: codeQuizBrowser,
       repoLink: 'https://github.com/a-down/code-quiz',
       deployedLink: 'https://a-down.github.io/code-quiz/',
+      description: 'The Coding Quiz allows users to take a 10-question test on JavaScript knowledge. Users are given 90 seconds to answer every question. At the end of the quiz, users can save their initials and score to local storage.',
+      description2: '',
       techStack: ['HTML', 'CSS', 'JavaScript', 'GitHub']
     },
     {
@@ -75,7 +85,9 @@ export default function ProjectSection() {
       browserImg: noteTakerBrowser,
       repoLink: 'https://github.com/a-down/note-taker',
       deployedLink: 'https://a-down-note-taker-a4f5d9c37c25.herokuapp.com/',
-      techStack: ['HTML', 'CSS', 'JavaScript', 'Express', 'Node.js', 'GitHub']
+      description: 'Note Taker is a full-stack website where users can save notes and stay organized. When a note is created, Express and Node.js are used to save the note as a JSON file in the server. Users can also delete notes saved to the site.',
+      description2: 'I was responsible for building out the backend of the website and deploying the website.',
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Express', 'Node.js', 'GitHub', 'Heroku']
     },
   ]
 
