@@ -1,4 +1,5 @@
 import headshot from '../assets/headshot.png'
+import StackDisplay from './StackDisplay/StackDisplay'
 
 
 export default function About() {
@@ -17,10 +18,11 @@ export default function About() {
           <img src={headshot} className='w-[250px] h-[250px] rounded-2xl shadow-lg'/>
         </div>
 
-        {/* <LanguageDisplay /> */}
-        <div className='w-full bg-slate-600 h-[62px] max-w-[974px]'>
+        
+        <div className='w-full bg-slate-600 h-[62px] max-w-[974px]'></div>
 
-        </div>
+        <StackDisplay />
+        
       </div>
     </>
 

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import StackDisplay from '../StackDisplay/StackDisplay'
 
 export default function Project({ project }) {
   const [ repoLink, setRepoLink ] = useState({color: '#e2e8f0'})
