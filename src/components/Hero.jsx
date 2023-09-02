@@ -10,7 +10,7 @@ export default function HeroText(){
       <div className=" flex flex-col text-gray-200 h-[665px] my-40 items-center gap-2">
 
         <h1 className=' text-5xl p-2'>Alec Downing</h1>
-        <img src={lineGraphic} className='p-2'/>
+        <img src={lineGraphic} className='p-2 select-none'/>
         <h3 className=' text-3xl font-serif font-thin'>Front End Developer</h3>
         <h4 className=' text-xl font-serif font-thin'>Making the Internet Easier to Use</h4>
 

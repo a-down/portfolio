@@ -1,7 +1,3 @@
-import { PiSmileyBold } from 'react-icons/pi'
-
-import { BsEmojiSmile} from 'react-icons/bs'
-
 import { HiOutlineFaceSmile } from 'react-icons/hi2'
 
 
@@ -24,9 +20,9 @@ export default function Header() {
           </div>
 
           <nav className=' text-base font-thin text-gray-100 flex gap-3'>
-            <a href='' className=' hover:text-accent'>About</a>
-            <a href='' className=' hover:text-accent'>Projects</a>
-            <a href='' className=' hover:text-accent'>Contact</a>
+            {/* <a href='' className=' hover:text-accent'>About</a> */}
+            {/* <a href='' className=' hover:text-accent'>Projects</a> */}
+            {/* <a href='' className=' hover:text-accent'>Contact</a> */}
             <a href='' className=' hover:text-accent'>Resume</a>
           </nav>
 

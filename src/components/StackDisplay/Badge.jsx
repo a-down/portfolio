@@ -10,7 +10,12 @@ import {
   SiGithub,
   SiNodedotjs,
   SiExpress,
-  SiMongodb 
+  SiMongodb ,
+  SiHandlebarsdotjs,
+  SiMysql,
+  SiSequelize,
+  SiBulma,
+  SiHeroku
 } from 'react-icons/si'
 
 
@@ -80,15 +85,39 @@ export default function Language({stack, isDark}) {
         break;
 
       case 'MongoDB':
-        if (!isDark) iconColor = '47A248'
+        if (!isDark) iconColor = '#47A248'
         return <SiMongodb className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
+        
+      case 'Handlebars':
+        if (!isDark) iconColor = '#000000'
+        return <SiHandlebarsdotjs className=' w-full h-full p-2' style={{color: iconColor}}/>
+        break;
+
+      case 'MySQL':
+        if (!isDark) iconColor = '#4479A1'
+        return <SiMysql className=' w-full h-full p-2' style={{color: iconColor}}/>
+        break;
+
+      case 'Sequelize':
+        if (!isDark) iconColor = '#52B0E7'
+        return <SiSequelize className=' w-full h-full p-2' style={{color: iconColor}}/>
+        break;
+
+      case 'Bulma':
+        if (!isDark) iconColor = '#00D1B2'
+        return <SiBulma className=' w-full h-full p-2' style={{color: iconColor}}/>
+        break;
+
+      case 'Heroku':
+        if (!isDark) iconColor = '#430098'
+        return <SiHeroku className=' w-full h-full p-2' style={{color: iconColor}}/>
+        break;
+
     }
   }
 
   const icon = getIcon(stack)
-
-  console.log(icon)
 
   return (
     <div>
@@ -96,7 +125,7 @@ export default function Language({stack, isDark}) {
         {icon}
       </div>
 
-      <p className=' font-serif font-thin text-center text-sm text-gray-200'>{stack}</p>
+      <p className=' font-serif font-thin text-center text-sm text-gray-200 select-none'>{stack}</p>
     </div>
   )
   }

@@ -30,7 +30,7 @@ export default function ProjectSection() {
       browserImg: safePawsBrowser,
       repoLink: 'https://github.com/a-down/safe-paws',
       deployedLink: 'https://safe-paws-da967720d734.herokuapp.com/',
-      techStack: ['HTML', 'CSS', 'JavaScript', /*Handlebars*/, 'Bootstrap', 'Express', /*Sequelize*/, 'Node.js']
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express', 'MySQL', 'Sequelize', 'Heroku']
     },
     {
       title: 'Tech Blog',
@@ -39,7 +39,7 @@ export default function ProjectSection() {
       browserImg: techBlogBrowser,
       repoLink: 'https://github.com/a-down/tech-blog',
       deployedLink: 'https://a-down-tech-blog-b6cbf85bb984.herokuapp.com',
-      techStack: ['HTML', 'CSS', 'JavaScript']
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Express', 'Node.js', 'MySQL', 'Sequelize', 'Heroku']
     },
     {
       title: 'GameVerseHub',
@@ -48,7 +48,7 @@ export default function ProjectSection() {
       browserImg: gameVerseHubBrowser,
       repoLink: 'https://github.com/a-down/GameVerseHub',
       deployedLink: 'https://a-down.github.io/GameVerseHub/',
-      techStack: ['HTML', 'CSS', 'JavaScript']
+      techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap']
     },
     {
       title: 'Weather Dashboard',
@@ -57,7 +57,7 @@ export default function ProjectSection() {
       browserImg: weatherDashboardBrowser,
       repoLink: 'https://github.com/a-down/weather-dashboard',
       deployedLink: 'https://a-down.github.io/weather-dashboard/',
-      techStack: ['HTML', 'CSS', 'JavaScript']
+      techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery']
     },
     {
       title: 'Code Quiz',
@@ -75,7 +75,7 @@ export default function ProjectSection() {
       browserImg: noteTakerBrowser,
       repoLink: 'https://github.com/a-down/note-taker',
       deployedLink: 'https://a-down-note-taker-a4f5d9c37c25.herokuapp.com/',
-      techStack: ['HTML', 'CSS', 'JavaScript']
+      techStack: ['HTML', 'CSS', 'JavaScript', 'Express', 'Node.js']
     },
   ]
 
