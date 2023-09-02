@@ -32,7 +32,7 @@ export default function Project({ project, stackArr, isDark }) {
         </div>
       </div>
 
-      <div className=' flex w-full h-[320px] max-w-[974px] space-between justify-between '>
+      <div className=' flex w-full max-w-[974px] justify-between' style={{aspectRatio: 'auto'}}>
         <img src={project.phoneImg} width='132px' className={`shadow-md shadow-${project.color}`} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
 
         <img src={project.browserImg} width='476px' className={'shadow-md'} style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
