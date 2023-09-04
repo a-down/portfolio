@@ -16,7 +16,7 @@ export default function Project({ project, stackArr, isDark }) {
   }
 
   return (
-    <div className="mx-auto flex flex-col items-center pt-24 px-4 md:px-10 lg:px-24 gap-10">
+    <div className="mx-auto flex flex-col items-center lg:pt-24 pt-14 px-4 md:px-10 lg:px-24 gap-10">
       <div className='text-center select-none'>
         <h2 className='text-7xl' style={{color: `${project.color}`}}>{project.title}</h2>
         <div className="text-gray-200 font-serif text-xl font-thin">
@@ -58,7 +58,7 @@ export default function Project({ project, stackArr, isDark }) {
           </div>
         </div>
 
-        <div className=' lg:max-w-[255px] text-navy font-thin font-serif p-3.5 text-sm flex flex-col gap-3.5 text-justify rounded-lg' style={{backgroundColor: `${project.color}`}}>
+        <div className=' lg:max-w-[255px] text-navy font-thin font-serif p-3.5 text-sm flex flex-col gap-3.5 text-justify rounded' style={{backgroundColor: `${project.color}`, filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
           <p>{project.description}</p>
 
           { (project.description2) ?? (
