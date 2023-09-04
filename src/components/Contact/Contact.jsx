@@ -15,7 +15,8 @@ export default function Contact(){
         <h2 className='text-4xl w-full text-center font-sans'>Get In Touch</h2>
         
         <div className='flex flex-col md:flex-row gap-10 justify-between text-xl font-serif w-full py-10'>
-          <div className='flex flex-col gap-8'>
+
+          <div className='flex flex-col gap-8 order-1 md:-order-1'>
             <a href='' className='flex items-center gap-4 hover:text-slate-600'>
               <SiGithub />
               <h4>a-down</h4>
@@ -35,8 +36,6 @@ export default function Contact(){
               <HiMiniDocumentText />
               <h4>Resume</h4>
             </a>
-
-
           </div>
 
           <ContactForm />

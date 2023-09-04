@@ -4,7 +4,7 @@ import StackDisplay from './StackDisplay/StackDisplay'
 export default function Footer() {
 
     const footerStack = [
-      'React', 'Tailwind', 'JavaScript', 'CSS', 'Vercel', 'Chakra'
+      'React', 'Tailwind', 'JavaScript', 'CSS', 'Chakra', 'Vercel', 
     ]
 
   return (
