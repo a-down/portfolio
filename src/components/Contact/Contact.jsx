@@ -1,28 +1,34 @@
 import ContactForm from './ContactForm'
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import { HiMiniDocumentText } from 'react-icons/hi2'
+import { HiOutlineMail } from 'react-icons/hi'
 
 
 
 export default function Contact(){
 
   return (
-    <div className=" gap-4 md:gap-16 w-100 bg-accent p-4 pb-8 md:p-10 lg:p-24 items-center ">
+    <div className=" gap-4 md:gap-16 w-100 bg-accent px-6 py-8 md:px-10 lg:px-24 items-center ">
 
       <div className="flex flex-col justify-between max-w-[974px] mx-auto">
 
         <h2 className='text-4xl w-full text-center font-sans'>Get In Touch</h2>
         
-        <div className='flex justify-between text-xl font-serif'>
-          <div className='flex flex-col justify-between'>
+        <div className='flex flex-col md:flex-row gap-10 justify-between text-xl font-serif w-full py-10'>
+          <div className='flex flex-col gap-8'>
             <a href='' className='flex items-center gap-4 hover:text-slate-600'>
               <SiGithub />
-              <h4>GitHub: a-down</h4>
+              <h4>a-down</h4>
             </a>
 
             <a href='' className='flex items-center gap-4 hover:text-slate-600'>
               <SiLinkedin />
-              <h4>LinkedIn: alec-downing</h4>
+              <h4>alec-downing</h4>
+            </a>
+
+            <a href='' className='flex items-center gap-4 hover:text-slate-600'>
+              <HiOutlineMail />
+              <h4>alec2downing@gmail.com</h4>
             </a>
 
             <a href='' className='flex items-center gap-4 hover:text-slate-600'>
