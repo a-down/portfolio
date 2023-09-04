@@ -8,7 +8,7 @@ export default function About() {
 
   return (
     <>
-      <div className=" flex flex-col justify-center gap-4 md:gap-16 w-100 bg-accent p-4 md:p-10 lg:p-24 items-center">
+      <div className=" flex flex-col justify-center gap-4 md:gap-16 w-100 bg-accent p-4 pb-8 md:p-10 lg:p-24 items-center">
 
         <div className='flex flex-col md:flex-row justify-between w-full max-w-[974px]'>
           <div className="font-serif max-w-[800px]">
