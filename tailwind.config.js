@@ -17,9 +17,11 @@ export default {
       },
       dropShadow: {
         'header': '0 6px 6px #95ADCF'
+      },
+      screens: {
+        'lg': '1040px'
       }
-    },
   },
   plugins: [],
 }
-
+}

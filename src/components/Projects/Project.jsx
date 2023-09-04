@@ -16,7 +16,7 @@ export default function Project({ project, stackArr, isDark }) {
   }
 
   return (
-    <div className="mx-auto flex flex-col items-center pt-24 px-24 gap-10">
+    <div className="mx-auto flex flex-col items-center lg:pt-24 pt-14 px-4 md:px-10 lg:px-24 gap-10">
       <div className='text-center select-none'>
         <h2 className='text-7xl' style={{color: `${project.color}`}}>{project.title}</h2>
         <div className="text-gray-200 font-serif text-xl font-thin">
@@ -32,24 +32,43 @@ export default function Project({ project, stackArr, isDark }) {
         </div>
       </div>
 
-      <div className=' flex w-full max-w-[974px] justify-between' style={{aspectRatio: 'auto'}}>
-        <img src={project.phoneImg} width='132px' className='shadow-md' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
+      {/* <div className=' flex flex-col md:flex-row gap-4 w-full max-w-[974px] justify-between' style={{aspectRatio: 'auto'}}>
+        <img src={project.phoneImg} width='132px' className='shadow-md hidden lg:inline' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
 
-        <img src={project.browserImg} width='476px' className='shadow-md' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
+        <img src={project.browserImg} className='shadow-md self-stretch md:self-start lg:w-[476px]' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
 
-        <div className='w-[255px] bg-slate-50 font-thin font-serif p-3 text-sm flex flex-col gap-3 shrink-0 shadow-md' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}>
+        <div className='w-full md:w-[255px] bg-slate-50 font-thin font-serif p-3 text-sm flex flex-col gap-3 shrink-0 shadow-md text-justify' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}>
           <p>{project.description}</p>
 
           { (project.description2) ?? (
           <p>{project.description2}</p>
         )}
         </div>
+      </div> */}
 
+      <div className=' w-full flex flex-col lg:flex-row gap-4 lg:w-[974px] lg:justify-between'>
 
+        <div className='flex gap-4'>
+          <div className=' hidden md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
+            <img src={project.phoneImg} className='' style={{borderRadius: '4px'}}/>
+          </div>
+
+          <div className='flex-grow' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
+            <img src={project.browserImg} className='' style={{borderRadius: '4px'}}/>
+          </div>
+        </div>
+
+        <div className=' lg:max-w-[255px] text-navy font-thin font-serif p-3.5 text-sm flex flex-col gap-3.5 text-justify rounded' style={{backgroundColor: `${project.color}`, filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
+          <p>{project.description}</p>
+
+          { (project.description2) ?? (
+          <p>{project.description2}</p>
+          )}
+        </div>
       </div>
 
       <StackDisplay stackArr={stackArr} isDark={isDark}/>
-
+    
     </div>
   )
 }

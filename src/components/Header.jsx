@@ -7,12 +7,12 @@ export default function Header() {
   return (
     <>
 
-      <div className='w-full h-[100px]  bg-navy opacity-50 shadow-2xl drop-shadow-header'>
+      <div className='w-full h-[100px] bg-navy opacity-50 shadow-2xl drop-shadow-header'>
       </div>
 
       <header className=' w-full h-[100px] absolute top-0'>
 
-        <div className='h-full items-center flex justify-between w-full px-24 opacity-100'>
+        <div className='h-full items-center flex justify-between w-full px-4 opacity-100 md:px-10 lg:px-24'>
 
           <div className='flex items-center gap-2'>
             <HiOutlineFaceSmile className=' text-gray-300 text-3xl'/>

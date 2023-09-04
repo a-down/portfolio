@@ -30,7 +30,7 @@ export default function ProjectSection() {
       browserImg: safePawsBrowser,
       repoLink: 'https://github.com/a-down/safe-paws',
       // deployedLink: 'https://safe-paws-da967720d734.herokuapp.com/',      cardOrder: [1, 2, 3],
-      description: 'Safe Paws was a team project during my Full-Stack Certificate Program. We built a website that used server-side rendering (Handlebars) to dynamically render the webpage according the the user. Users can create an account, add and remove pets, and book appointments.',
+      description: 'Safe Paws was a team project during my Full-Stack Certificate Program. We built a website that used server-side rendering (Handlebars) to dynamically render the webpage according to the user. Users can create an account, add and remove pets, and book appointments.',
       description2: 'I was the front-end architect and designer (HTML and CSS). I also assisted on the client-side JavaScript and the backend. I managed the GitHub Repo, resolved merge conflicts, and approved pull requests.',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
     },
@@ -47,7 +47,7 @@ export default function ProjectSection() {
       techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Express', 'Node.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
     },
     {
-      title: 'GameVerseHub',
+      title: 'Game Verse Hub',
       color: '#2D6EFD',
       phoneImg: gameVerseHubPhone,
       browserImg: gameVerseHubBrowser,
@@ -98,7 +98,7 @@ export default function ProjectSection() {
 
 
   return (
-    <div style={backgroundStyle} className='pb-24'>
+    <div style={backgroundStyle} className='pb-24 px-4 md:px-10 lg:px-24'>
       { projects.map((project) => (
         <Project project={project} key={project.title} stackArr={project.techStack} isDark={true}/>
       ))}
