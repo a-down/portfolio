@@ -44,7 +44,7 @@ export default function Project({ project, stackArr, isDark }) {
           </div>
         </div>
 
-        <div className=' lg:max-w-[255px] text-navy font-thin font-serif p-3.5 text-sm flex flex-col gap-3.5 text-justify rounded' style={{backgroundColor: `${project.color}`, filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
+        <div className=' lg:max-w-[255px] text-navy font-thin font-serif p-3.5 text-sm flex flex-col gap-3.5 text-justify rounded bg-slate-200' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
           <p>{project.description}</p>
 
           { (project.description2) ?? (
