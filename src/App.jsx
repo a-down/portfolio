@@ -5,6 +5,7 @@ import HeroText from './components/Hero'
 import About from './components/About'
 import ProjectsSection from './components/Projects/ProjectsSection'
 import Footer from './components/Footer'
+import Contact from './components/Contact/Contact'
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
       <About />
 
       <ProjectsSection />
+
+      <Contact />
 
       <Footer />
     </>
