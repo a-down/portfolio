@@ -17,7 +17,7 @@ export default function About() {
             <p className='p-4 text-justify'>I specialize in React and JavaScript while using Tailwind, Chakra, Bootstrap, and GitHub. I also have experience with Node.js, Express.js, MySQL, Sequelize, MongoDB, Mongoose, and Handlebars.</p>
           </div>
 
-          <img src={headshot} className='w-[250px] h-[250px] rounded-2xl shadow-lg -order-1 md:order-3 self-center m-4'/>
+          <img src={headshot} className='w-[250px] h-[250px] rounded-2xl shadow-lg -order-1 md:order-3 self-center m-4 md:m-0'/>
         </div>
 
         <StackDisplay stackArr={myTechStack} isDark={true}/>

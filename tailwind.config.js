@@ -19,7 +19,7 @@ export default {
         'header': '0 6px 6px #95ADCF'
       },
       screens: {
-        'lg': '1100px'
+        'lg': '1040px'
       }
   },
   plugins: [],

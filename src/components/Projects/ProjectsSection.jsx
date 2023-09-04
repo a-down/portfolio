@@ -30,7 +30,7 @@ export default function ProjectSection() {
       browserImg: safePawsBrowser,
       repoLink: 'https://github.com/a-down/safe-paws',
       // deployedLink: 'https://safe-paws-da967720d734.herokuapp.com/',      cardOrder: [1, 2, 3],
-      description: 'Safe Paws was a team project during my Full-Stack Certificate Program. We built a website that used server-side rendering (Handlebars) to dynamically render the webpage according the the user. Users can create an account, add and remove pets, and book appointments.',
+      description: 'Safe Paws was a team project during my Full-Stack Certificate Program. We built a website that used server-side rendering (Handlebars) to dynamically render the webpage according to the user. Users can create an account, add and remove pets, and book appointments.',
       description2: 'I was the front-end architect and designer (HTML and CSS). I also assisted on the client-side JavaScript and the backend. I managed the GitHub Repo, resolved merge conflicts, and approved pull requests.',
       techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
     },
