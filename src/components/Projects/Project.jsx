@@ -32,21 +32,7 @@ export default function Project({ project, stackArr, isDark }) {
         </div>
       </div>
 
-      {/* <div className=' flex flex-col md:flex-row gap-4 w-full max-w-[974px] justify-between' style={{aspectRatio: 'auto'}}>
-        <img src={project.phoneImg} width='132px' className='shadow-md hidden lg:inline' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
-
-        <img src={project.browserImg} className='shadow-md self-stretch md:self-start lg:w-[476px]' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}/>
-
-        <div className='w-full md:w-[255px] bg-slate-50 font-thin font-serif p-3 text-sm flex flex-col gap-3 shrink-0 shadow-md text-justify' style={{filter: `drop-shadow(0px 4px 3px ${project.color})`}}>
-          <p>{project.description}</p>
-
-          { (project.description2) ?? (
-          <p>{project.description2}</p>
-        )}
-        </div>
-      </div> */}
-
-      <div className=' w-full flex flex-col lg:flex-row gap-4 lg:w-[974px] lg:justify-between'>
+      <div className=' w-full flex flex-col lg:flex-row gap-4 lg:w-[974px]'>
 
         <div className='flex gap-4'>
           <div className=' hidden md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
