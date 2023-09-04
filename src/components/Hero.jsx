@@ -15,12 +15,12 @@ export default function HeroText(){
         <h4 className=' text-xl font-serif font-thin'>Making the Internet Easier to Use</h4>
 
         <div className='flex mt-52 gap-4 w-full justify-center md:justify-end md:px-10 lg:px-24'>
-          <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent hover:text-slate-400'>
-            <FaLinkedin className='w-12 h-12 hover:navy'/>
+          <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
+            <FaLinkedin className='w-12 h-12 hover:text-blue-200'/>
           </a>
 
           <a href='https://www.github.com/a-down' target='_blank'>
-            <FaGithubSquare className='w-12 h-12  text-accent hover:text-slate-400'/>
+            <FaGithubSquare className='w-12 h-12  text-accent hover:text-blue-200'/>
           </a>
         </div>
 
