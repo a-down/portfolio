@@ -1,7 +1,9 @@
 import { HiOutlineFaceSmile } from 'react-icons/hi2'
+import resume from '../assets/alec-downing-resume.pdf'
 
 
 export default function Header() {
+
 
 
   return (
@@ -16,14 +18,14 @@ export default function Header() {
 
           <div className='flex items-center gap-2'>
             <HiOutlineFaceSmile className=' text-gray-300 text-3xl'/>
-            <h2 className=' text-3xl text-accent'>Alec Downing</h2>
+            <h2 className=' text-3xl text-accent font-semibold'>Alec Downing</h2>
           </div>
 
           <nav className=' text-base font-thin text-gray-100 flex gap-3'>
             {/* <a href='' className=' hover:text-accent'>About</a> */}
             {/* <a href='' className=' hover:text-accent'>Projects</a> */}
             {/* <a href='' className=' hover:text-accent'>Contact</a> */}
-            <a href='' className='font-sm font-serif bg-transparent border border-accent text-white hover:bg-gradient-to-br from-accent via-blue-200 to-blue-100 hover:text-navy py-1 px-2 rounded-md'>Resume</a>
+            <a href={resume} download='alec-downing-resume' className='font-sm font-serif bg-transparent border border-accent text-white hover:bg-gradient-to-br from-accent via-blue-200 to-blue-100 hover:text-navy py-1 px-2 rounded-md'>Resume</a>
           </nav>
 
         </div>
