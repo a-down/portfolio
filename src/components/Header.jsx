@@ -23,7 +23,7 @@ export default function Header() {
             {/* <a href='' className=' hover:text-accent'>About</a> */}
             {/* <a href='' className=' hover:text-accent'>Projects</a> */}
             {/* <a href='' className=' hover:text-accent'>Contact</a> */}
-            <a href='' className='font-sm font-serif bg-accent text-navy hover:bg-gradient-to-r from-accent via-blue-200 to-blue-100 hover:text-navy py-1 px-2 rounded-sm'>Resume</a>
+            <a href='' className='font-sm font-serif bg-transparent border border-accent text-white hover:bg-gradient-to-br from-accent via-blue-200 to-blue-100 hover:text-navy py-1 px-2 rounded-md'>Resume</a>
           </nav>
 
         </div>
