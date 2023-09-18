@@ -39,7 +39,7 @@ export default function Contact(){
             </a>
           </div>
 
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
 
       </div>
