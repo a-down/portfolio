@@ -24,7 +24,7 @@ export default function Project({ project, stackArr, isDark }) {
       whileInView={{ visibility: 'visible', opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="flex flex-col items-center lg:pt-24 md:pt-16 pt-14 px-8 md:px-10 lg:px-24 gap-10">
+      <div className="flex flex-col items-center lg:pt-24 md:pt-16 pt-14 px-8 md:px-10 lg:px-24 gap-4 md:gap-10">
         <div className='text-center select-none'>
           <h2 className='text-7xl font-semibold' style={{color: `${project.color}`}}>{project.title}</h2>
           <div className="text-gray-200 font-serif text-xl font-thin">
@@ -40,10 +40,17 @@ export default function Project({ project, stackArr, isDark }) {
           </div>
         </div>
 
-        <div className=' w-full flex flex-col lg:flex-row gap-4 lg:w-[974px]'>
+        <div className=' w-full flex flex-col gap-2 md:gap-4 lg:w-[974px]'>
+          <div className=' w-full text-neutral-200 font-sans font-thin py-1.5 px-3.5 text-md flex flex-col gap-3.5 order-1 text-justify rounded  leading-loose' >
+            <p>{project.description}</p>
 
-          <div className='flex gap-4'>
-            <div className=' hidden md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
+            { (project.description2) ?? (
+            <p>{project.description2}</p>
+            )}
+          </div>
+
+          <div className='flex gap-2 md:gap-4 w-full md:order-2'>
+            <div className='xs:w-full md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
               <img src={project.phoneImg} className='' style={{borderRadius: '4px'}}/>
             </div>
 
@@ -52,13 +59,7 @@ export default function Project({ project, stackArr, isDark }) {
             </div>
           </div>
 
-          <div className=' lg:max-w-[255px] text-neutral-50 font-serif p-3.5 text-sm flex flex-col gap-3.5 text-justify rounded bg-slate-900' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
-            <p>{project.description}</p>
-
-            { (project.description2) ?? (
-            <p>{project.description2}</p>
-            )}
-          </div>
+          
         </div>
 
         <StackDisplay stackArr={stackArr} isDark={isDark}/>
