@@ -16,7 +16,8 @@ import {
   SiSequelize,
   SiBulma,
   SiHeroku,
-  SiVercel
+  SiVercel,
+  SiFramer
 } from 'react-icons/si'
 
 
@@ -120,6 +121,11 @@ export default function Language({stack, isDark}) {
         return <SiVercel className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
 
+      case 'Framer Motion':
+        if (!isDark) iconColor = '#0055FF'
+        return <SiFramer className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
     }
   }
 
@@ -127,7 +133,7 @@ export default function Language({stack, isDark}) {
 
   return (
     <div>
-      <div className={` w-[64px] h-[64px] rounded-xl ${badgeColor}`}>
+      <div className={` w-[64px] h-[64px] rounded-xl ${badgeColor} mx-auto`}>
         {icon}
       </div>
 
