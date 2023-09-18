@@ -10,10 +10,10 @@ export default function About() {
   return (
     <div className='bg-navy'>
       <motion.div
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, amount: 0.6 }}
           initial={{ visibility: 'hidden', opacity: 0.4 }}
           whileInView={{ visibility: 'visible', opacity: 1 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
         >
         <div className=" flex flex-col justify-center gap-4 md:gap-16 w-100 bg-accent p-4 pb-8 md:p-10 lg:p-24 items-center">
 
