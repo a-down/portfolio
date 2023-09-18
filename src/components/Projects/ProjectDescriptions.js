@@ -24,7 +24,7 @@ export let projects = [
     deployedLink: 'https://friendsdb-5ccabe7c6928.herokuapp.com/',     
     description: `Friends.db was a team project during my Full-Stack Certificate Program. We built a social media site for developers to share creations and questions with their coding friends. Users can sign in to their account, create profiles, follow friends, see and interact with friends' posts, and receive notifications when friends interact with their posts or follow them. Users choose a color for themselves to represent them across the site using React useContext.`,
     description2: `I was the primary React developer and site designer. I led the way on the front end while managing the project's GitHub repo, site deployment, and database hosting.`,
-    techStack: ['React', 'JavaScript', 'Tailwind', 'HTML', 'GitHub', 'Node.js', 'Express', 'MongoDo', 'Heroku']
+    techStack: ['React', 'JavaScript', 'Tailwind', 'HTML', 'GitHub', 'Node.js', 'Express', 'MongoDB', 'Heroku']
   },
   {
     title: 'Safe Paws',

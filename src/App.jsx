@@ -6,7 +6,6 @@ import About from './components/About'
 import ProjectsSection from './components/Projects/ProjectsSection'
 import Footer from './components/Footer'
 import Contact from './components/Contact/Contact'
-import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
 
@@ -18,7 +17,7 @@ function App() {
   }
 
   return (
-    <ChakraProvider>
+    <>
       <div style={heroStyle} className='h-[765px] w-100'>
         <Header />
         <HeroText />
@@ -31,7 +30,7 @@ function App() {
       <Contact />
 
       <Footer />
-    </ChakraProvider>
+    </>
   )
 }
 

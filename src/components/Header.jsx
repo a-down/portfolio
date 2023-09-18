@@ -18,7 +18,7 @@ export default function Header() {
 
           <div className='flex items-center gap-2'>
             <HiOutlineFaceSmile className=' text-gray-300 text-3xl'/>
-            <h2 className=' text-3xl text-accent font-semibold'>Alec Downing</h2>
+            <h2 className=' text-3xl text-accent'>Alec Downing</h2>
           </div>
 
           <nav className=' text-base font-thin text-gray-100 flex gap-3'>
