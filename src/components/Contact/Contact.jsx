@@ -32,7 +32,7 @@ export default function Contact(){
                   <h4>a-down</h4>
                 </a>
 
-                <a href='https://linkedin/in/alec-downing/' target='_blank' className='flex items-center gap-4 hover:text-slate-600 active:text-slate-200'>
+                <a href='https://linkedin.com/in/alec-downing/' target='_blank' className='flex items-center gap-4 hover:text-slate-600 active:text-slate-200'>
                   <SiLinkedin />
                   <h4>alec-downing</h4>
                 </a>

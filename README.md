@@ -1,8 +1,11 @@
-# React + Vite
+# Professional Portfolio
+[alecdowning.com](https://alecdowning.com)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My portfolio was built with React (Vite), Tailwind, JavaScript, Framer Motion, and is hosted on Vercel.
 
-Currently, two official plugins are available:
+## Features
+- about section with developer description, developer tech stack, and a photo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 6 individual or team projects with links to repositories, links to deployed applications, visuals, descriptions, and tech stacks used to build the project
+
+- contact section with [LinkedIn](https://linkedin.com/in/alec-downing/), [GitHub](https://github.com/a-down), [email](mailto:alec2downing@gmail.com), and resume
