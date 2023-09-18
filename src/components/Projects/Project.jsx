@@ -18,7 +18,7 @@ export default function Project({ project, stackArr, isDark }) {
   return (
     <div className="flex flex-col items-center lg:pt-24 md:pt-16 pt-14 px-8 md:px-10 lg:px-24 gap-10">
       <div className='text-center select-none'>
-        <h2 className='text-7xl' style={{color: `${project.color}`}}>{project.title}</h2>
+        <h2 className='text-7xl font-semibold' style={{color: `${project.color}`}}>{project.title}</h2>
         <div className="text-gray-200 font-serif text-xl font-thin">
           <p className='select-none'>
             -
