@@ -4,11 +4,8 @@ import resume from '../assets/alec-downing-resume.pdf'
 
 export default function Header() {
 
-
-
   return (
     <>
-
       <div className='w-full h-[100px] bg-navy opacity-50 shadow-2xl drop-shadow-header'>
       </div>
 
@@ -31,8 +28,6 @@ export default function Header() {
         </div>
 
       </header>
-
-
     </>
   )
 }

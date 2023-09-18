@@ -17,12 +17,12 @@ import {
   SiBulma,
   SiHeroku,
   SiVercel,
-  SiFramer
+  SiFramer,
+  SiVite
 } from 'react-icons/si'
 
 
 export default function Language({stack, isDark}) {
-
   let badgeColor
   isDark ? badgeColor = '' : badgeColor = 'bg-navy'
 
@@ -126,6 +126,10 @@ export default function Language({stack, isDark}) {
         return <SiFramer className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
 
+      case 'Vite':
+        if (!isDark) iconColor = '#646CFF'
+        return <SiVite className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
     }
   }
 

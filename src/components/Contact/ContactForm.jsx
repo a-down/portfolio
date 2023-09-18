@@ -39,7 +39,7 @@ export default function ContactForm() {
       whileInView={{ width: '500px' }}
     >
       <form
-      action='https://forms.gle/Pmwti1ST2F1BiuMy7'
+      action=''
       method='POST'
       className='w-full md:w-[500px] bg-gradient-to-br from-slate-50 via-slate-100 to-slate-200 rounded-md text-navy p-4 flex flex-col gap-4 text-sm font-serif' style={{filter: `drop-shadow(0px 2px 3px #999999`}}>
         <fieldset className='flex flex-col gap-1'>

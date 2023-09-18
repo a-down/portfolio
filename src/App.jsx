@@ -1,14 +1,8 @@
-import { useState } from 'react'
 import heroBG from './assets/backgrounds/hero-bg.svg'
-import Header from './components/Header'
-import HeroText from './components/Hero'
-import About from './components/About'
-import ProjectsSection from './components/Projects/ProjectsSection'
-import Footer from './components/Footer'
-import Contact from './components/Contact/Contact'
+import { About, Contact, Footer, Header, HeroText, ProjectsSection } from './components'
+
 
 function App() {
-
   const heroStyle={
     backgroundImage: `url(${heroBG})`, 
     backgroundRepeat: 'no-repeat', 

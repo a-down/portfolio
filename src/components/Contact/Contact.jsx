@@ -6,7 +6,6 @@ import resume from '../../assets/alec-downing-resume.pdf'
 import { motion, useScroll } from "framer-motion"
 
 
-
 export default function Contact(){
   const { scrollYProgress } = useScroll();
 

@@ -5,7 +5,6 @@ import { motion, useScroll } from "framer-motion"
 
 export default function About() {
   const { scrollYProgress } = useScroll();
-
   const myTechStack = ['React', 'JavaScript', 'Tailwind', 'Chakra', 'HTML', 'CSS', 'Bootstrap', 'jQuery', 'GitHub', 'Node.js', 'Express', 'MongoDB']
 
   return (
@@ -33,8 +32,5 @@ export default function About() {
         </div>
       </motion.div>
     </div>
-
-
-
   )
 }
