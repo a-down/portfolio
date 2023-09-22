@@ -18,7 +18,8 @@ import {
   SiHeroku,
   SiVercel,
   SiFramer,
-  SiVite
+  SiVite,
+  SiRadixui
 } from 'react-icons/si'
 
 
@@ -129,6 +130,11 @@ export default function Language({stack, isDark}) {
       case 'Vite':
         if (!isDark) iconColor = '#646CFF'
         return <SiVite className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Radix UI':
+        if (!isDark) iconColor = '#646CFF'
+        return <SiRadixui className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
     }
   }
