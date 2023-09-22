@@ -5,6 +5,7 @@ import { motion, useScroll } from "framer-motion"
 export default function Project({ project, stackArr, isDark }) {
   const [ repoLink, setRepoLink ] = useState({color: '#e2e8f0'})
   const [ liveLink, setLiveLink ] = useState({color: '#e2e8f0'})
+  const [ extraLink, setExtraLink ] = useState({color: '#e2e8f0'})
   const { scrollYProgress } = useScroll();
 
   function setRepoLinkColor(isActive){
@@ -15,6 +16,11 @@ export default function Project({ project, stackArr, isDark }) {
   function setLiveLinkColor(isActive){
     const newColor = (isActive) ? project.color : '#e2e8f0'
     setLiveLink({...liveLink, color: newColor})
+  }
+
+  function setExtraLinkColor(isActive){
+    const newColor = (isActive) ? project.color : '#e2e8f0'
+    setExtraLink({...liveLink, color: newColor})
   }
 
   return (
@@ -36,6 +42,13 @@ export default function Project({ project, stackArr, isDark }) {
                 
               <a href={project.deployedLink} target='_blank' style={liveLink} onMouseEnter={() => setLiveLinkColor(true)} onMouseLeave={()=>setLiveLinkColor(false)}> Deployed Site </a> 
               -
+
+              {(project.extraLink) && (
+                <>
+                  <a href={project.deployedLink} target='_blank' style={extraLink} onMouseEnter={() => setExtraLinkColor(true)} onMouseLeave={()=> setExtraLinkColor(false)}> {project.extraLinkTitle} </a> 
+                  -
+                </>
+              )}
             </p>
           </div>
         </div>
@@ -44,8 +57,12 @@ export default function Project({ project, stackArr, isDark }) {
           <div className=' w-full text-neutral-200 font-sans font-thin py-1.5 px-3.5 text-md flex flex-col gap-3.5 order-1 text-justify rounded  leading-loose' >
             <p>{project.description}</p>
 
-            { (project.description2) ?? (
+            { (project.description2) && (
             <p>{project.description2}</p>
+            )}
+
+            { (project.description3) && (
+            <p>{project.description3}</p>
             )}
           </div>
 

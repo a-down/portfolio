@@ -12,6 +12,8 @@ import noteTakerPhone from '../../assets/project-visuals/note-taker-phone.png'
 import noteTakerBrowser from '../../assets/project-visuals/note-taker-browser.png'
 import friendsDbPhone from '../../assets/project-visuals/friends-db-phone.png'
 import friendsDbBrowser from '../../assets/project-visuals/friends-db-browser.png'
+import gameWorldPhone from '../../assets/project-visuals/game-world-phone.jpeg'
+import gameWorldBrowser from '../../assets/project-visuals/game-world-browser.png'
 
 
 export let projects = [
@@ -61,17 +63,32 @@ export let projects = [
     description2: 'The blog side uses server-side rendering (Handlebars) to update the site based on database data and the logged-in user.',
     techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Express', 'Node.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
   },
+  // {
+  //   title: 'Game Verse Hub',
+  //   color: '#2D6EFD',
+  //   phoneImg: gameVerseHubPhone,
+  //   browserImg: gameVerseHubBrowser,
+  //   // cardOrder: [2, 1, 3],
+  //   repoLink: 'https://github.com/a-down/GameVerseHub',
+  //   deployedLink: 'https://a-down.github.io/GameVerseHub/',
+  //   description: 'GameVerseHub was a team project during my Full Stack Certificate Program. We built the site for users to see featured video games and search for games by keyword. RAWG API powers the site.',
+  //   description2: 'I built the client-side JavaScript for the search page. I managed the GitHub Repo, resolved merge conflicts, and approved pull requests.',
+  //   techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap','GitHub' ]
+  // },
   {
-    title: 'Game Verse Hub',
-    color: '#2D6EFD',
-    phoneImg: gameVerseHubPhone,
-    browserImg: gameVerseHubBrowser,
-    // cardOrder: [2, 1, 3],
-    repoLink: 'https://github.com/a-down/GameVerseHub',
-    deployedLink: 'https://a-down.github.io/GameVerseHub/',
-    description: 'GameVerseHub was a team project during my Full Stack Certificate Program. We built the site for users to see featured video games and search for games by keyword. RAWG API powers the site.',
-    description2: 'I built the client-side JavaScript for the search page. I managed the GitHub Repo, resolved merge conflicts, and approved pull requests.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap','GitHub' ]
+    title: 'Game World',
+    color: '#7C3AED',
+    phoneImg: gameWorldPhone,
+    browserImg: gameWorldBrowser,
+    // cardOrder: [1, 2, 3],
+    repoLink: 'https://github.com/a-down/game-world-react-rebuild',
+    deployedLink: 'https://a-down-game-world.vercel.app',
+    extraLink: 'https://github.com/a-down/GameVerseHub',
+    extraLinkTitle: 'Original Repo',
+    description: 'The Weather Dashboard allows users to search for current and future weather by city name. The site saves user search history for future reference. The Weather Dashboard is built with jQuery and powered by the OpenWeather API.',
+    description2: 'GameVerseHub was a team project during my Full Stack Certificate Program. We built the site for users to see featured video games and search for games by keyword. RAWG API powers the site.',
+    description3: 'For the origininal GameVerseHub, I built the client-side JavaScript for the search page. I managed the GitHub Repo, resolved merge conflicts, and approved pull requests.',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'GitHub']
   },
   {
     title: 'Weather Dashboard',
