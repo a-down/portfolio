@@ -45,7 +45,7 @@ export default function Project({ project, stackArr, isDark }) {
 
               {(project.extraLink) && (
                 <>
-                  <a href={project.deployedLink} target='_blank' style={extraLink} onMouseEnter={() => setExtraLinkColor(true)} onMouseLeave={()=> setExtraLinkColor(false)}> {project.extraLinkTitle} </a> 
+                  <a href={project.extraLink} target='_blank' style={extraLink} onMouseEnter={() => setExtraLinkColor(true)} onMouseLeave={()=> setExtraLinkColor(false)}> {project.extraLinkTitle} </a> 
                   -
                 </>
               )}
