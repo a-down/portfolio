@@ -72,7 +72,7 @@ export let projects = [
     phoneImg: techBlogPhone,
     browserImg: techBlogBrowser,
     // cardOrder: [3, 2, 1],
-    repoLink: 'https://github.com/a-down/tech-blog',
+    repoLink: 'https://github.com/a-down/full-stack-tech-blog',
     deployedLink: 'https://a-down-tech-blog-b6cbf85bb984.herokuapp.com',
     description: 'Undefined Opinions is a full-stack website that allows users to view blog posts posted on the site. Users can also create an account, post and edit their own blog posts, and comment on posts made by others. Users must be signed in to add posts or comments to the MySQL database.',
     description2: 'The blog side uses server-side rendering (Handlebars) to update the site based on database data and the logged-in user.',
