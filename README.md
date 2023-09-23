@@ -1,11 +1,27 @@
-# Professional Portfolio
-[alecdowning.com](https://alecdowning.com)
+# [alecdowning.com](https://alecdowning.com)
 
-My portfolio was built with React (Vite), Tailwind, JavaScript, Framer Motion, and is hosted on Vercel.
+[alecdowning.com](https://alecdowning.com) is my professional portfolio. I chose to build with React because of the number of reusable components. Below are the site details:
 
-## Features
-- about section with developer description, developer tech stack, and a photo
+## Sections
+- About Section with developer description, developer tech stack, and a photo
 
-- 6 individual or team projects with links to repositories, links to deployed applications, visuals, descriptions, and tech stacks used to build the project
+- Project Section with 6 individual or team projects with links to repositories, links to deployed applications, visuals, descriptions, and tech stacks
 
-- contact section with [LinkedIn](https://linkedin.com/in/alec-downing/), [GitHub](https://github.com/a-down), [email](mailto:alec2downing@gmail.com), and resume
+- Contact Section with [LinkedIn](https://linkedin.com/in/alec-downing/), [GitHub](https://github.com/a-down), [email](mailto:alec2downing@gmail.com), and resume
+
+## Tech Stack
+- React
+- Tailwind
+- JavaScript
+- CSS
+- Framer Motion
+- Vite
+- Vercel
+
+### Reusable Components
+- Display for Individual Projects
+- Tech Stack Displays
+  - used in About Sections
+  - used in individual projects
+  - used in site footer
+  
