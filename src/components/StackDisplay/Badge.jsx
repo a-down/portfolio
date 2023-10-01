@@ -82,7 +82,7 @@ export default function Language({stack, isDark}) {
         return <SiNodedotjs className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
       
-      case 'Express':
+      case 'Express.js':
         if (!isDark) iconColor = '#000000'
         return <SiExpress className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;

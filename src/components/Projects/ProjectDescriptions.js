@@ -22,7 +22,7 @@ export let projects = [
     deployedLink: 'https://friendsdb-5ccabe7c6928.herokuapp.com/',     
     description: `Friends.db was a team project during my Full-Stack Certificate Program. We built a social media site for developers to share creations and questions with their coding friends. Users can sign in to their account, create profiles, follow friends, see and interact with friends' posts, and receive notifications when friends interact with their posts or follow them. Users choose a color for themselves to represent them across the site using React useContext.`,
     description2: `I was the primary React developer and site designer. I led the way on the front end while managing the project's GitHub repo, site deployment, and database hosting.`,
-    techStack: ['React', 'JavaScript', 'Tailwind', 'HTML', 'CSS', 'GitHub', 'Node.js', 'Express', 'MongoDB', 'Heroku']
+    techStack: ['React', 'JavaScript', 'Tailwind', 'HTML', 'CSS', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Heroku']
   },
   {
     title: 'Safe Paws',
@@ -33,7 +33,7 @@ export let projects = [
     deployedLink: 'https://safe-paws-da967720d734.herokuapp.com/',     
     description: 'Safe Paws was a team project during my Full-Stack Certificate Program. We built a website that used server-side rendering (Handlebars) to dynamically render the webpage according to the user. Users can create an account, add and remove pets, and book appointments.',
     description2: 'I was the front-end architect and designer (HTML and CSS). I also assisted on the client-side JavaScript and the backend. I managed the GitHub Repo, resolved conflicts, and approved pull requests.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
   },
   {
     title: 'Game World',
@@ -74,7 +74,7 @@ export let projects = [
     deployedLink: 'https://a-down-tech-blog-b6cbf85bb984.herokuapp.com',
     description: 'Undefined Opinions is a full-stack website that allows users to view blog posts posted on the site. Users can also create an account, post and edit their own blog posts, and comment on posts made by others. Users must be signed in to add posts or comments to the MySQL database.',
     description2: 'The blog side uses server-side rendering (Handlebars) to update the site based on database data and the logged-in user.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Express', 'Node.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Node.js', 'Express.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
   },
   {
     title: 'Note Taker',
@@ -86,6 +86,6 @@ export let projects = [
     deployedLink: 'https://a-down-note-taker-a4f5d9c37c25.herokuapp.com/',
     description: 'Note Taker is a full-stack website for users to save notes to stay organized. Express.js and Node.js save the notes as JSON files in the server. Users can also delete notes saved to the site.',
     description2: 'I built out the backend of the website and deployed the website to Heroku.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Express', 'Node.js', 'GitHub', 'Heroku']
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'GitHub', 'Heroku']
   },
 ]
