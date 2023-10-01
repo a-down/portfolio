@@ -2,12 +2,8 @@ import safePawsPhone from '../../assets/project-visuals/safe-paws-phone.png'
 import safePawsBrowser from '../../assets/project-visuals/safe-paws-browser.png'
 import techBlogPhone from '../../assets/project-visuals/tech-blog-phone.png'
 import techBlogBrowser from '../../assets/project-visuals/tech-blog-browser.png'
-import gameVerseHubPhone from '../../assets/project-visuals/gameversehub-phone.png'
-import gameVerseHubBrowser from '../../assets/project-visuals/gameversehub-browser.png'
 import weatherDashboardPhone from '../../assets/project-visuals/weather-dashboard-phone.png'
 import weatherDashboardBrowser from '../../assets/project-visuals/weather-dashboard-browser.png'
-import codeQuizPhone from '../../assets/project-visuals/code-quiz-phone.png'
-import codeQuizBrowser from '../../assets/project-visuals/code-quiz-browser.png'
 import noteTakerPhone from '../../assets/project-visuals/note-taker-phone.png'
 import noteTakerBrowser from '../../assets/project-visuals/note-taker-browser.png'
 import friendsDbPhone from '../../assets/project-visuals/friends-db-phone.png'
@@ -39,18 +35,6 @@ export let projects = [
     description2: 'I was the front-end architect and designer (HTML and CSS). I also assisted on the client-side JavaScript and the backend. I managed the GitHub Repo, resolved conflicts, and approved pull requests.',
     techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
   },
-  // {
-  //   title: 'Coding Quiz',
-  //   color: '#F08080',
-  //   phoneImg: codeQuizPhone,
-  //   browserImg: codeQuizBrowser,
-  //   // cardOrder: [2, 3, 1],
-  //   repoLink: 'https://github.com/a-down/code-quiz',
-  //   deployedLink: 'https://a-down.github.io/code-quiz/',
-  //   description: 'The Coding Quiz allows users to take a 10-question test on JavaScript. Users have 90 seconds to answer every question. Users can save their initials and scores to compare to previous and future attempts.',
-  //   description2: '',
-  //   techStack: ['HTML', 'CSS', 'JavaScript', 'GitHub']
-  // },
   {
     title: 'Game World',
     color: '#7C3AED',
@@ -67,6 +51,20 @@ export let projects = [
     techStack: ['React', 'JavaScript', 'Tailwind', 'Radix UI', 'HTML', 'CSS', 'Framer Motion', 'GitHub', 'Vite', 'Vercel']
   },
   {
+    title: 'WeatherCraft',
+    color: '#FBD28E',
+    phoneImg: weatherDashboardPhone,
+    browserImg: weatherDashboardBrowser,
+    // cardOrder: [1, 2, 3],
+    repoLink: 'https://github.com/a-down/weathercraft-jquery-weather-site',
+    deployedLink: 'https://weathercraft-68e93962bfa5.herokuapp.com/',
+    extraLink: 'https://a-down.github.io/weather-dashboard/',
+    extraLinkTitle: 'Original Site',
+    description: 'WeatherCraft is a weather site built with jQuery (JavaScript), HTML, vanilla CSS, and OpenWeatherMap Weather API. Users can view weather by searching a city or zip code and country. The current location will display current weather, upcoming weather for the night, and an bi-hourly forecast. Users can set a favorite location that defaults on site load, as well as view their last five searches in the search modal. Both pieces of information are stored in local storage.',
+    description2: 'WeatherCraft is a rebuild of a project from my Full-Stack Certificate Program. Updates that I made included: building a backend to handle muptiple API calls, designing from scratch using a 4pt grid system and Figma, adding search by zip functionality, appended and removed elements dynamically, utilized href for searches to allow reloads/bookmarks',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Node.js', 'Express.js', 'GitHub', 'Heroku']
+  },
+  {
     title: 'Undefined Opinions',
     color: '#3E829A',
     phoneImg: techBlogPhone,
@@ -77,30 +75,6 @@ export let projects = [
     description: 'Undefined Opinions is a full-stack website that allows users to view blog posts posted on the site. Users can also create an account, post and edit their own blog posts, and comment on posts made by others. Users must be signed in to add posts or comments to the MySQL database.',
     description2: 'The blog side uses server-side rendering (Handlebars) to update the site based on database data and the logged-in user.',
     techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Express', 'Node.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
-  },
-  // {
-  //   title: 'Game Verse Hub',
-  //   color: '#2D6EFD',
-  //   phoneImg: gameVerseHubPhone,
-  //   browserImg: gameVerseHubBrowser,
-  //   // cardOrder: [2, 1, 3],
-  //   repoLink: 'https://github.com/a-down/GameVerseHub',
-  //   deployedLink: 'https://a-down.github.io/GameVerseHub/',
-  //   description: 'GameVerseHub was a team project during my Full Stack Certificate Program. We built the site for users to see featured video games and search for games by keyword. RAWG API powers the site.',
-  //   description2: 'I built the client-side JavaScript for the search page. I managed the GitHub Repo, resolved merge conflicts, and approved pull requests.',
-  //   techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap','GitHub' ]
-  // },
-  {
-    title: 'Weather Dashboard',
-    color: '#EAC792',
-    phoneImg: weatherDashboardPhone,
-    browserImg: weatherDashboardBrowser,
-    // cardOrder: [1, 2, 3],
-    repoLink: 'https://github.com/a-down/weather-dashboard',
-    deployedLink: 'https://a-down.github.io/weather-dashboard/',
-    description: 'The Weather Dashboard allows users to search for current and future weather by city name. The site saves user search history for future reference. The Weather Dashboard is built with jQuery and powered by the OpenWeather API.',
-    description2: '',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'GitHub']
   },
   {
     title: 'Note Taker',
