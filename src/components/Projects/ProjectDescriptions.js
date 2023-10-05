@@ -76,16 +76,16 @@ export let projects = [
     description2: 'The blog side uses server-side rendering (Handlebars) to update the site based on database data and the logged-in user.',
     techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Node.js', 'Express.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
   },
-  {
-    title: 'Note Taker',
-    color: '#44CAF0',
-    phoneImg: noteTakerPhone,
-    browserImg: noteTakerBrowser,
-    // cardOrder: [3, 2, 1],
-    repoLink: 'https://github.com/a-down/note-taker',
-    deployedLink: 'https://a-down-note-taker-a4f5d9c37c25.herokuapp.com/',
-    description: 'Note Taker is a full-stack website for users to save notes to stay organized. Express.js and Node.js save the notes as JSON files in the server. Users can also delete notes saved to the site.',
-    description2: 'I built out the backend of the website and deployed the website to Heroku.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'GitHub', 'Heroku']
-  },
+  // {
+  //   title: 'Note Taker',
+  //   color: '#44CAF0',
+  //   phoneImg: noteTakerPhone,
+  //   browserImg: noteTakerBrowser,
+  //   // cardOrder: [3, 2, 1],
+  //   repoLink: 'https://github.com/a-down/note-taker',
+  //   deployedLink: 'https://a-down-note-taker-a4f5d9c37c25.herokuapp.com/',
+  //   description: 'Note Taker is a full-stack website for users to save notes to stay organized. Express.js and Node.js save the notes as JSON files in the server. Users can also delete notes saved to the site.',
+  //   description2: 'I built out the backend of the website and deployed the website to Heroku.',
+  //   techStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'GitHub', 'Heroku']
+  // },
 ]

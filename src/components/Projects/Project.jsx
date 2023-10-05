@@ -25,7 +25,7 @@ export default function Project({ project, stackArr, isDark }) {
 
   return (
     <motion.div
-      viewport={{ once: true, amount: 0.6 }}
+      viewport={{ once: true, amount: 0.4 }}
       initial={{ visibility: 'hidden', opacity: 0.4 }}
       whileInView={{ visibility: 'visible', opacity: 1 }}
       transition={{ duration: 0.6 }}

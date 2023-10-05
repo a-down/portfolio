@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className='bg-navy'>
       <motion.div
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.4 }}
           initial={{ visibility: 'hidden', opacity: 0.4 }}
           whileInView={{ visibility: 'visible', opacity: 1 }}
           transition={{ duration: 0.4 }}
