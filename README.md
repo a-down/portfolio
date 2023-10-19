@@ -21,7 +21,7 @@
 ### Reusable Components
 - Display for Individual Projects
 - Tech Stack Displays
-  - used in About Sections
-  - used in individual projects
-  - used in site footer
+  - About Section
+  - Individual Project Tech Stacks
+  - Footer
   
