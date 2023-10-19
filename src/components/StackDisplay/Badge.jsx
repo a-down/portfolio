@@ -19,8 +19,10 @@ import {
   SiVercel,
   SiFramer,
   SiVite,
-  SiRadixui
+  SiRadixui,
+  SiNextdotjs
 } from 'react-icons/si'
+import clerkDark from '../../assets/clerk-dark.png'
 
 
 export default function Language({stack, isDark}) {
@@ -135,6 +137,15 @@ export default function Language({stack, isDark}) {
       case 'Radix UI':
         if (!isDark) iconColor = '#646CFF'
         return <SiRadixui className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Next.js':
+        if (!isDark) iconColor = '#000000'
+        return <SiNextdotjs className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Clerk':
+        return <img src={clerkDark} className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
     }
   }

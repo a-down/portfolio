@@ -10,9 +10,23 @@ import friendsDbPhone from '../../assets/project-visuals/friends-db-phone.png'
 import friendsDbBrowser from '../../assets/project-visuals/friends-db-browser.png'
 import gameWorldPhone from '../../assets/project-visuals/game-world-phone.png'
 import gameWorldBrowser from '../../assets/project-visuals/game-world-browser.png'
+import jobNotebookPhone from '../../assets/project-visuals/job-notebook-phone.png'
+import jobNotebookBrowser from '../../assets/project-visuals/job-notebook-browser.png'
 
 
 export let projects = [
+  {
+    title: 'Job Notebook',
+    color: '#9dd4c7',
+    phoneImg: jobNotebookPhone,
+    browserImg: jobNotebookBrowser,
+    repoLink: 'https://github.com/a-down/job-notebook-application-tracker',
+    deployedLink: 'https://jobnotebook.vercel.app',     
+    description: `Notebook is a tool for job seekers to keep track of their current applications. In today's job market, there are many steps for potential candidates. Applications that take their time can struggle to keep each one straight. Unlike other job trackers, Job Notebook focuses on what the user needs to do BEFORE submitting their application.`,
+    description2: `I created Job Notebook in the first month after I graduated from my Full Stack Bootcamp. I was searching several job boards and trying to track it all in a spreadsheet. This spreadsheet got pretty long pretty quickly. I needed a tool to keep track of a job's details, links, tasks, contacts, files, and notes.`,
+    description3: `I chose to use Next.js, Tailwind, and MongoDB because I needed a reactive app. Users are constantly displaying/hiding UI elements. I wanted to use React, so I implemented Next.js because I wanted to learn it as a Full-Stack solution. Clerk provides the authentication for Job Notebook. I chose Clerk because it provided third-party sign up, a simple developer experience, and holds user data in their own secure database.`,
+    techStack: ['Next.js', 'React', 'Tailwind', 'MongoDB', 'Clerk', 'Radix UI', 'CSS', 'JavaScript', 'GitHub', 'Vercel']
+  },
   {
     title: 'Friends.db',
     color: '#62BCF4',
