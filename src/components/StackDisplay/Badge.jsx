@@ -20,7 +20,11 @@ import {
   SiFramer,
   SiVite,
   SiRadixui,
-  SiNextdotjs
+  SiNextdotjs,
+  SiReactrouter,
+  SiNpm,
+  SiFigma,
+  SiMongoose
 } from 'react-icons/si'
 import clerkDark from '../../assets/clerk-dark.png'
 
@@ -146,6 +150,26 @@ export default function Language({stack, isDark}) {
 
       case 'Clerk':
         return <img src={clerkDark} className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'React Router':
+        if (!isDark) iconColor = '#CA4245'
+        return <SiReactrouter className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'npm':
+        if (!isDark) iconColor = '#CB3837'
+        return <SiNpm className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Figma':
+        if (!isDark) iconColor = '#F24E1E'
+        return <SiFigma className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Mongoose':
+        if (!isDark) iconColor = '#880000'
+        return <SiMongoose className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
     }
   }
