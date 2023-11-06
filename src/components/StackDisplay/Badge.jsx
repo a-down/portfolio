@@ -24,7 +24,8 @@ import {
   SiReactrouter,
   SiNpm,
   SiFigma,
-  SiMongoose
+  SiMongoose,
+  SiRender
 } from 'react-icons/si'
 import clerkDark from '../../assets/clerk-dark.png'
 
@@ -170,6 +171,11 @@ export default function Language({stack, isDark}) {
       case 'Mongoose':
         if (!isDark) iconColor = '#880000'
         return <SiMongoose className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+        
+      case 'Render':
+        if (!isDark) iconColor = '#46E3B7'
+        return <SiRender className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
     }
   }
