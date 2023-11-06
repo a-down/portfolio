@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion"
 
 
 export default function About() {
-  const myTechStack = ['React', 'Next.js', 'JavaScript', 'Tailwind', 'jQuery', 'Framer Motion', 'Figma', 'React Router',  'HTML', 'CSS', 'Radix UI', 'Bootstrap', 'Chakra', 'Bulma', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'MySQL', 'Sequelize', 'Clerk', 'npm', 'Vercel', 'Heroku']
+  const myTechStack = ['React', 'Next.js', 'JavaScript', 'Tailwind', 'jQuery', 'Framer Motion', 'Figma', 'React Router',  'HTML', 'CSS', 'Radix UI', 'Bootstrap', 'Chakra', 'Bulma', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'MySQL', 'Sequelize', 'Clerk', 'npm', 'Vercel', 'Heroku', 'Render']
 
   return (
     <div className='bg-navy'>
