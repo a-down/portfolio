@@ -37,9 +37,9 @@ export default function Contact(){
                   <h4>alec-downing</h4>
                 </a>
 
-                <a href="mailto: alec2downing@gmail.com" className='flex items-center gap-4 hover:text-slate-600 active:text-slate-200'>
+                <a href="mailto: alec@alecdowning.com" className='flex items-center gap-4 hover:text-slate-600 active:text-slate-200'>
                   <HiOutlineMail />
-                  <h4>alec2downing@gmail.com</h4>
+                  <h4>alec@alecdowning.com</h4>
                 </a>
 
                 <a href={resume} download='alec-downing-resume' className='flex items-center gap-4 hover:text-slate-600 active:text-slate-200'>
