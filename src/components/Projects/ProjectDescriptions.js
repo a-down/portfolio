@@ -12,9 +12,31 @@ import gameWorldPhone from '../../assets/project-visuals/game-world-phone.png'
 import gameWorldBrowser from '../../assets/project-visuals/game-world-browser.png'
 import jobNotebookPhone from '../../assets/project-visuals/job-notebook-phone.png'
 import jobNotebookBrowser from '../../assets/project-visuals/job-notebook-browser.png'
+import quickMeasureAuto from '../../assets/project-visuals/quick-measure-auto.png'
+import quickMeasureTap from '../../assets/project-visuals/quick-measure-tap.png'
+import quickMeasureSaving from '../../assets/project-visuals/quick-measure-saving.png'
+import quickMeasureSaved from '../../assets/project-visuals/quick-measure-saved.png'
+import quickMeasureHome from '../../assets/project-visuals/quick-measure-home.png'
+
 
 
 export let projects = [
+  {
+    title: 'Quick Measure - GPS',
+    color: '#6DAB64',
+    mobileAppImages: [
+      quickMeasureHome,
+      quickMeasureAuto,
+      quickMeasureTap,
+      quickMeasureSaving
+    ],
+    repoLink: 'https://github.com/a-down/quick-measure-gps-app',
+    deployedLink: 'https://apps.apple.com/us/app/quick-measure-gps/id6473677147',     
+    description: `Quick Measure is a quick and simple mobile app to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!`,
+    description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
+    description3: `I built Quick Measure - GPS with React Native, Expo, and React-Native-Maps. React Native allowed me to build a cross-platform mobile app with JavaScript, and Expo provided various plugins/packages, a build environment, version management, and a compiler for the App Store. I styled with Nativewind (TailwindCSS for React Native), provide ads with Google AdMob, and used Revenue Cat to track and manage in-app purchases with their api and package "react-native-purchases". Currently, the app is only available on iOS. I look forward to working on the Android build and releasing it on the Google Play Store in the next couple of months.`,
+    techStack: ['React Native', 'Expo', 'Tailwind', 'JavaScript', 'App Store Connect', 'Google AdMob', 'GitHub']
+  },
   {
     title: 'Job Notebook',
     color: '#9dd4c7',
@@ -78,18 +100,18 @@ export let projects = [
     description2: 'WeatherCraft is a rebuild of a project from my Full-Stack Certificate Program. Updates that I made included: building a backend to handle muptiple API calls, designing from scratch using a 4pt grid system and Figma, adding search by zip functionality, appended and removed elements dynamically, utilized href for searches to allow reloads/bookmarks, allowed users to set a favorite/default location',
     techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Node.js', 'Express.js', 'GitHub', 'Render']
   },
-  {
-    title: 'Undefined Opinions',
-    color: '#3E829A',
-    phoneImg: techBlogPhone,
-    browserImg: techBlogBrowser,
-    // cardOrder: [3, 2, 1],
-    repoLink: 'https://github.com/a-down/full-stack-tech-blog',
-    deployedLink: 'https://a-down-tech-blog-b6cbf85bb984.herokuapp.com',
-    description: 'Undefined Opinions is a full-stack website that allows users to view blog posts posted on the site. Users can also create an account, post and edit their own blog posts, and comment on posts made by others. Users must be signed in to add posts or comments to the MySQL database.',
-    description2: 'The blog side uses server-side rendering (Handlebars) to update the site based on database data and the logged-in user.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Node.js', 'Express.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
-  },
+  // {
+  //   title: 'Undefined Opinions',
+  //   color: '#3E829A',
+  //   phoneImg: techBlogPhone,
+  //   browserImg: techBlogBrowser,
+  //   // cardOrder: [3, 2, 1],
+  //   repoLink: 'https://github.com/a-down/full-stack-tech-blog',
+  //   deployedLink: 'https://a-down-tech-blog-b6cbf85bb984.herokuapp.com',
+  //   description: 'Undefined Opinions is a full-stack website that allows users to view blog posts posted on the site. Users can also create an account, post and edit their own blog posts, and comment on posts made by others. Users must be signed in to add posts or comments to the MySQL database.',
+  //   description2: 'The blog side uses server-side rendering (Handlebars) to update the site based on database data and the logged-in user.',
+  //   techStack: ['HTML', 'CSS', 'JavaScript', 'Bulma', 'Handlebars', 'jQuery', 'Node.js', 'Express.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
+  // },
   // {
   //   title: 'Note Taker',
   //   color: '#44CAF0',
