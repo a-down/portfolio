@@ -40,7 +40,7 @@ export default function Project({ project, stackArr, isDark }) {
               
               -
                 
-              <a href={project.deployedLink} target='_blank' style={liveLink} onMouseEnter={() => setLiveLinkColor(true)} onMouseLeave={()=>setLiveLinkColor(false)}> Deployed Site </a> 
+              <a href={project.deployedLink} target='_blank' style={liveLink} onMouseEnter={() => setLiveLinkColor(true)} onMouseLeave={()=>setLiveLinkColor(false)}>{` ${project.mobileAppImages ? 'App Store' : 'Deployed Site'} `}</a> 
               -
 
               {(project.extraLink) && (
@@ -67,13 +67,29 @@ export default function Project({ project, stackArr, isDark }) {
           </div>
 
           <div className='flex gap-2 md:gap-4 w-full md:order-2'>
-            <div className='xs:w-full md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
-              <img src={project.phoneImg} className='' style={{borderRadius: '4px'}}/>
-            </div>
+            {!project.mobileAppImages
+              ? (
+                <>
+                  <div className='xs:w-full md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
+                    <img src={project.phoneImg} className='' style={{borderRadius: '4px'}}/>
+                  </div>
 
-            <div className='flex-grow' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
-              <img src={project.browserImg} className='' style={{borderRadius: '4px'}}/>
-            </div>
+                  <div className='flex-grow' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
+                    <img src={project.browserImg} className='' style={{borderRadius: '4px'}}/>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {project.mobileAppImages.map((image, index) => (
+                    <div key={index}>
+                      <div className='xs:w-full md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
+                        <img src={image} className='' style={{borderRadius: '20px'}}/>
+                      </div>
+                    </div>
+                  ))}
+                </>
+              )}
+            
           </div>
 
           

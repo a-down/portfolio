@@ -25,7 +25,10 @@ import {
   SiNpm,
   SiFigma,
   SiMongoose,
-  SiRender
+  SiRender,
+  SiExpo,
+  SiGoogleadmob,
+  SiAppstore
 } from 'react-icons/si'
 import clerkDark from '../../assets/clerk-dark.png'
 
@@ -40,6 +43,10 @@ export default function Language({stack, isDark}) {
   const getIcon = (iconName) => {
     switch (iconName) {
       case 'React':
+        if (!isDark) iconColor = '#61DAFB'
+        return <SiReact className=' w-full h-full p-2' style={{color: iconColor}}/>
+        break;
+      case 'React Native':
         if (!isDark) iconColor = '#61DAFB'
         return <SiReact className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
@@ -176,6 +183,21 @@ export default function Language({stack, isDark}) {
       case 'Render':
         if (!isDark) iconColor = '#46E3B7'
         return <SiRender className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Expo':
+        if (!isDark) iconColor = '#000020'
+        return <SiExpo className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Google AdMob':
+        if (!isDark) iconColor = '#EA4335'
+        return <SiGoogleadmob className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'App Store Connect':
+        if (!isDark) iconColor = '#0D96F6'
+        return <SiAppstore className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
     }
   }
