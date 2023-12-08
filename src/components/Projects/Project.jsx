@@ -83,7 +83,7 @@ export default function Project({ project, stackArr, isDark }) {
                   {project.mobileAppImages.map((image, index) => (
                     <div key={index}>
                       <div className='xs:w-full md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
-                        <img src={image} className='rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-5xl' />
+                        <img src={image} />
                       </div>
                     </div>
                   ))}

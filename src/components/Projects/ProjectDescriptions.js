@@ -15,7 +15,6 @@ import jobNotebookBrowser from '../../assets/project-visuals/job-notebook-browse
 import quickMeasureAuto from '../../assets/project-visuals/quick-measure-auto.png'
 import quickMeasureTap from '../../assets/project-visuals/quick-measure-tap.png'
 import quickMeasureSaving from '../../assets/project-visuals/quick-measure-saving.png'
-import quickMeasureSaved from '../../assets/project-visuals/quick-measure-saved.png'
 import quickMeasureHome from '../../assets/project-visuals/quick-measure-home.png'
 
 
