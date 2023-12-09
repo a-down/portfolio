@@ -15,7 +15,7 @@ export default function HeroText(){
 
       <div className='flex flex-row mt-52 gap-4 w-full justify-center items-start md:justify-between md:px-10 lg:px-24 2xl:px-[15%]'>
 
-        <a href='mailto: alec@alecdowning.com' className=' text-accent hover:text-blue-200 flex flex-col md:flex-row items-center md:gap-2 order-2 md:order-1'>
+        <a href='mailto: alec@alecdowning.com' className=' text-accent hover:text-blue-200 flex flex-col md:flex-row items-center md:gap-3 order-2 md:order-1 font-serif'>
           <FaEnvelope className='w-12 h-12 '/>
           <p className="md:hidden">Contact</p>
           <p className="hidden md:inline">alec@alecdowning.com</p>
