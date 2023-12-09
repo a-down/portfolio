@@ -1,5 +1,5 @@
 import lineGraphic from '../assets/line-graphic.png'
-import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
+import { FaGithubSquare, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 
 export default function HeroText(){
@@ -13,14 +13,23 @@ export default function HeroText(){
       <h3 className=' text-3xl font-serif font-thin'>Frontend Developer</h3>
       <h4 className=' text-xl font-serif font-thin'>Making the Internet Easier to Use</h4>
 
-      <div className='flex mt-52 gap-4 w-full justify-center md:justify-end md:px-10 lg:px-24'>
-        <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
-          <FaLinkedin className='w-12 h-12 hover:text-blue-200'/>
+      <div className='flex flex-row mt-52 gap-4 w-full justify-center items-start md:justify-between md:px-10 lg:px-24'>
+
+        <a href='mailto: alec@alecdowning.com' className=' text-accent hover:text-blue-200 flex flex-col md:flex-row items-center md:gap-2 order-2 md:order-1'>
+          <FaEnvelope className='w-12 h-12 '/>
+          <p className="md:hidden">Contact</p>
+          <p className="hidden md:inline">alec@alecdowning.com</p>
         </a>
 
-        <a href='https://www.github.com/a-down' target='_blank'>
-          <FaGithubSquare className='w-12 h-12  text-accent hover:text-blue-200'/>
-        </a>
+        <div className="md:order-2 flex flex-row gap-4">
+          <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
+            <FaLinkedin className='w-12 h-12 hover:text-blue-200'/>
+          </a>
+
+          <a href='https://www.github.com/a-down' target='_blank'>
+            <FaGithubSquare className='w-12 h-12  text-accent hover:text-blue-200'/>
+          </a>
+      </div>
       </div>
 
     </div>
