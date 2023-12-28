@@ -7,7 +7,8 @@ export default {
   theme: {
     fontFamily: {
       'sans': 'Outfit, sans-serif',
-      'serif': 'Zilla Slab, serif'
+      'serif': 'Zilla Slab, serif',
+      'jost': 'Jost, sans-serif'
     },
     extend: {
       colors: {

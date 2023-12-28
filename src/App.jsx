@@ -3,7 +3,7 @@ import {
   Routes, 
   Route
 } from "react-router-dom";
-import Portfolio from './pages/Portfolio.jsx'
+import { Portfolio, QuickMeasure } from './pages';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Portfolio />} />
+        <Route path="/quickmeasure" element={<QuickMeasure />} />
       </Routes>
     </BrowserRouter>
   );
