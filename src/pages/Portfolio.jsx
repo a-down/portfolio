@@ -1,5 +1,5 @@
-import heroBG from './assets/backgrounds/hero-bg.svg'
-import { About, Contact, Footer, Header, HeroText, ProjectsSection } from './components'
+import heroBG from '../assets/backgrounds/hero-bg.svg'
+import { About, Contact, Footer, Header, HeroText, ProjectsSection } from '../components'
 
 
 export default function Portfolio() {

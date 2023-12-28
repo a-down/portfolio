@@ -3,7 +3,7 @@ import {
   Routes, 
   Route
 } from "react-router-dom";
-import Portfolio from './Portfolio.jsx'
+import Portfolio from './pages/Portfolio.jsx'
 
 
 function App() {
