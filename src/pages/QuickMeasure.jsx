@@ -43,12 +43,12 @@ export default function QuickMeasure() {
           </div>
 
           {/* HERO */}
-          <div className=" relative h-full pt-16 lg:pt-32 flex flex-col gap-8">
+          <div className=" relative h-full pt-16 lg:pt-32 flex flex-col gap-8 md:gap-0 pb-12 lg:pb-0">
             <div className="lg:max-w-[720px xl:max-w-none] pr-4 md:pr-16 lg:pr-24">
-              <h1 className="font-bold text-[40px] md:text-[64px] leading-none">Easy Tools for a <span className="text-[64px] md:text-[96px] text-[#6DAB64] block">Quick Measure</span></h1>
+              <h1 className="font-semibold md:font-bold text-[32px] md:text-[64px] leading-none">Easy Tools for a <span className="text-[48px] md:text-[96px] text-[#6DAB64] block font-bold mb-4">Quick Measure</span></h1>
               <p className="sm:text-lg md:text-xl leading-loose max-w-[460px] xl:max-w-[720px]">Quick Measure is a quick and simple tool to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!</p>
             </div>
-            <img src={heroMockup} alt="Quick Measure Hero Mockup" className="w-[100%] lg:w-[90%] lg:max-w-[900px] xl:max-w-[980px] scale-125 lg:scale-100 lg:absolute lg:bottom-0 lg:right-0" />
+            <img src={heroMockup} alt="Quick Measure Hero Mockup" className="ml-auto w-[100%] md:w-[90%] lg:max-w-[700px] xl:max-w-[760px] 2xl:max-w-[1000px] scale-125 lg:scale-100 lg:absolute lg:bottom-0 lg:right-0" />
           </div>
         </div>
 
@@ -104,7 +104,7 @@ export default function QuickMeasure() {
         </div>
 
         {/* CONTACT SECTION */}
-        <div className="mt-16 mb-32 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
+        <div className="mt-32 mb-32 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
           <h2 className="text-4xl font-semibold mb-6">Contact Me</h2>
 
           <p className="text-xl">
