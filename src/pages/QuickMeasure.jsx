@@ -124,8 +124,6 @@ export default function QuickMeasure() {
             </a>
           </div>
         </footer>
-
-
       </div>
 
 
