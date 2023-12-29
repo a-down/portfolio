@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Portfolio, QuickMeasure } from './pages'
+import Root from './Root'
 import './index.css'
 import { inject } from '@vercel/analytics';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -11,11 +12,22 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Portfolio />,
+    // children: [
+    //   {
+    //     path: "quickmeasure",
+    //     element: <QuickMeasure />,
+    //   },
+    //   {
+    //     path: "*",
+    //     element: <Portfolio />,
+    //   },
+    // ]
   },
   {
-    path: "/quickmeasure",
+    path: "quickmeasure",
     element: <QuickMeasure />,
-  },
+  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
