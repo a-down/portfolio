@@ -22,7 +22,7 @@ export default function QuickMeasure() {
       <div className="font-jost relative w-full ">
 
         {/* HEADER AND HERO */}
-        <div className="lg:h-[100dvh] pt-8 px-4 md:pl-16 lg:pl-24 overflow-clip" style={heroStyle} >
+        <div className="lg:h-[100dvh] pt-8 pl-4 md:pl-16 lg:pl-24 overflow-clip" style={heroStyle} >
           {/* HEADER */}
           <div className=" flex justify-between pr-4 md:pr-16 lg:pr-24">
             <a href="/" className="transition-all hover:opacity-60 flex gap-2 items-center">
