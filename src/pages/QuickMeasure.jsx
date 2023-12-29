@@ -1,11 +1,22 @@
 import heroMockup from '../assets/quick-measure/quick-measure-hero-mockup.png'
 import heroBg from '../assets/backgrounds/qm-hero-bg.png'
+import appIcon from '../assets/quick-measure/icon.png'
+import walkingIcon from '../assets/quick-measure/walking-icon.png'
+import satelliteIcon from '../assets/quick-measure/satellite-dish.svg'
+import downloadIcon from '../assets/quick-measure/download.svg'
 
 export default function QuickMeasure() {
   const units = ['feet', 'yards', 'miles', 'acres', 'meters', 'kilometers', 'hectares']
 
   const heroStyle={
     backgroundImage: `url(${heroBg})`, 
+    backgroundRepeat: 'no-repeat', 
+    backgroundSize: 'cover', 
+    backgroundPosition: 'center'
+  }
+
+  const appIconBackground = {
+    backgroundImage: `url(${appIcon})`, 
     backgroundRepeat: 'no-repeat', 
     backgroundSize: 'cover', 
     backgroundPosition: 'center'
@@ -32,8 +43,7 @@ export default function QuickMeasure() {
           <div className="grid grid-cols-8 grid-rows-3 gap-4 my-4">
             <div className="col-span-4 h-[280px] bg-gray-200/40 shadow-sm backdrop-blur-md rounded-3xl px-6 py-4 flex flex-col">
               <div className="flex gap-4 justify-end">
-                <img src="https://placehold.co/128" />
-                <img src="https://placehold.co/128" />
+                <img src={satelliteIcon} className="h-[128px]"/>
               </div>
 
               <div className="h-full flex flex-col justify-end">
@@ -42,40 +52,41 @@ export default function QuickMeasure() {
               </div>
             </div>
 
-            <div className="col-span-2 h-[280px] bg-gray-200/40 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center relative">
-              {/* <h3 className="text-2xl font-medium text-gray-800">Save</h3> */}
-              <div className='flex flex-col items-center justify-center'>
-                <img src="https://placehold.co/128" className="mb-2" />
-                <p className="leading-none text-center text-gray-700 absolute bottom-6">Save Measurements</p>
-              </div>
-            </div>
-
-            <div className="col-span-2 h-[280px] bg-gray-200/40 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center">
-              <img src="https://placehold.co/224" />
-            </div>
-
-            <div className="col-span-2 h-[280px] bg-gray-200/40 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center relative">
-              {/* <h3 className="text-2xl font-medium text-gray-800">Save</h3> */}
-              <div className='flex flex-col items-center justify-center'>
-                <img src="https://placehold.co/128" className="mb-2" />
-                <p className="leading-none text-center text-gray-700 absolute bottom-6">Measure Anywhere by Tapping</p>
-              </div>
-            </div>
-
-            <div className="col-span-4 h-[280px] bg-gray-200/40 shadow-sm rounded-3xl px-6 py-4 flex items-center justify-center">
-              <p className="text-2xl font-semibold text-green-700 text-center max-w-[480px]">Quick Measure was built so you can quickly and easily measure area and distance. It only takes 2 taps and feet to start!</p>
-            </div>
-
             <div className="col-span-2 h-[280px] bg-gray-200/40 shadow-sm rounded-3xl px-6 py-4 flex items-end">
               <div className="flex flex-wrap gap-2">
                 <h3 className="text-xl font-medium text-gray-700 w-full">Units</h3>
 
                 {units.map((measurement, index) => (
-                  <div className="bg-green-500 rounded-full px-4 py-1 " key={index}>
+                  <div className="bg-green-600 rounded-full px-4 py-1 " key={index}>
                     <p className=" leading-snug text-green-100">{measurement}</p>
                   </div>
                 ))}
 
+              </div>
+            </div>
+
+            <div  className="col-span-2 h-[280px] bg-green-600 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center">
+              <img src={appIcon} className="h-[200px]"/>
+            </div>
+
+            <div className="col-span-2 h-[280px] bg-green-600 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center">
+              {/* <h3 className="text-2xl font-medium text-gray-800">Save</h3> */}
+              <div className='flex flex-col items-center justify-center'>
+                <img src={walkingIcon} className="h-[200px]"/>
+                {/* <p className="leading-none text-center text-gray-700 absolute bottom-6">Measure Anywhere by Tapping</p> */}
+              </div>
+            </div>
+
+            <div className="col-span-4 h-[280px] bg-gray-200/40 shadow-sm rounded-3xl px-6 py-4 flex items-center justify-center">
+              {/* <img src= */}
+              <p className="text-2xl font-semibold text-green-700 text-center max-w-[480px]">Quick Measure was built so you can quickly and easily measure area and distance. It only takes 2 taps and feet to start!</p>
+            </div>
+
+            <div className="col-span-2 h-[280px] bg-gray-950 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center relative">
+              {/* <h3 className="text-2xl font-medium text-gray-800">Save</h3> */}
+              <div className='flex flex-col items-center justify-center'>
+                <img src={downloadIcon} className="mb-2 h-[200px]" />
+                <p className="leading-none text-center text-gray-300 absolute bottom-6">Save Measurements</p>
               </div>
             </div>
 
