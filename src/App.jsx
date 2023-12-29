@@ -10,8 +10,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Portfolio />} />
         <Route path="/quickmeasure" element={<QuickMeasure />} />
+        <Route path="/*" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
   );
