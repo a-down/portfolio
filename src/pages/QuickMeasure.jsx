@@ -4,7 +4,6 @@ import appIcon from '../assets/quick-measure/icon.png'
 import walkingIcon from '../assets/quick-measure/walking-icon.png'
 import satelliteIcon from '../assets/quick-measure/satellite-dish.svg'
 import downloadIcon from '../assets/quick-measure/download.svg'
-import StackDisplay from '../components/StackDisplay/StackDisplay'
 import { SiAppstore } from 'react-icons/si'
 import { FiArrowLeft } from 'react-icons/fi'
 
@@ -13,13 +12,6 @@ export default function QuickMeasure() {
 
   const heroStyle = {
     backgroundImage: `url(${heroBg})`, 
-    backgroundRepeat: 'no-repeat', 
-    backgroundSize: 'cover', 
-    backgroundPosition: 'center'
-  }
-
-  const appIconBackground = {
-    backgroundImage: `url(${appIcon})`, 
     backgroundRepeat: 'no-repeat', 
     backgroundSize: 'cover', 
     backgroundPosition: 'center'
@@ -58,6 +50,7 @@ export default function QuickMeasure() {
 
           <div className="grid grid-cols-8 grid-rows-2 gap-4 my-4">
 
+            {/* MEASURE WITH GPS */}
             <div className="order-2 md:order-4 lg:order-none col-span-8 md:col-span-4 h-[280px] bg-gray-200/40 shadow-sm backdrop-blur-md rounded-3xl px-6 py-4 flex flex-col">
               <div className="flex gap-4 justify-end">
                 <img src={satelliteIcon} className="h-[128px]"/>
@@ -68,6 +61,7 @@ export default function QuickMeasure() {
               </div>
             </div>
 
+            {/* UNITS */}
             <div className="order-3 md:order-5 lg:order-none col-span-8 md:col-span-4 lg:col-span-2 h-[280px] bg-gray-200/40 shadow-sm rounded-3xl px-6 py-4 flex items-end">
               <div className="flex flex-wrap gap-2">
                 <h3 className="text-xl font-medium text-gray-700 w-full">Units</h3>
@@ -79,20 +73,24 @@ export default function QuickMeasure() {
               </div>
             </div>
 
+            {/* APP ICON */}
             <div  className=" order-6 md:order-2 lg:order-none col-span-8 md:col-span-4 lg:col-span-2 h-[280px] bg-green-600 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center">
               <img src={appIcon} className="h-[200px] lg:h-[148px] xl:h-[200px]"/>
             </div>
 
+            {/* WALKING ICON */}
             <div className="order-5 md:order-3 lg:order-none col-span-8 md:col-span-4 lg:col-span-2 h-[280px] bg-green-600 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center">
               <div className='flex flex-col items-center justify-center'>
                 <img src={walkingIcon} className="h-[200px] mr-4 lg:h-[148px] xl:h-[200px]"/>
               </div>
             </div>
 
+            {/* DESCRIPTION */}
             <div className=" order-1 lg:order-noone col-span-8 md:col-span-4 h-[280px] bg-gray-200/40 shadow-sm rounded-3xl px-6 py-4 flex items-center justify-center">
               <p className="text-2xl font-semibold text-green-700 text-center max-w-[480px]">Quick Measure was built so you can quickly and easily measure area and distance. It only takes 2 taps and feet to start!</p>
             </div>
 
+            {/* SAVE */}
             <div className="order-4 md:order-6 col-span-8 md:col-span-4 lg:col-span-2 h-[280px] bg-gray-950 shadow-sm rounded-3xl px-6 py-4 flex justify-center items-center relative">
               <div className='flex flex-col items-center justify-center'>
                 <img src={downloadIcon} className="mb-2 h-[200px] lg:h-[148px] xl:h-[200px]" />
@@ -114,6 +112,7 @@ export default function QuickMeasure() {
           </p>
         </div>
 
+        {/* FOOTER */}
         <footer className="w-full bg-green-600">
           <div className=" flex justify-between py-8 mt-16 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
             <a href="/" className="transition-all hover:opacity-60 flex gap-2 items-center text-xl">
@@ -126,8 +125,6 @@ export default function QuickMeasure() {
           </div>
         </footer>
       </div>
-
-
     </>
   )
 }
