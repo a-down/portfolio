@@ -49,6 +49,13 @@ export default function Project({ project, stackArr, isDark }) {
                   -
                 </>
               )}
+
+              {project.productPageLink && (
+                <>
+                  <a href={project.productPageLink} target='_blank' style={extraLink} onMouseEnter={() => setExtraLinkColor(true)} onMouseLeave={()=> setExtraLinkColor(false)}> Product Page </a> 
+                  -
+                </>
+              ) }
             </p>
           </div>
         </div>
