@@ -1,4 +1,4 @@
-import heroMockup from '../assets/quick-measure/quick-measure-hero-mockup.png'
+import heroMockup from '../assets/quick-measure/hero-mockup.png'
 import heroBg from '../assets/backgrounds/qm-hero-bg.png'
 import appIcon from '../assets/quick-measure/icon.png'
 import walkingIcon from '../assets/quick-measure/walking-icon.png'
