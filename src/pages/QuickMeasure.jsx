@@ -102,7 +102,7 @@ export default function QuickMeasure() {
         </div>
 
         {/* CONTACT SECTION */}
-        <div className="mt-32 mb-32 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
+        <div className="my-16 md:my-20 lg:my-24 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
           <h2 className="text-4xl font-semibold mb-6">Contact Me</h2>
 
           <p className="text-xl">
