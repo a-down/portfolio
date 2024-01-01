@@ -11,8 +11,18 @@
     <title>Alec Downing</title>
     <link rel="icon" type="image/x-icon" href="./smile.ico">
   </head>
-  <body style="background-color:#1B2032">
+  <body id="body">
     <div id="root"></div>
+
+    <script type="application/javascript">
+      const body = document.getElementById("body");
+      if (window.location.pathname === "/quickmeasure") {
+        body.style.backgroundColor = "#fff";
+      } else {
+        body.style.backgroundColor = "#1B2032";
+      }
+    </script>
+    
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
