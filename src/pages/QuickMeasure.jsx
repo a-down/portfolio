@@ -14,7 +14,8 @@ export default function QuickMeasure() {
     backgroundImage: `url(${heroBg})`, 
     backgroundRepeat: 'no-repeat', 
     backgroundSize: 'cover', 
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
+    scale: 110
   }
 
   return (
@@ -22,7 +23,7 @@ export default function QuickMeasure() {
       <div className="font-jost relative w-full ">
 
         {/* HEADER AND HERO */}
-        <div className="lg:h-[100dvh] pt-8 pl-4 md:pl-16 lg:pl-24 overflow-clip" style={heroStyle} >
+        <div className="w-full lg:h-[100dvh] pt-8 pl-4 md:pl-16 lg:pl-24 overflow-clip" style={heroStyle} >
           {/* HEADER */}
           <div className=" flex justify-between pr-4 md:pr-16 lg:pr-24">
             <a href="/" className="transition-all hover:opacity-60 flex gap-2 items-center">
@@ -102,7 +103,7 @@ export default function QuickMeasure() {
         </div>
 
         {/* CONTACT SECTION */}
-        <div className="my-16 md:my-20 lg:my-24 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
+        <div className="mt-24 mb-36 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
           <h2 className="text-4xl font-semibold mb-6">Contact Me</h2>
 
           <p className="text-xl">
@@ -113,8 +114,9 @@ export default function QuickMeasure() {
         </div>
 
         {/* FOOTER */}
-        <footer className="w-full bg-green-600">
-          <div className=" flex justify-between py-8 mt-16 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
+        <footer className="w-full bg-gray-200/40 mt-16 ">
+          <div className="h-0.5 bg-gradient-to-r from-green-500/80 to-green-700"></div>
+          <div className=" flex justify-between py-8 mx-4 md:mx-16 lg:mx-24 xl:mx-auto max-w-[1200px]">
             <a href="/" className="transition-all hover:opacity-60 flex gap-2 items-center text-xl">
               <FiArrowLeft />Return to alecdowning.com</a>
               <a href="https://apps.apple.com/us/app/quick-measure-gps/id6473677147" target="_blank" className="bg-black/90 backdrop-blur-xl hover:bg-black/75 transition-all rounded-2xl flex justify-between items-center text-lg text-white font-medium px-4 py-2.5">
