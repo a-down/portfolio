@@ -5,7 +5,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Portfolio />} />
+        <Route path="/*" element={<Portfolio />} />
         <Route path="/quickmeasure" element={<QuickMeasure />} />
       </Routes>
     </BrowserRouter>
