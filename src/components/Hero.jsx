@@ -1,5 +1,6 @@
 import lineGraphic from '../assets/line-graphic.png'
 import { FaGithubSquare, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa'
+import StackDisplay from './StackDisplay/StackDisplay';
 
 
 export default function HeroText(){
@@ -10,30 +11,37 @@ export default function HeroText(){
   ]
 
   return (
-    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12">
+    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 ">
       {/* Text and Links */}
-      <div className=" flex flex-col text-gray-200 pt-32 gap-2 w-full max-w-[1200px] mx-auto relative">
-        <h1 className=' text-9xl text-brand-900 tracking-tight font-bold'>Alec Downing</h1>
-        <div className=" flex flex-row">
-          <h2 className=" text-2xl text-slate-500">Frontend Developer</h2>
-          <span className="text-3xl text-slate-400 font-thin mx-2">|</span>
-          <h4 className=' text-3xl text-slate-400 font-thin'>Making the Internet Easier to Use</h4>
+      <div className=" flex flex-col justify-between text-gray-200 pt-32 gap-2 w-full h-full flex-grow max-w-[1200px] mx-auto relative">
+        <div>
+          <h1 className=' text-[10rem] leading-none text-brand-900 tracking-tight font-bold'>Alec Downing</h1>
+          <div className=" flex flex-row">
+            <h2 className=" text-2xl text-slate-500">Frontend Developer</h2>
+            <span className="text-2xl text-slate-400 font-thin mx-2">|</span>
+            <h4 className=' text-2xl text-slate-400'>Making the Internet Easier to Use</h4>
+          </div>
         </div>
 
-        {/* <div className='flex flex-col items-center gap-4 absolute right-0 top-0'>
-          <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
-            <FaLinkedin className='w-12 h-12 mt-[3px] text-brand-400/90 hover:text-brand-400/100'/>
-          </a>
+        <div className="flex justify-between items-end w-full">
+          <div>
+            <StackDisplay stackArr={['React', 'Next.js', 'React Native', 'JavaScript', 'Tailwind']} isDark={true}/>
+          </div>
+          <div className='flex flex-col items-end justify-end gap-4 '>
+            <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
+              <FaLinkedin className='w-12 h-12 mt-[3px] text-brand-400/90 hover:text-brand-400/100'/>
+            </a>
 
-          <a href='https://www.github.com/a-down' target='_blank'>
-            <FaGithubSquare className='w-12 h-12 mt-[3px]  text-brand-400/90 hover:text-brand-400/100'/>
-          </a>
+            <a href='https://www.github.com/a-down' target='_blank'>
+              <FaGithubSquare className='w-12 h-12 mt-[3px]  text-brand-400/90 hover:text-brand-400/100'/>
+            </a>
 
-          <a href='mailto: alec@alecdowning.com' className=' text-brand-400/90 hover:text-brand-400/100'>
-            <FaEnvelope className='w-10 h-12'/> */}
-            {/* <p className="hidden md:inline">alec@alecdowning.com</p> */}
-          {/* </a>
-        </div> */}
+            <a href='mailto: alec@alecdowning.com' className='flex items-center gap-4 text-brand-400/90 hover:text-brand-400/100'>
+              <p className="hidden md:inline">alec@alecdowning.com</p>
+              <FaEnvelope className='w-11 h-12'/>
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* <div className="w-full max-w-[1200px] mx-auto flex justify-between">

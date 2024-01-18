@@ -20,9 +20,9 @@ export default function ProjectSection() {
   }
 
   return (
-    <div className="bg-slate-50 w-full mt-36 pb-36 px-24 flex justify-center items-center" id="projects">
+    <div className="bg-slate-100 w-full mt-36 pb-36 px-24 flex justify-center items-center" id="projects">
       <div className="max-w-[1200px]">
-      <h3 className="text-4xl mb-8 text-slate-800 font-semibold">Creations</h3>
+      <h3 className="text-6xl mb-12 text-slate-800 font-semibold">My Projects</h3>
       <Carousel className="w-full aspect-video shadow-xl">
         <CarouselContent className="">
           { projects.map((project, index) => (

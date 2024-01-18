@@ -50,17 +50,6 @@ export let projects = [
     techStack: ['Next.js', 'React', 'Tailwind', 'MongoDB', 'Clerk', 'Radix UI', 'CSS', 'JavaScript', 'GitHub', 'Vercel']
   },
   {
-    title: 'Friends.db',
-    color: '#62BCF4',
-    phoneImg: friendsDbPhone,
-    browserImg: friendsDbBrowser,
-    repoLink: 'https://github.com/a-down/friends-db',
-    deployedLink: 'https://friendsdb-5ccabe7c6928.herokuapp.com/',     
-    description: `Friends.db was a team project during my Full-Stack Certificate Program. We built a social media site for developers to share creations and questions with their coding friends. Users can sign in to their account, create profiles, follow friends, see and interact with friends' posts, and receive notifications when friends interact with their posts or follow them. Users choose a color for themselves to represent them across the site using React useContext.`,
-    description2: `I was the primary React developer and site designer. I led the way on the front end while managing the project's GitHub repo, site deployment, and database hosting.`,
-    techStack: ['React', 'JavaScript', 'Tailwind', 'HTML', 'CSS', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Heroku']
-  },
-  {
     title: 'Safe Paws',
     color: '#DB7F67',
     phoneImg: safePawsPhone,
@@ -70,6 +59,17 @@ export let projects = [
     description: 'Safe Paws was a team project during my Full-Stack Certificate Program. We built a website that used server-side rendering (Handlebars) to dynamically render the webpage according to the user. Users can create an account, add and remove pets, and book appointments.',
     description2: 'I was the front-end architect and designer (HTML and CSS). I also assisted on the client-side JavaScript and the backend. I managed the GitHub Repo, resolved conflicts, and approved pull requests.',
     techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
+  },
+  {
+    title: 'Friends.db',
+    color: '#62BCF4',
+    phoneImg: friendsDbPhone,
+    browserImg: friendsDbBrowser,
+    repoLink: 'https://github.com/a-down/friends-db',
+    deployedLink: 'https://friendsdb-5ccabe7c6928.herokuapp.com/',     
+    description: `Friends.db was a team project during my Full-Stack Certificate Program. We built a social media site for developers to share creations and questions with their coding friends. Users can sign in to their account, create profiles, follow friends, see and interact with friends' posts, and receive notifications when friends interact with their posts or follow them. Users choose a color for themselves to represent them across the site using React useContext.`,
+    description2: `I was the primary React developer and site designer. I led the way on the front end while managing the project's GitHub repo, site deployment, and database hosting.`,
+    techStack: ['React', 'JavaScript', 'Tailwind', 'HTML', 'CSS', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Heroku']
   },
   // {
   //   title: 'Game World',
