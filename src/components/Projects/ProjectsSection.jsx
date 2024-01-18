@@ -12,7 +12,7 @@ export default function ProjectSection() {
   }
 
   return (
-    <div style={backgroundStyle} className='pb-24' id="creations">
+    <div style={backgroundStyle} id="creations">
       { projects.map((project) => (
         <Project project={project} key={project.title} stackArr={project.techStack} isDark={true}/>
       ))}

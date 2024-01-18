@@ -111,7 +111,7 @@ export default function Language({stack, isDark}) {
         return <SiHandlebarsdotjs className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;
 
-      case 'MySQL':
+      case 'SQL':
         if (!isDark) iconColor = '#4479A1'
         return <SiMysql className=' w-full h-full p-2' style={{color: iconColor}}/>
         break;

@@ -4,7 +4,7 @@ import { motion, useScroll } from "framer-motion"
 
 
 export default function About() {
-  const myTechStack = ['React', 'React Native', 'Next.js', 'JavaScript', 'Tailwind', 'Expo', 'jQuery', 'Framer Motion', 'Figma', 'React Router',  'HTML', 'CSS', 'Radix UI', 'Bootstrap', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'MySQL', 'Sequelize', 'Clerk', 'npm', 'App Store Connect', 'Google AdMob', 'Vercel', 'Heroku', 'Render']
+  const myTechStack = ['React', 'React Native', 'Next.js', 'HTML', 'CSS', 'JavaScript', 'Tailwind', 'Expo', 'Figma', 'React Router', 'Radix UI', 'Bootstrap', 'jQuery', 'Node.js', 'Express.js', 'MongoDB', 'SQL', 'Clerk', 'npm', 'App Store Connect', 'Google AdMob', 'GitHub']
 
   return (
     <div className='bg-gradient-to-br from-brand-300 to-brand-200/20 py-24 w-full flex justify-center items-center px-24' id="about">
