@@ -1,5 +1,6 @@
 import projectsBG from '../../assets/backgrounds/projects-bg.svg'
 import Project from './Project'
+import Project2 from './Project2'
 import { projects } from './ProjectDescriptions'
 
 export default function ProjectSection() {
@@ -12,10 +13,13 @@ export default function ProjectSection() {
   }
 
   return (
-    <div style={backgroundStyle} id="creations">
+    <div className="bg-slate-50 w-full py-24 px-24 " id="creations">
+      <h3 className="text-4xl mb-8 text-slate-800">Creations</h3>
+      <div className="max-w-[1200px]">
       { projects.map((project) => (
-        <Project project={project} key={project.title} stackArr={project.techStack} isDark={true}/>
+        <Project2 project={project} key={project.title} stackArr={project.techStack} isDark={true}/>
       ))}
+      </div>
     </div>
   )
 }
