@@ -210,7 +210,7 @@ export default function Language({stack, isDark}) {
         {icon}
       </div>
 
-      <p className=' font-serif font-thin text-center text-sm text-gray-200 select-none'>{stack}</p>
+      <p className=' font-thin text-center text-sm text-slate-600 select-none'>{stack}</p>
     </div>
   )
   }
