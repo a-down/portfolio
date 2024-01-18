@@ -18,9 +18,9 @@ export default function Header() {
           </div>
 
           <nav className=' text-base flex items-center gap-6 text-brand-400 font-semibold'>
-            <a href='/#about' className=' hover:underline'>About</a>
-            <a href='/#projects' className=' hover:underline'>Projects</a>
-            <a href='/#contact' className=' hover:underline'>Contact</a>
+            <a href='/#about' className=' hover:underline transition-all'>About</a>
+            <a href='/#projects' className=' hover:underline transition-all'>Projects</a>
+            <a href='/#contact' className=' hover:underline transition-all'>Contact</a>
               {/* <a href='mailto: alec@alecdowning.com' className=' text-brand-400/80 hover:text-brand-400/100'> */}
                 {/* <FaEnvelope className='w-8 h-8'/> */}
                 {/* <p className="hidden md:inline">alec@alecdowning.com</p> */}

@@ -48,11 +48,11 @@ export default function Project({ project, stackArr, isDark }) {
         <h5 className="text-4xl font-medium">{project.title}</h5>
         
         <div className="flex flex-row gap-2">
-          <a href={project.repoLink} className="hover:underline" target="_blank">Repo</a>
+          <a href={project.repoLink} className="hover:underline transition-all" target="_blank">Repo</a>
           <span>/</span>
-          <a href={project.deployedLink} className="hover:underline" target="_blank">Deployed Site</a>
+          <a href={project.deployedLink} className="hover:underline transition-all" target="_blank">Deployed Site</a>
           <span>/</span>
-          <a href="/projects" className="hover:underline">Details</a>
+          <a href="/projects" className="hover:underline transition-all">Details</a>
         </div>
       </div>
     </a>

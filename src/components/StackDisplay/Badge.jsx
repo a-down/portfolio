@@ -195,7 +195,7 @@ export default function Language({stack, isDark}) {
         return <SiGoogleadmob className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
 
-      case 'App Store Connect':
+      case 'App Store':
         if (!isDark) iconColor = '#0D96F6'
         return <SiAppstore className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;

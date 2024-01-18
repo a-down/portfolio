@@ -1,4 +1,5 @@
 import ContactForm from './ContactForm'
+import ContactForm2 from './ContactForm2'
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import { HiMiniDocumentText } from 'react-icons/hi2'
 import { HiOutlineMail } from 'react-icons/hi'
@@ -12,21 +13,19 @@ export default function Contact(){
 
   return (
     <div className='bg-navy' id="contact">
-      <motion.div
-        viewport={{ once: true, amount: 0.8 }}
-        initial={{ visibility: 'hidden', opacity: 0.4 }}
-        whileInView={{ visibility: 'visible', opacity: 1 }}
-        transition={{ duration: 0.6 }}
+      <div
+        // viewport={{ once: true, amount: 0.8 }}
+        // initial={{ visibility: 'hidden', opacity: 0.4 }}
+        // whileInView={{ visibility: 'visible', opacity: 1 }}
+        // transition={{ duration: 0.6 }}
       >
-        <div className=" gap-4 md:gap-16 w-100 bg-accent px-6 py-8 md:px-10 lg:px-24 items-center ">
+        <div className=" gap-4 md:gap-16 bg-brand-200 px-6 py-32 md:px-10 lg:px-24 items-center ">
 
-          <div className="flex flex-col justify-between max-w-[974px] mx-auto">
-
-            <h2 className='text-4xl w-full text-center font-sans'>Get In Touch</h2>
+          <div className="flex justify-center items-center max-w-[1200px] mx-auto">
             
-            <div className='flex flex-col md:flex-row gap-10 justify-between text-xl font-serif w-full py-10'>
+            <div className='flex flex-col justify-between items-center text-xl font-serif w-full'>
 
-              <div className='flex flex-col gap-8 order-1 md:-order-1'>
+              {/* <div className='flex flex-col gap-8 order-1 md:-order-1'>
                 <a href='https://github.com/a-down' target='_blank' className='flex items-center gap-4 hover:text-slate-600 active:text-slate-200'>
                   <SiGithub />
                   <h4>a-down</h4>
@@ -46,16 +45,16 @@ export default function Contact(){
                   <HiMiniDocumentText />
                   <h4>Resume</h4>
                 </a>
-              </div>
+              </div> */}
 
-              <ContactForm />
+              <ContactForm2 />
             </div>
 
           </div>
 
 
         </div>
-      </motion.div>
+      </div>
     </div>
   )
 }
