@@ -13,8 +13,8 @@ export default function Home() {
   }
 
   return (
-    <>
-      <div style={heroStyle} className='min-h-[100dvh] w-100 bg-slate-50'>
+    <div>
+      <div style={heroStyle} className='bg-slate-50'>
         <Header />
         <Hero/>
       </div>
@@ -26,6 +26,6 @@ export default function Home() {
       <Contact />
 
       <Footer />
-    </>
+    </div>
   )
 }
