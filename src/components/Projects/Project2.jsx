@@ -29,17 +29,12 @@ export default function Project({ project, stackArr, isDark }) {
 
   return (
     <a 
-      className="block cursor-pointer " 
+      className="block cursor-pointer relative" 
       style={{backgroundColor: project.color}} 
       onMouseEnter={() => setOverlay(true)}
       onMouseLeave={() => setOverlay(false)}>
-      <div className="w-full aspect-video bg-slate-50/20 flex justify-center items-center relative">
+      <div className="w-full aspect-video bg-slate-50/20 flex justify-center items-center">
         <img src={project.browserImg} className={`h-[80%] rounded-lg shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}/>
-
-        <div className="absolute bottom-12 left-12 p-4 rounded-lg" style={{backgroundColor: project.color}}>
-          <h5 className="text-4xl font-medium text-white">{project.title}</h5>
-          
-        </div>
 
         {overlay && ( 
         <>
@@ -47,6 +42,18 @@ export default function Project({ project, stackArr, isDark }) {
           {/* <p className='text-2xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-800 py-1.5 px-3 bg-slate-800/5 rounded-md'>View Details</p> */}
         </>
         )}
+      </div>
+
+      <div className="absolute bottom-12 left-12 py-4 px-6 rounded-lg text-slate-50" style={{backgroundColor: project.color}}>
+        <h5 className="text-4xl font-medium">{project.title}</h5>
+        
+        <div className="flex flex-row gap-2">
+          <a href={project.repoLink} className="hover:underline" target="_blank">Repo</a>
+          <span>/</span>
+          <a href={project.deployedLink} className="hover:underline" target="_blank">Deployed Site</a>
+          <span>/</span>
+          <a href="/projects" className="hover:underline">Details</a>
+        </div>
       </div>
     </a>
   )
