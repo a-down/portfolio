@@ -11,7 +11,7 @@ export default function Contact(){
 
 
   return (
-    <div className='bg-navy'>
+    <div className='bg-navy' id="contact">
       <motion.div
         viewport={{ once: true, amount: 0.8 }}
         initial={{ visibility: 'hidden', opacity: 0.4 }}
@@ -48,7 +48,7 @@ export default function Contact(){
                 </a>
               </div>
 
-              {/* <ContactForm /> */}
+              <ContactForm />
             </div>
 
           </div>
