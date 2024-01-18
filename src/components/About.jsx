@@ -7,7 +7,7 @@ export default function About() {
   const myTechStack = ['React', 'React Native', 'Next.js', 'HTML', 'CSS', 'JavaScript', 'Tailwind', 'Expo', 'Figma', 'React Router', 'Radix UI', 'Bootstrap', 'jQuery', 'Node.js', 'Express.js', 'MongoDB', 'SQL', 'Clerk', 'npm', 'App Store', 'Google AdMob', 'GitHub']
 
   return (
-    <div className='bg-gradient-to-br from-brand-300 to-brand-200/20 py-36 w-full flex justify-center items-center px-24' id="about">
+    <div className='bg-gradient-to-br from-brand-300 to-brand-200/20 py-28 w-full flex justify-center items-center px-24' id="about">
       <div
           // viewport={{ once: true, amount: 0.4 }}
           // initial={{ visibility: 'hidden', opacity: 0.4 }}
