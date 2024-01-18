@@ -20,7 +20,8 @@ export default function ProjectSection() {
   }
 
   return (
-    <div className="bg-slate-50 w-full py-24 px-24" id="creations">
+    <div className="bg-slate-50 w-full py-36 px-24 flex justify-center items-center" id="creations">
+      <div className="max-w-[1200px]">
       <h3 className="text-4xl mb-8 text-slate-800 font-semibold">Creations</h3>
       <Carousel className="w-full aspect-video shadow-xl">
         <CarouselContent className="">
@@ -35,6 +36,7 @@ export default function ProjectSection() {
       </Carousel>
       <div className="max-w-[1200px]">
 
+      </div>
       </div>
     </div>
   )

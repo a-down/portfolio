@@ -34,7 +34,7 @@ export default function Project({ project, stackArr, isDark }) {
       onMouseEnter={() => setOverlay(true)}
       onMouseLeave={() => setOverlay(false)}>
       <div className="w-full aspect-video bg-slate-50/20 flex justify-center items-center relative">
-        <img src={project.browserImg} className={`h-[80%] rounded-lg shadow-2xl ${overlay ? 'scale-[102%]' : ''}`}/>
+        <img src={project.browserImg} className={`h-[80%] rounded-lg shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}/>
 
         <div className="absolute bottom-12 left-12 p-4 rounded-lg" style={{backgroundColor: project.color}}>
           <h5 className="text-4xl font-medium text-white">{project.title}</h5>
@@ -44,7 +44,7 @@ export default function Project({ project, stackArr, isDark }) {
         {overlay && ( 
         <>
           <div className='h-full w-full absolute top-0 left-0 opacity-20 flex justify-center items-center' style={{backgroundColor: project.color}}></div> 
-          <p className='text-2xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-800 py-1.5 px-3 bg-slate-800/5 rounded-md'>View Details</p>
+          {/* <p className='text-2xl font-semibold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-slate-800 py-1.5 px-3 bg-slate-800/5 rounded-md'>View Details</p> */}
         </>
         )}
       </div>
