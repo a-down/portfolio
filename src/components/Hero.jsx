@@ -13,7 +13,7 @@ export default function HeroText(){
     <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12">
       {/* Text and Links */}
       <div className=" flex flex-col text-gray-200 mt-32 gap-2 w-full max-w-[1200px] mx-auto">
-        <h1 className=' text-9xl text-brand-500'>Alec Downing</h1>
+        <h1 className=' text-9xl text-brand-500 tracking-tight'>Alec Downing</h1>
         <div className=" flex flex-row">
           <h2 className=" text-2xl text-slate-500">Frontend Developer</h2>
           <span className="text-2xl text-slate-400 font-thin mx-2">|</span>

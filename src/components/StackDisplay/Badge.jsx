@@ -38,7 +38,7 @@ export default function Language({stack, isDark}) {
   isDark ? badgeColor = '' : badgeColor = 'bg-navy'
 
   // default icon color if isDark === true
-  let iconColor = '#475569'
+  let iconColor = '#64748B'
 
   const getIcon = (iconName) => {
     switch (iconName) {
@@ -157,7 +157,7 @@ export default function Language({stack, isDark}) {
         break;
 
       case 'Clerk':
-        return <img src={clerkDark} className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        return <img src={clerkDark} className=' w-full h-full p-2 opacity-80' style={{color: iconColor}}/>
         break;
 
       case 'React Router':
