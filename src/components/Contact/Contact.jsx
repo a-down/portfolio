@@ -38,7 +38,7 @@ export default function Contact(){
                 </a>
 
                 <a href="mailto: alec@alecdowning.com" className='flex items-center gap-4 hover:text-slate-600 active:text-slate-200'>
-                  <HiOutlineMail />
+                  <HiOutlineMail/>
                   <h4>alec@alecdowning.com</h4>
                 </a>
 

@@ -18,24 +18,22 @@ export default function HeroText(){
       {/* Text and Links */}
       <div className=" flex flex-col text-gray-200 mt-40 gap-2 w-full max-w-[1200px] mx-auto">
         <h1 className=' text-9xl text-brand-500'>Alec Downing</h1>
-        <h4 className=' text-2xl text-slate-500 font-thin'>
-          <span className=" text-brand-400">
-            Frontend Developer{' '}
-          </span>
-          Making the Internet Easier to Use</h4>
-
-        <div className='flex gap-4 w-full justify-start mt-8'>
+        <div className=" flex flex-row">
+          <h2 className=" text-2xl text-slate-500">Frontend Developer</h2>
+          <span className="text-2xl text-slate-400 font-thin mx-2">|</span>
+          <h4 className=' text-2xl text-slate-400 font-thin'>Making the Internet Easier to Use</h4>
+        </div>
+        <div className='flex gap-4 w-full justify-start mt-6'>
           <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
-            <FaLinkedin className='w-12 h-12 text-slate-400 hover:text-slate-500'/>
+            <FaLinkedin className='w-12 h-12 mt-[3px] text-brand-400/90 hover:text-brand-400/100'/>
           </a>
 
           <a href='https://www.github.com/a-down' target='_blank'>
-            <FaGithubSquare className='w-12 h-12  text-slate-400 hover:text-slate-500'/>
+            <FaGithubSquare className='w-12 h-12 mt-[3px]  text-brand-400/90 hover:text-brand-400/100'/>
           </a>
 
-          <a href='mailto: alec@alecdowning.com' className=' text-slate-400 hover:text-slate-500 flex items-center gap-2'>
-            <FaEnvelope className='w-12 h-12 '/>
-            <p className="md:hidden">Contact</p>
+          <a href='mailto: alec@alecdowning.com' className=' text-brand-400/90 hover:text-brand-400/100'>
+            <FaEnvelope className='w-14 h-14 mx-[3px]'/>
             {/* <p className="hidden md:inline">alec@alecdowning.com</p> */}
           </a>
         </div>
@@ -43,7 +41,7 @@ export default function HeroText(){
 
       <div className="w-full max-w-[1200px] mx-auto flex justify-between items-center">
         {heroQuickLinks.map((object, index) => (
-          <a href={object.link} className="rounded-lg bg-brand-400/10 w-[30%] block text-center p-6 text-xl text-brand-800 hover:bg-brand-400/40 cursor-pointer transition-all" key={index}>
+          <a href={object.link} className="rounded-lg bg-brand-400/10 w-[30%] block text-center p-6 text-xl text-brand-800 hover:bg-brand-400/25 cursor-pointer transition-all" key={index}>
             {object.title}
           </a>
         ))}
