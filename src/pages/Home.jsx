@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div>
-      <div style={heroStyle} className='bg-slate-50'>
+      <div className='bg-slate-100'>
         <Header />
         <Hero/>
       </div>
