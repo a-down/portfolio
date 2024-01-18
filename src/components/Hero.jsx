@@ -1,12 +1,8 @@
 import lineGraphic from '../assets/line-graphic.png'
-import { FaGithubSquare, FaLinkedin, FaEnvelope } from 'react-icons/fa'
+import { FaGithubSquare, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa'
 
 
 export default function HeroText(){
-  const circle1 = 280
-  const circle2 = 240
-  const circle3 = 140
-
   const heroQuickLinks = [
     { title: 'About', link: '#about' },
     { title: 'Creations', link: '#creations' },
@@ -14,9 +10,9 @@ export default function HeroText(){
   ]
 
   return (
-    <div className="flex flex-col w-full items-start justify-between gap-28">
+    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12">
       {/* Text and Links */}
-      <div className=" flex flex-col text-gray-200 mt-40 gap-2 w-full max-w-[1200px] mx-auto">
+      <div className=" flex flex-col text-gray-200 mt-32 gap-2 w-full max-w-[1200px] mx-auto">
         <h1 className=' text-9xl text-brand-500'>Alec Downing</h1>
         <div className=" flex flex-row">
           <h2 className=" text-2xl text-slate-500">Frontend Developer</h2>
@@ -39,29 +35,15 @@ export default function HeroText(){
         </div>
       </div>
 
-      <div className="w-full max-w-[1200px] mx-auto flex justify-between items-center">
+      <div className="w-full max-w-[1200px] mx-auto flex justify-between">
         {heroQuickLinks.map((object, index) => (
-          <a href={object.link} className="rounded-lg bg-brand-400/10 w-[30%] block text-center p-6 text-xl text-brand-800 hover:bg-brand-400/25 cursor-pointer transition-all" key={index}>
+          <a href={object.link} className="flex flex-col gap-1 items-center rounded-lg bg-brand-400/10 w-[30%] text-center p-6 text-xl text-brand-800 hover:bg-brand-400/25 cursor-pointer transition-all" key={index}>
             {object.title}
+            <FaArrowDown className="inline text-sm"/>
           </a>
         ))}
       </div>
-
-      {/* <div className="relative flex-grow">
-
-        <svg height={circle1} width={circle1} className="absolute right-48">
-          <circle cx={circle1 / 2} cy={circle1 / 2} r={circle1 / 2} fill="#699EE8" opacity="0.5" />
-        </svg>
-
-        <svg height={circle2} width={circle2} className="absolute right-32 top-40">
-          <circle cx={circle2 / 2} cy={circle2 / 2} r={circle2 / 2} fill="#699EE8" opacity="0.5" />
-        </svg>
-
-        <svg height={circle3} width={circle3}>
-          <circle cx={circle3 / 2} cy={circle3 / 2} r={circle3 / 2} fill="#699EE8" opacity="0.5" />
-        </svg>
-
-      </div> */}
+      
     </div>
   )
 }
