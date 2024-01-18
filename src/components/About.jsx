@@ -7,7 +7,7 @@ export default function About() {
   const myTechStack = ['React', 'React Native', 'Next.js', 'JavaScript', 'Tailwind', 'Expo', 'jQuery', 'Framer Motion', 'Figma', 'React Router',  'HTML', 'CSS', 'Radix UI', 'Bootstrap', 'Chakra', 'Bulma', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'MySQL', 'Sequelize', 'Clerk', 'npm', 'App Store Connect', 'Google AdMob', 'Vercel', 'Heroku', 'Render']
 
   return (
-    <div className='bg-navy'>
+    <div className='bg-navy' id="about">
       <motion.div
           viewport={{ once: true, amount: 0.4 }}
           initial={{ visibility: 'hidden', opacity: 0.4 }}
