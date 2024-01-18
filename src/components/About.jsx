@@ -7,17 +7,17 @@ export default function About() {
   const myTechStack = ['React', 'React Native', 'Next.js', 'JavaScript', 'Tailwind', 'Expo', 'jQuery', 'Framer Motion', 'Figma', 'React Router',  'HTML', 'CSS', 'Radix UI', 'Bootstrap', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'MySQL', 'Sequelize', 'Clerk', 'npm', 'App Store Connect', 'Google AdMob', 'Vercel', 'Heroku', 'Render']
 
   return (
-    <div className='bg-brand-300 py-24' id="about">
+    <div className='bg-brand-300 py-24 w-full flex justify-center items-center px-24' id="about">
       <div
-          viewport={{ once: true, amount: 0.4 }}
-          initial={{ visibility: 'hidden', opacity: 0.4 }}
-          whileInView={{ visibility: 'visible', opacity: 1 }}
-          transition={{ duration: 0.4 }}
+          // viewport={{ once: true, amount: 0.4 }}
+          // initial={{ visibility: 'hidden', opacity: 0.4 }}
+          // whileInView={{ visibility: 'visible', opacity: 1 }}
+          // transition={{ duration: 0.4 }}
         >
-        <div className=" w-full max-w-[1200px] mx-auto flex flex-col gap-20">
+        <div className=" w-full flex flex-col justify-center max-w-[1200px] gap-20">
 
-          <div className='flex flex-row items-start'>
-            <img src={headshot} className='w-[320px] aspect-square rounded-full shadow-sm m-4 md:m-0 flex-shrink-0'/>
+          <div className='flex flex-row flex-start'>
+            <img src={headshot} className='w-[320px] h-[320px] rounded-full shadow-sm m-4 md:m-0 flex-shrink-0'/>
 
             <div className="text-slate-950 flex flex-col gap-4 pl-8">
               <p className='pt-0 text-4xl mb-2'>I am a Frontend and Mobile App Developer.</p>
