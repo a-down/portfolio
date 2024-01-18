@@ -23,8 +23,8 @@ export default function Project({ project, stackArr, isDark }) {
   }
 
   return (
-    <div className="w-full aspect-video mb-[200px]" style={{backgroundColor: project.color}}>
-      <div className="w-full h-full bg-slate-50/20 flex justify-center items-center">
+    <div className="" style={{backgroundColor: project.color}}>
+      <div className="w-full aspect-video bg-slate-50/20 flex justify-center items-center">
         <img src={project.phoneImg} className="h-[80%] rounded-lg shadow-2xl"/>
       </div>
     </div>
