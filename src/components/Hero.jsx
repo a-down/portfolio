@@ -38,7 +38,7 @@ export default function HeroText(){
 
             <a href='mailto: alec@alecdowning.com' className='flex items-center gap-4 text-brand-400/90 hover:text-brand-400/100 transition-all'>
               <p className="hidden md:inline">alec@alecdowning.com</p>
-              <FaEnvelope className='w-11 h-12'/>
+              <FaEnvelope className='w-11 h-12 mr-[3px]'/>
             </a>
           </div>
         </div>

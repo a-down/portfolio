@@ -58,7 +58,7 @@ export default function ContactForm() {
             <label>Message:</label>
             <textarea
               rows='5'
-              placeholder='I am in need of a...'
+              placeholder='I am in need of...'
               className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3"
               onChange={(e) => setMessage(e.value)}
               name='message'
