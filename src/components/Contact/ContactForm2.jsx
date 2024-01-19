@@ -35,7 +35,7 @@ export default function ContactForm() {
             <input 
               className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3"
               placeholder='John Smith'
-              onChange={(e) => setName(...e.value)}
+              onChange={(e) => setName(e.value)}
               name='name'
               value={name}
               type='text'
@@ -47,7 +47,7 @@ export default function ContactForm() {
             <input 
               className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3"
               placeholder='johnsmith@email.com'
-              onChange={(e) => setEmail(...e.value)}
+              onChange={(e) => setEmail(e.value)}
               name='email'
               value={email}
               type='email'
@@ -60,7 +60,7 @@ export default function ContactForm() {
               rows='5'
               placeholder='I am in need of a...'
               className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3"
-              onChange={(e) => setMessage(...e.value)}
+              onChange={(e) => setMessage(e.value)}
               name='message'
               value={message}
               type='text'
