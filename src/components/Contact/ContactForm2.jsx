@@ -70,7 +70,7 @@ export default function ContactForm() {
           <button
             type='submit'
             className="mt-4 py-4 px-3 bg-brand-950 hover:bg-brand-900 shadow-lg rounded-md text-xl font-semibold text-brand-100 transition-all">
-            Submit
+            {state.submitting ? 'Submitting...' : 'Submit'}
           </button>
 
         </form>
