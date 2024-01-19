@@ -14,7 +14,7 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-slate-100 px-24">
+    <div className="bg-slate-100">
       <div className=''>
         <Header />
         <Hero/>

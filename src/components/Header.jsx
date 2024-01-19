@@ -7,8 +7,8 @@ import { FaGithubSquare, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons
 export default function Header() {
 
   return (
-    <div className="flex between">
-      <header className=' w-full h-[100px] max-w-[1200px]'>
+    <div className="flex mx-auto px-24 w-full justify-center">
+      <header className=' w-full h-[100px] max-w-[1400px]'>
 
         <div className='h-full items-center flex justify-between w-full opacity-100'>
 

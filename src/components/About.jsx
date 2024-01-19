@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className='bg-gradient-to-br from-brand-300 to-brand-200/20 py-28 w-full flex justify-center items-center px-24 relative overflow-clip' id="about">
       <div>
-        <div className=" w-full flex flex-col justify-center max-w-[1200px] gap-32">
+        <div className=" w-full flex flex-col justify-center max-w-[1400px] gap-32">
 
           <div className='flex flex-row flex-start gap-4 relative'>
             <img src={headshot} className='w-[320px] h-[320px] rounded-full shadow-sm m-4 md:m-0 flex-shrink-0 z-10'/>
@@ -20,7 +20,7 @@ export default function About() {
             </div>
           </div>
 
-          <StackDisplay stackArr={myTechStack} isDark={true}/>
+          <StackDisplay stackArr={myTechStack} isDark={true} centered={true}/>
 
         </div>
       </div>

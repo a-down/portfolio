@@ -21,12 +21,12 @@ export default function ProjectSection() {
 
   return (
     <div className="bg-slate-100 w-full mt-24 pb-36 px-24 flex justify-center items-center " id="projects">
-      <div className="max-w-[1200px]">
+      <div className="max-w-[1400px]">
       <h3 className="text-6xl mb-12 text-slate-800 font-semibold">My Projects</h3>
       <Carousel className="w-full aspect-video shadow-xl">
         <CarouselContent className="">
-          { projects.map((project, index) => (
-            <CarouselItem key={index}>
+          {projects.map((project, index) => (
+            <CarouselItem key={index} className="">
               <Project2 project={project} key={project.title} stackArr={project.techStack} isDark={true}/>
             </CarouselItem>
           ))}
@@ -34,9 +34,6 @@ export default function ProjectSection() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-      <div className="max-w-[1200px]">
-
-      </div>
       </div>
     </div>
   )

@@ -11,9 +11,9 @@ export default function HeroText(){
   ]
 
   return (
-    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 max-w-[1200px]">
+    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 px-24">
       {/* Text and Links */}
-      <div className=" flex flex-col justify-between text-gray-200 pt-32 gap-2 w-full h-full flex-grow mx-auto relative">
+      <div className=" flex flex-col justify-between text-gray-200 pt-32 gap-2 w-full h-full flex-grow mx-auto relative max-w-[1400px]">
         <div>
           <h1 className=' text-[10rem] leading-none text-brand-900 tracking-tight font-bold'>Alec Downing</h1>
           <div className=" flex flex-row">
@@ -25,7 +25,7 @@ export default function HeroText(){
 
         <div className="flex justify-between items-end w-full">
           <div>
-            <StackDisplay stackArr={['React', 'Next.js', 'React Native', 'JavaScript', 'Tailwind', 'Figma', 'Clerk', 'App Store']} isDark={true}/>
+            <StackDisplay stackArr={['React', 'Next.js', 'React Native', 'JavaScript', 'Tailwind', 'Figma', 'Clerk', 'App Store']} isDark={true} centered={true}/>
           </div>
           <div className='flex flex-col items-end justify-end gap-4 '>
             <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
