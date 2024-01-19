@@ -28,7 +28,8 @@ export default function Project({ project, stackArr, isDark }) {
   }
 
   return (
-    <a 
+    <div 
+      onClick={() => window.location.href = '/projects'}
       className="block cursor-pointer relative" 
       style={{backgroundColor: project.color}} 
       onMouseEnter={() => setOverlay(true)}
@@ -55,6 +56,6 @@ export default function Project({ project, stackArr, isDark }) {
           <a href="/projects" className="hover:underline transition-all">Details</a>
         </div>
       </div>
-    </a>
+    </div>
   )
 }
