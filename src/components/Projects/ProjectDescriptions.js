@@ -20,18 +20,37 @@ import quickMeasureHome from '../../assets/project-visuals/quick-measure-home.pn
 
 
 export let projects = [
+  // {
+  //   title: 'Braham Evangelical Lutheran Church',
+  //   color: '#6F54B8',
+  //   images: [
+
+  //   ]
+  // }
   {
     title: 'Quick Measure - GPS',
     color: '#6DAB64',
-    mobileAppImages: [
-      quickMeasureHome,
-      quickMeasureAuto,
-      quickMeasureTap,
-      quickMeasureSaving
+    images: [
+      {
+        img: quickMeasureHome,
+        type: 'phone'
+      },
+      {
+        img: quickMeasureAuto,
+        type: 'phone'
+      },
+      {
+        img: quickMeasureTap,
+        type: 'phone'
+      },
+      {
+        img: quickMeasureSaving,
+        type: 'phone'
+      }
     ],
     repoLink: 'https://github.com/a-down/quick-measure-gps-app',
-    deployedLink: 'https://apps.apple.com/us/app/quick-measure-gps/id6473677147',
-    productPageLink: '/quickmeasure',     
+    deployedLink: '/quickmeasure',
+    appStoreLink: 'https://apps.apple.com/us/app/quick-measure-gps/id6473677147',     
     description: `Quick Measure is a quick and simple mobile app to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!`,
     description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
     description3: `I built Quick Measure with React Native, Expo, and React-Native-Maps. React Native allowed me to build a cross-platform mobile app with JavaScript, and Expo provided various plugins/packages, a build environment, version management, and a compiler for the App Store. I styled with Nativewind (TailwindCSS for React Native), provide ads with Google AdMob, and used Revenue Cat to track and manage in-app purchases with their api and package "react-native-purchases". Currently, the app is only available on iOS. I look forward to working on the Android build and releasing it on the Google Play Store in the next couple of months.`,
@@ -40,8 +59,16 @@ export let projects = [
   {
     title: 'Job Notebook',
     color: '#9dd4c7',
-    phoneImg: jobNotebookPhone,
-    browserImg: jobNotebookBrowser,
+    images: [
+      {
+        img: jobNotebookBrowser,
+        type: 'browser'
+      },
+      {
+        img: jobNotebookPhone,
+        type: 'browser'
+      },
+    ],
     repoLink: 'https://github.com/a-down/job-notebook-application-tracker',
     deployedLink: 'https://jobnotebook.vercel.app',     
     description: `Notebook is a tool for job seekers to keep track of their current applications. In today's job market, there are many steps for potential candidates. Applications that take their time can struggle to keep each one straight. Unlike other job trackers, Job Notebook focuses on what the user needs to do BEFORE submitting their application.`,
@@ -52,25 +79,47 @@ export let projects = [
   {
     title: 'Safe Paws',
     color: '#DB7F67',
-    phoneImg: safePawsPhone,
-    browserImg: safePawsBrowser,
+    images: [
+      {
+        img: safePawsBrowser,
+        type: 'browser'
+      },
+      {
+        img: safePawsPhone,
+        type: 'browser'
+      },
+    ],
     repoLink: 'https://github.com/a-down/safe-paws',
     deployedLink: 'https://safe-paws-da967720d734.herokuapp.com/',     
     description: 'Safe Paws was a team project during my Full-Stack Certificate Program. We built a website that used server-side rendering (Handlebars) to dynamically render the webpage according to the user. Users can create an account, add and remove pets, and book appointments.',
     description2: 'I was the front-end architect and designer (HTML and CSS). I also assisted on the client-side JavaScript and the backend. I managed the GitHub Repo, resolved conflicts, and approved pull requests.',
-    techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express.js', 'MySQL', 'Sequelize', 'GitHub', 'Heroku']
+    techStack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Handlebars',  'Node.js', 'Express.js', 'SQL', 'Sequelize', 'GitHub', 'Heroku']
   },
   {
     title: 'Friends.db',
     color: '#62BCF4',
-    phoneImg: friendsDbPhone,
-    browserImg: friendsDbBrowser,
+    images: [
+      {
+        img: friendsDbBrowser,
+        type: 'browser'
+      },
+      {
+        img: friendsDbPhone,
+        type: 'browser'
+      },
+    ],
     repoLink: 'https://github.com/a-down/friends-db',
     deployedLink: 'https://friendsdb-5ccabe7c6928.herokuapp.com/',     
     description: `Friends.db was a team project during my Full-Stack Certificate Program. We built a social media site for developers to share creations and questions with their coding friends. Users can sign in to their account, create profiles, follow friends, see and interact with friends' posts, and receive notifications when friends interact with their posts or follow them. Users choose a color for themselves to represent them across the site using React useContext.`,
     description2: `I was the primary React developer and site designer. I led the way on the front end while managing the project's GitHub repo, site deployment, and database hosting.`,
     techStack: ['React', 'JavaScript', 'Tailwind', 'HTML', 'CSS', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Heroku']
   },
+
+
+
+
+
+
   // {
   //   title: 'Game World',
   //   color: '#7C3AED',

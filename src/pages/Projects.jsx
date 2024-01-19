@@ -13,8 +13,8 @@ export default function Projects() {
       </div>
 
       {projects.map((project, index) => (
-        <FullProject project={project} key={project.title + index} stackArr={project.techStack} isDark={true}/>)
-      )}
+        <FullProject project={project} key={project.title + index} stackArr={project.techStack} isDark={true} index={index}/>
+      ))}
     </div>
   )
 }
