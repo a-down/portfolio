@@ -7,7 +7,7 @@ import { FaGithubSquare, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons
 export default function Header() {
 
   return (
-    <div className="flex justify-center">
+    <div className="flex between">
       <header className=' w-full h-[100px] max-w-[1200px]'>
 
         <div className='h-full items-center flex justify-between w-full opacity-100'>
@@ -18,8 +18,9 @@ export default function Header() {
           </div>
 
           <nav className=' text-base flex items-center gap-6 text-brand-400 font-semibold'>
+            <a href='/' className=' hover:underline transition-all'>Home</a>
             <a href='/#about' className=' hover:underline transition-all'>About</a>
-            <a href='/#projects' className=' hover:underline transition-all'>Projects</a>
+            <a href='/projects' className=' hover:underline transition-all'>Projects</a>
             <a href='/#contact' className=' hover:underline transition-all'>Contact</a>
               {/* <a href='mailto: alec@alecdowning.com' className=' text-brand-400/80 hover:text-brand-400/100'> */}
                 {/* <FaEnvelope className='w-8 h-8'/> */}
