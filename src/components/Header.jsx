@@ -1,15 +1,9 @@
 import smileIcon from '../assets/smile.svg'
 import resume from '../assets/alec-downing-resume.pdf'
-import { FaGithubSquare, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa'
-import { useLocation, useNavigation, useHref } from 'react-router-dom'
 
 
 export default function Header({ location }) {
-  // const navigation = useNavigation()
-  // console.log(navigation)
 
-  const href = useHref()
-  console.log(href)
 
   return (
     <div className="max-w-[1400px] mx-auto px-24 w-full">

@@ -33,6 +33,7 @@ export let projects = [
   {
     title: 'Quick Measure - GPS',
     color: '#6DAB64',
+    slug: 'quickmeasure',
     images: [
       {
         img: quickMeasureHome,

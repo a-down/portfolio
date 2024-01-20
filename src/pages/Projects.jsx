@@ -1,9 +1,20 @@
 import { Header } from '../components'
 import FullProject from '@/components/Projects/FullProject'
 import { projects } from '@/components/Projects/ProjectDescriptions'
+import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 export default function Projects() {
+  const { projectSlug } = useParams()
+  
+  useEffect(() => {
+    const element = document.getElementById(projectSlug);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  })
 
   return (
     <div className='bg-slate-100 flex flex-col items-center mx-auto'>

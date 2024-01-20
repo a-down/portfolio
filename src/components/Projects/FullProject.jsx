@@ -13,12 +13,12 @@ import {
 } from "@/components/ui/carousel"
 
 
-export default function Project({ project, stackArr, isDark }) {
+export default function FullProject({ project, stackArr, isDark }) {
   // let { scrollTarget } = useParams()
-
+  
 
   return (
-    <div className="flex flex-col gap-8 mb-24 text-slate-800">
+    <div className="flex flex-col gap-8 mb-24 text-slate-800" id={project.slug}>
       <div className="flex justify-between">
         <h2 className="text-6xl font-bold" style={{color: project.color}}>{project.title}</h2>
         <div className="flex gap-4 items-center">
