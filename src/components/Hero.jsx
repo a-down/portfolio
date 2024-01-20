@@ -13,8 +13,8 @@ export default function HeroText(){
   return (
     <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 max-w-[1400px] mx-auto px-24">
       {/* Text and Links */}
-      <div className=" flex flex-col justify-between text-gray-200 pt-32 gap-2 w-full h-full flex-grow mx-auto relative">
-        <div>
+      <div className=" flex flex-col justify-between text-gray-200 gap-2 w-full h-full flex-grow mx-auto relative">
+        <div className="h-[50%] flex-grow flex flex-col justify-center">
           <h1 className=' text-[10rem] leading-none text-brand-900 tracking-tight font-bold'>Alec Downing</h1>
           <div className=" flex flex-row">
             <h2 className=" text-2xl text-slate-500">Frontend Developer</h2>
@@ -23,7 +23,7 @@ export default function HeroText(){
           </div>
         </div>
 
-        <div className="flex justify-between items-end w-full">
+        <div className="flex justify-between items-end w-full h-[50%]">
           <div>
             <StackDisplay stackArr={['React', 'Next.js', 'React Native', 'JavaScript', 'Tailwind', 'Figma', 'Clerk', 'App Store']} isDark={true} centered={true}/>
           </div>
