@@ -29,14 +29,14 @@ export default function HeroText(){
           </div>
           <div className='flex flex-col items-end justify-end gap-4 '>
             <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
-              <FaLinkedin className='w-12 h-12 mt-[3px] text-brand-400/90 hover:text-brand-400/100 transition-all'/>
+              <FaLinkedin className='w-12 h-12 mt-[3px] text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all'/>
             </a>
 
             <a href='https://www.github.com/a-down' target='_blank'>
-              <FaGithubSquare className='w-12 h-12 mt-[3px]  text-brand-400/90 hover:text-brand-400/100 transition-all'/>
+              <FaGithubSquare className='w-12 h-12 mt-[3px]  text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all'/>
             </a>
 
-            <a href='mailto: alec@alecdowning.com' className='flex items-center gap-4 text-brand-400/90 hover:text-brand-400/100 transition-all'>
+            <a href='mailto: alec@alecdowning.com' className='flex items-center gap-4 text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all'>
               <p className="hidden md:inline">alec@alecdowning.com</p>
               <FaEnvelope className='w-11 h-12 mr-[3px]'/>
             </a>
