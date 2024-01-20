@@ -36,7 +36,10 @@ export default function Project({ project, stackArr, isDark }) {
       <div 
         onClick={() => window.location.href = '/projects'}
         className="w-full aspect-video bg-slate-50/20 flex justify-center items-center">
-        <img src={project.browserImg} className={`h-[80%] rounded-lg shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}/>
+        <img 
+          src={project.images[0].img} 
+          className={`h-[80%] shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}
+          style={{borderRadius: project.images[0].type === 'phone' ? 36 : 8}}/>
 
         {overlay && ( 
         <>
