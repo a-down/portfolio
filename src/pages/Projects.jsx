@@ -7,7 +7,6 @@ export default function Projects() {
 
   return (
     <div className='bg-slate-100 flex flex-col items-center'>
-      <Header />
       <div className="py-24 px-24 w-full max-w-[1400px]">
         <h1 className="w-full text-left text-8xl leading-none font-bold tracking-tight text-brand-900">Projects</h1>
       </div>

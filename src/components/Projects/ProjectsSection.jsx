@@ -23,7 +23,7 @@ export default function ProjectSection() {
     <div className="bg-slate-100 w-full mt-24 pb-36 px-24 flex justify-center items-center " id="projects">
       <div className="max-w-[1400px] w-full">
         <h3 className="text-6xl mb-12 text-slate-800 font-semibold">My Projects</h3>
-        <Carousel className="w-full aspect-video shadow-xl cursor-grab">
+        <Carousel className="w-full aspect-video shadow-xl">
           <CarouselContent className="">
             {projects.map((project, index) => (
               <CarouselItem key={index} className="">

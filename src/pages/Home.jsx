@@ -15,18 +15,10 @@ export default function Home() {
 
   return (
     <div className="bg-slate-100">
-      <div className=''>
-        <Header />
-        <Hero/>
-      </div>
-
+      <Hero />
       <About />
-
       <ProjectsSection />
-
       <Contact />
-
-      <Footer />
     </div>
   )
 }

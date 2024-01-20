@@ -29,7 +29,7 @@ export default function Project({ project, stackArr, isDark }) {
 
   return (
     <div 
-      className="block cursor-pointer relative" 
+      className="block cursor-grab relative" 
       style={{backgroundColor: project.color}} 
       onMouseEnter={() => setOverlay(true)}
       onMouseLeave={() => setOverlay(false)}>
