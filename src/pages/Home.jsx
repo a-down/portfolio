@@ -11,7 +11,7 @@ export default function Home() {
   }
 
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-100 max-w-[1400px] mx-auto px-24">
       <Header location={'home'}/>
       <Hero />
       <About />

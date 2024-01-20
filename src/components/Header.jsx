@@ -13,7 +13,7 @@ export default function Header({ location }) {
 
   return (
     <div className="flex mx-auto w-full justify-center">
-      <header className=' w-full h-[100px] max-w-[1400px] px-24 pl-[84px]'>
+      <header className=' w-full h-[100px]'>
 
         <div className='h-full items-center flex justify-between w-full opacity-100'>
 

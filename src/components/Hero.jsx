@@ -11,9 +11,9 @@ export default function HeroText(){
   ]
 
   return (
-    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 px-24">
+    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12">
       {/* Text and Links */}
-      <div className=" flex flex-col justify-between text-gray-200 pt-32 gap-2 w-full h-full flex-grow mx-auto relative max-w-[1400px]">
+      <div className=" flex flex-col justify-between text-gray-200 pt-32 gap-2 w-full h-full flex-grow mx-auto relative">
         <div>
           <h1 className=' text-[10rem] leading-none text-brand-900 tracking-tight font-bold'>Alec Downing</h1>
           <div className=" flex flex-row">
