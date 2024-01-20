@@ -26,7 +26,7 @@ export default function Project({ project, stackArr, isDark }) {
               href={project.deployedLink} 
               target="_blank"
               style={{color: project.color}}
-              className="hover:opacity-80">
+              className="hover:scale-105 transitiion-all">
               <HiExternalLink className="text-4xl"/>
             </a>
           )}
@@ -35,7 +35,7 @@ export default function Project({ project, stackArr, isDark }) {
               href={project.repoLink} 
               target="_blank"
               style={{color: project.color}}
-              className="hover:opacity-80">
+              className="hover:scale-105 transitiion-all">
               <SiGithub className="text-4xl"/>
             </a>
           )}
@@ -44,7 +44,7 @@ export default function Project({ project, stackArr, isDark }) {
               href={project.appStoreLink} 
               target="_blank"
               style={{color: project.color}}
-              className="hover:opacity-80">
+              className="hover:scale-105 transitiion-all">
               <SiAppstore className="text-4xl"/>
             </a>
           )}
