@@ -8,24 +8,24 @@ export default function Project({ project, stackArr, isDark }) {
   const [ extraLink, setExtraLink ] = useState({color: '#e2e8f0'})
   const [ overlay, setOverlay ] = useState(false)
 
-  function setRepoLinkColor(isActive){
-    const newColor = (isActive) ? project.color : '#e2e8f0'
-    setRepoLink({...repoLink, color: newColor})
-  }
+  // function setRepoLinkColor(isActive){
+  //   const newColor = (isActive) ? project.color : '#e2e8f0'
+  //   setRepoLink({...repoLink, color: newColor})
+  // }
 
-  function setLiveLinkColor(isActive){
-    const newColor = (isActive) ? project.color : '#e2e8f0'
-    setLiveLink({...liveLink, color: newColor})
-  }
+  // function setLiveLinkColor(isActive){
+  //   const newColor = (isActive) ? project.color : '#e2e8f0'
+  //   setLiveLink({...liveLink, color: newColor})
+  // }
 
-  function setExtraLinkColor(isActive){
-    const newColor = (isActive) ? project.color : '#e2e8f0'
-    setExtraLink({...liveLink, color: newColor})
-  }
+  // function setExtraLinkColor(isActive){
+  //   const newColor = (isActive) ? project.color : '#e2e8f0'
+  //   setExtraLink({...liveLink, color: newColor})
+  // }
 
-  function displayOverlay() {
+  // function displayOverlay() {
 
-  }
+  // }
 
   return (
     <div 
@@ -50,11 +50,11 @@ export default function Project({ project, stackArr, isDark }) {
         <h5 className="text-4xl font-medium">{project.title}</h5>
         
         <div className="flex flex-row gap-2">
-          <a href={project.repoLink} className="hover:underline transition-all" target="_blank">Repo</a>
+          <a href={project.repoLink} className="hover:scale-105 transition-all" target="_blank">Repo</a>
           <span>/</span>
-          <a href={project.deployedLink} className="hover:underline transition-all" target="_blank">Deployed Site</a>
+          <a href={project.deployedLink} className="hover:scale-105 transition-all" target="_blank">Deployed Site</a>
           <span>/</span>
-          <a href="/projects" className="hover:underline transition-all">Details</a>
+          <a href="/projects" className="hover:scale-105 transition-all">Full Project Details</a>
         </div>
       </div>
     </div>
