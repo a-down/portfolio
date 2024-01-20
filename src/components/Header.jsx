@@ -7,15 +7,12 @@ import { FaGithubSquare, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons
 export default function Header() {
 
   return (
-    <div className="flex mx-auto px-24 w-full justify-center">
-      <header className=' w-full h-[100px] max-w-[1400px]'>
+    <div className="flex mx-auto w-full justify-center">
+      <header className=' w-full h-[100px] max-w-[1400px] px-24 pl-[84px]'>
 
         <div className='h-full items-center flex justify-between w-full opacity-100'>
 
-          <div className='flex items-center gap-2'>
-            <HiOutlineFaceSmile className=' text-brand-400 text-3xl'/>
-            {/* <h2 className=' text-3xl text-brand-500'>Alec Downing</h2> */}
-          </div>
+          <HiOutlineFaceSmile className=' text-brand-400 text-3xl'/>
 
           <nav className=' text-base flex items-center gap-6 text-brand-400 font-semibold'>
             <a href='/' className=' hover:underline transition-all'>Home</a>
