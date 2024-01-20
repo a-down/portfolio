@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className='bg-gradient-to-br from-brand-300 to-brand-200/20 py-28 w-full flex justify-center items-center px-24 relative overflow-clip' id="about">
       <div>
-        <div className=" w-full flex flex-col justify-center max-w-[1400px] gap-24">
+        <div className=" w-full flex flex-col justify-center max-w-[1400px] px-24 gap-24">
 
           <div className='flex flex-row flex-start gap-4 relative'>
             <img src={headshot} className='w-[320px] h-[320px] rounded-full shadow-sm flex-shrink-0 z-10'/>

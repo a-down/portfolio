@@ -12,7 +12,7 @@ export default function Header({ location }) {
   console.log(href)
 
   return (
-    <div className="flex mx-auto w-full justify-center">
+    <div className="max-w-[1400px] mx-auto px-24 w-full">
       <header className=' w-full h-[100px]'>
 
         <div className='h-full items-center flex justify-between w-full opacity-100'>
