@@ -77,8 +77,9 @@ export let projects = [
       },
     ],
     deployedLink: 'https://acst.responsivewebsitebuilder.io/preview/a3ab7be5?device=desktop',  
-    // description: `Quick Measure is a quick and simple mobile app to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!`,
-    // description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
+    documentationLink: 'https://belc-realm-support.vercel.app/',  
+    description: `I developed the website for Braham Evangelical Lutheran Church. I built the site with Realm, a church management software. Realm has a dedicated website builder, Refresh, that uses rows, columns, flexboxes, grids, and spacing in a no-code environment. I designed the edited images and mockups with Figma. The current site is preview link with placeholder images and text as we wait for official materials from church leadership.`,
+    description2: `I wrote markdown documentation with the Docusaurus framework to provide resources for church staff to update the site.`,
     techStack: ['Refresh', 'Figma', 'Docusaurus', 'Markdown', 'Vercel']
   },
   {

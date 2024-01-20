@@ -2,6 +2,7 @@ import { useState } from 'react'
 import StackDisplay from '../StackDisplay/StackDisplay'
 import { HiExternalLink } from 'react-icons/hi'
 import { SiGithub, SiAppstore } from 'react-icons/si'
+import { HiDocumentMagnifyingGlass } from "react-icons/hi2";
 // import { useParams } from 'react-router-dom'
 import {
   Carousel,
@@ -46,6 +47,15 @@ export default function Project({ project, stackArr, isDark }) {
               style={{color: project.color}}
               className="hover:scale-105 transitiion-all">
               <SiAppstore className="text-4xl"/>
+            </a>
+          )}
+          {project.documentationLink && (
+            <a 
+              href={project.documentationLink} 
+              target="_blank"
+              style={{color: project.color}}
+              className="hover:scale-105 transitiion-all">
+              <HiDocumentMagnifyingGlass className="text-4xl" />
             </a>
           )}
         </div>
