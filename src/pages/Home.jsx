@@ -1,7 +1,4 @@
-import heroBG from '../assets/backgrounds/hero-bg.svg'
-import bubblesBG from '../assets/backgrounds/bubbles.svg'
-import { About, Contact, Footer, Header, Hero, ProjectsSection } from '../components'
-import HeroText from '../components/Hero'
+import { About, Contact, Header, Hero, ProjectsSection } from '../components'
 import gradientLightBG from '../assets/backgrounds/gradient-light.svg'
 
 
@@ -15,6 +12,7 @@ export default function Home() {
 
   return (
     <div className="bg-slate-100">
+      <Header location={'home'}/>
       <Hero />
       <About />
       <ProjectsSection />

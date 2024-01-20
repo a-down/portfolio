@@ -23,6 +23,7 @@ export default function ContactForm() {
     <>
       {!confirmedState ? (
         <form 
+          id="contact"
           className="bg-blue-50/50 shadow-lg w-[600px] font-sans rounded-xl p-12 flex flex-col gap-6 text-slate-600"
           onSubmit={handleSubmit}>
           <div>

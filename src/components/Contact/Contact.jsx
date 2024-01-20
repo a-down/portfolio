@@ -12,7 +12,7 @@ export default function Contact(){
 
 
   return (
-    <div className='bg-navy' id="contact">
+    <div className='bg-navy'>
       <div
         // viewport={{ once: true, amount: 0.8 }}
         // initial={{ visibility: 'hidden', opacity: 0.4 }}
