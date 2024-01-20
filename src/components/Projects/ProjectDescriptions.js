@@ -16,6 +16,9 @@ import quickMeasureAuto from '../../assets/project-visuals/quick-measure-auto.pn
 import quickMeasureTap from '../../assets/project-visuals/quick-measure-tap.png'
 import quickMeasureSaving from '../../assets/project-visuals/quick-measure-saving.png'
 import quickMeasureHome from '../../assets/project-visuals/quick-measure-home.png'
+import belcBrowser from '../../assets/project-visuals/belc-browser.png'
+import belcMobile from '../../assets/project-visuals/belc-mobile.png'
+import belcMobileDrawer from '../../assets/project-visuals/belc-mobile-drawer.png'
 
 
 
@@ -55,6 +58,28 @@ export let projects = [
     description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
     description3: `I built Quick Measure with React Native, Expo, and React-Native-Maps. React Native allowed me to build a cross-platform mobile app with JavaScript, and Expo provided various plugins/packages, a build environment, version management, and a compiler for the App Store. I styled with Nativewind (TailwindCSS for React Native), provide ads with Google AdMob, and used Revenue Cat to track and manage in-app purchases with their api and package "react-native-purchases". Currently, the app is only available on iOS. I look forward to working on the Android build and releasing it on the Google Play Store in the next couple of months.`,
     techStack: ['React Native', 'Expo', 'Tailwind', 'JavaScript', 'App Store', 'Google AdMob', 'GitHub']
+  },
+  {
+    title: 'Braham Evangelical Lutheran Church',
+    color: '#6F54B8',
+    images: [
+      {
+        img: belcBrowser,
+        type: 'browser'
+      },
+      {
+        img: belcMobile,
+        type: 'browser'
+      },
+      {
+        img: belcMobileDrawer,
+        type: 'browser'
+      },
+    ],
+    deployedLink: 'https://acst.responsivewebsitebuilder.io/preview/a3ab7be5?device=desktop',  
+    // description: `Quick Measure is a quick and simple mobile app to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!`,
+    // description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
+    techStack: ['Refresh', 'Figma', 'Docusaurus', 'Markdown', 'Vercel']
   },
   {
     title: 'Job Notebook',

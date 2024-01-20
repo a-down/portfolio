@@ -28,9 +28,12 @@ import {
   SiRender,
   SiExpo,
   SiGoogleadmob,
-  SiAppstore
+  SiAppstore,
+  SiDocusaurus,
+  SiMarkdown
 } from 'react-icons/si'
 import clerkDark from '../../assets/clerk-dark.png'
+import refresh from '../../assets/refresh.svg'
 
 
 export default function Language({stack, isDark}) {
@@ -160,6 +163,10 @@ export default function Language({stack, isDark}) {
         return <img src={clerkDark} className=' w-full h-full p-2 opacity-80' style={{color: iconColor}}/>
         break;
 
+      case 'Refresh':
+        return <img src={refresh} className=' w-full h-full p-2 opacity-80' style={{color: iconColor}}/>
+        break;
+
       case 'React Router':
         if (!isDark) iconColor = '#CA4245'
         return <SiReactrouter className=' w-full h-full p-2 ' style={{color: iconColor}}/>
@@ -198,6 +205,16 @@ export default function Language({stack, isDark}) {
       case 'App Store':
         if (!isDark) iconColor = '#0D96F6'
         return <SiAppstore className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Docusaurus':
+        if (!isDark) iconColor = '#3ECC5F'
+        return <SiDocusaurus className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Markdown':
+        if (!isDark) iconColor = '#000000'
+        return <SiMarkdown className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
     }
   }
