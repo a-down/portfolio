@@ -60,14 +60,14 @@ export default function Footer() {
   }
 
   return (
-    <footer className=" bg-brand-950 w-full py-12 flex justify-center">
-      <div className="w-full max-w-[1400px] px-24 flex gap-12 flex-shrink-0">
+    <footer className=" bg-brand-950 w-full py-12 flex flex-col lg:flex-row justify-center">
+      <div className="w-full max-w-[1400px] px-8 md:px-12 lg:px-24 flex flex-wrap md:flex-row gap-12 flex-shrink-0">
         <LinkColumn column={linksLinks}/>
         <LinkColumn column={contactLinks}/>
         <LinkColumn column={projectsLinks}/>
-        <div className="flex flex-col ml-auto justify-start items-end gap-2">
+        <div className="flex flex-col mx-auto lg:mx-0 lg:ml-auto justify-start items-center lg:items-end gap-2">
           <h5 className='text-slate-300 w-full text-center'>alecdowning.com is built with</h5>
-          <StackDisplay stackArr={footerStack} isDark={false}/>
+          <StackDisplay stackArr={footerStack} isDark={false} centered={true}/>
         </div>
       </div>
     </footer>
