@@ -15,8 +15,8 @@ export default function About() {
 
             <div className="text-slate-950 flex flex-wrap lg:flex-col gap-4">
               <h3 className='pt-0 text-4xl mb-2 text-slate-800 tracking-tight'>I am a Frontend and Mobile App Developer.</h3>
-              <p className='text-lg font-thin leading-relaxed tracking-wide'>I build websites and apps that are easy to view, understand, and navigate. I will collaborate and communicate with designers and developers to create user-focused experiences. As a former teacher, I have used everything from beautiful creative websites to outdated software. Confusing tools either impede the user or get ignored. Accessible websites make for a better internet!</p>
-              <p className='text-lg font-thin leading-relaxed tracking-wide'>I focus on React, React Native, NextJS, JavaScript, and Tailwind. I am also comfortable using jQuery, various CSS Frameworks (Bootstrap, Material UI, Radix UI, Chakra, Bulma), GitHub, and Figma. I have cross-platform mobile experience with React Native and Expo, and I have full-stack experience with NodeJS, ExpressJS, MongoDB, Mongoose, MySQL, Sequelize, JWT, and Clerk.</p>
+              <p className='text-lg font-thin leading-relaxed tracking-wide'>I build websites that are easy to view, understand, and navigate. I will collaborate and communicate with designers and clients to create user-focused experiences! As a former teacher, I have used everything from beautiful creative websites to outdated software. Confusing websites either impede the user or get ignored. Accessible websites make for a better internet!</p>
+              <p className='text-lg font-thin leading-relaxed tracking-wide'>I mostly develop with React, NextJS, React Native, JavaScript, and Tailwind. I am also comfortable using jQuery, various CSS Frameworks (Shadcn, Bootstrap, Material UI, Radix UI, Chakra, Bulma), GitHub, and Figma. I have full-stack experience with NodeJS, ExpressJS, MongoDB, Mongoose, MySQL, Sequelize, JWT, and Clerk. I love learning new languages and technologies, because there are always multiple solutions to a problem!</p>
             </div>
           </div>
 
