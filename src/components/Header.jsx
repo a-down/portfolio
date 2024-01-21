@@ -19,13 +19,13 @@ export default function Header({ location }) {
             <a href='/' className={` hover:scale-105 transition-all active:text-brand-800 text-brand-${location === 'home' ? '800' : '400'}`}>
               Home
             </a>
-            <a href='/#about' className=' hover:scale-105 transition-all active:text-brand-800'>
+            <a href='/about' className=' hover:scale-105 transition-all active:text-brand-800'>
               About
             </a>
             <a href='/projects' className={` hover:scale-105 transition-all active:text-brand-800 text-brand-${location === 'projects' ? '800' : '400'}`}>
               Projects
             </a>
-            <a href='/#contact' className=' hover:scale-105 transition-all active:text-brand-800'>
+            <a href='/contact' className=' hover:scale-105 transition-all active:text-brand-800'>
               Contact
             </a>
 
