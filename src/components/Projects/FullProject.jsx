@@ -18,7 +18,7 @@ export default function FullProject({ project, stackArr, isDark }) {
   
 
   return (
-    <div className="flex flex-col gap-8 mb-24 text-slate-800" id={project.slug}>
+    <div className="flex flex-col gap-8 py-12 text-slate-800" id={project.slug}>
       <div className="flex justify-between">
         <h2 className="text-6xl font-bold" style={{color: project.color}}>{project.title}</h2>
         <div className="flex gap-4 items-center">
