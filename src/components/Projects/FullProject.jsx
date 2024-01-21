@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import StackDisplay from '../StackDisplay/StackDisplay'
 import { HiExternalLink } from 'react-icons/hi'
 import { SiGithub, SiAppstore } from 'react-icons/si'
@@ -12,7 +11,7 @@ import {
 } from "@/components/ui/carousel"
 
 
-export default function FullProject({ project, stackArr, isDark }) {
+export default function FullProject({ project, stackArr }) {
   
 
   return (
@@ -60,10 +59,10 @@ export default function FullProject({ project, stackArr, isDark }) {
       </div>
 
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 mb-2">
-        <div className="flex flex-col gap-4 leading-loose tracking-wide lg:w-2/5 overflow-clip text-slate-500">
+        <div className="flex flex-col gap-4 leading-loose tracking-wide lg:w-2/5 overflow-clip text-slate-500 font-thin">
           <p>{project.description}</p>
           <p>{project.description2}</p>
-          {/* <p>{project.description3}</p> */}
+          <p>{project.description3}</p>
         </div>
         
         <Carousel className="w-full h-fit aspect-video shadow-xl cursor-grab" style={{backgroundColor: project.color}}>
