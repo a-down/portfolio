@@ -60,7 +60,7 @@ export default function FullProject({ project, stackArr, isDark }) {
       </div>
 
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 mb-2">
-        <div className="flex flex-col gap-4 leading-loose tracking-wide lg:w-2/5 overflow-clip">
+        <div className="flex flex-col gap-4 leading-loose tracking-wide lg:w-2/5 overflow-clip text-slate-500">
           <p>{project.description}</p>
           <p>{project.description2}</p>
           {/* <p>{project.description3}</p> */}

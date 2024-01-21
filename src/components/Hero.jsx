@@ -4,7 +4,7 @@ import StackDisplay from './StackDisplay/StackDisplay';
 
 
 export const ExternalLinks = () => (
-  <div className='flex md:flex-col items-end justify-end gap-4'>
+  <div className='w-full md:w-auto flex md:flex-col items-end justify-around md:justify-end gap-4'>
     <a href='https://www.linkedin.com/in/alec-downing' target='_blank' className=' text-accent'>
       <FaLinkedin className='w-12 h-12 mt-[3px] text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all'/>
     </a>
