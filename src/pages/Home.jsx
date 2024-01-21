@@ -15,10 +15,7 @@ export default function Home() {
   const { section } = useParams()
   useEffect(() => {
     const element = document.getElementById(section);
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (element) element.scrollIntoView({ behavior: 'smooth' })
   }, [])
 
   return (

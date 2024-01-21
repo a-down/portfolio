@@ -10,10 +10,7 @@ export default function Projects() {
   
   useEffect(() => {
     const element = document.getElementById(projectSlug);
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (element) element.scrollIntoView({ behavior: 'smooth' })
   }, [])
 
   return (
@@ -24,7 +21,7 @@ export default function Projects() {
           <h1 className="w-full text-left text-8xl leading-none font-bold tracking-tight text-brand-900">Projects</h1>
         </div>
 
-        <div className="w-full">
+        <div className="w-full mt-12 mb-24">
           {projects.map((project, index) => (
             <FullProject project={project} key={project.title + index} stackArr={project.techStack} isDark={true} index={index}/>
           ))}
