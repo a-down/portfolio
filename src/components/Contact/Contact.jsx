@@ -19,7 +19,7 @@ export default function Contact(){
         // whileInView={{ visibility: 'visible', opacity: 1 }}
         // transition={{ duration: 0.6 }}
       >
-        <div className=" gap-4 md:gap-16 bg-brand-200 px-6 py-32 md:px-10 lg:px-24 items-center ">
+        <div className=" gap-4 md:gap-16 bg-brand-200 md:py-16 lg:py-32 md:px-12 lg:px-24 items-center ">
 
           <div className="flex justify-center items-center max-w-[1200px] mx-auto">
             

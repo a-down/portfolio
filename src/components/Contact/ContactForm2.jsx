@@ -24,10 +24,10 @@ export default function ContactForm() {
       {!confirmedState ? (
         <form 
           id="contact"
-          className="bg-blue-50/50 shadow-lg w-[600px] font-sans rounded-xl p-12 flex flex-col gap-6 text-slate-600"
+          className="bg-blue-50/50 shadow-lg max-w-[600px] font-sans md:rounded-xl p-8 md:p-12 flex flex-col gap-6 text-slate-600"
           onSubmit={handleSubmit}>
           <div>
-            <h3 className='text-4xl text-slate-800 w-full font-semibold mb-1'>Get In Touch</h3>
+            <h3 className='text-3xl md:text-4xl text-slate-800 w-full font-semibold mb-1'>Get In Touch</h3>
             <p>Send me a message and I will get back to you as soon as I can!</p>
           </div>
 
