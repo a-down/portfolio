@@ -2,6 +2,7 @@ import { About, Contact, Header, Hero, ProjectsSection } from '../components'
 import gradientLightBG from '../assets/backgrounds/gradient-light.svg'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
+import { Footer } from '@/components'
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <About />
       <ProjectsSection />
       <Contact />
+      <Footer />
     </div>
   )
 }

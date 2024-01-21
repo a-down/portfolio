@@ -1,7 +1,5 @@
 import { QuickMeasure, Home, Projects } from "./pages";
-
 import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
-import { Footer } from "./components";
 
 
 export default function App() {
@@ -20,7 +18,6 @@ export default function App() {
           <Route path="/quickmeasure" element={<QuickMeasure />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
     </>
   );
 }
