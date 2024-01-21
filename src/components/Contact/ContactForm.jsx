@@ -1,60 +1,85 @@
-import {
-  FormControl,
-  FormLabel,
-  Input,
-  FormHelperText,
-  Textarea
-} from '@chakra-ui/react'
+import { useState, useEffect } from 'react'
+import { useForm, ValidationError } from '@formspree/react';
 
 
 export default function ContactForm() {
-  const { scrollYProgress } = useScroll();
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [confirmedState, setConfirmedState] = useState(false)
 
+  const [state, handleSubmit] = useForm("xnqenyrj");
 
+  useEffect(() => {
+    if (state.succeeded) {
+      setName('')
+      setEmail('')
+      setMessage('')
+      setConfirmedState(true)
+    }
+  }, [state])
 
   return (
+    <>
+      {!confirmedState ? (
+        <form 
+          id="contact"
+          className="bg-blue-50/50 shadow-lg w-full md:w-[600px] font-sans md:rounded-xl py-12 px-4 md:p-12 flex flex-col gap-6 text-slate-600"
+          onSubmit={handleSubmit}>
+          <div>
+            <h3 className='text-2xl md:text-4xl text-slate-800 w-full mb-1'>Get In Touch</h3>
+            <p className="font-thin">Send me a message and I will get back to you as soon as I can!</p>
+          </div>
 
-    <div
-      initial={{ width: '400px' }}
-      whileInView={{ width: '500px' }}
-    >
-      <form
-      action=''
-      method='POST'
-      className='w-full bg-slate-50 rounded-md text-navy p-4 flex flex-col gap-4 text-sm font-serif' style={{filter: `drop-shadow(0px 2px 3px #999999`}}>
-        <fieldset className='flex flex-col gap-1'>
-          <label className='text-navy text-md '>Name:</label>
-          <input 
-            type="text" 
-            placeholder='John Doe'
-            className='py-1.5 px-2.5 rounded-md shadow-sm focus:shadow-lg text-navy border border-slate-200 bg-slate-50'
-            name='entry.369267883'/>
-        </fieldset>
+          <fieldset className="flex flex-col gap-2">
+            <label>Name:</label>
+            <input 
+              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
+              placeholder='John Smith'
+              onChange={(e) => setName(e.value)}
+              name='name'
+              value={name}
+              type='text'
+              required />
+          </fieldset>
 
-        <fieldset className='flex flex-col gap-1'>
-          <label className='text-navy text-md '>Email:</label>
-          <input 
-            type="email" 
-            placeholder='name@email.com'
-            className='py-1.5 px-2.5 rounded-md shadow-sm focus:shadow-lg text-navy border border-slate-200 bg-slate-50'
-            name='entry.1793406575'/>
-        </fieldset>
+          <fieldset className="flex flex-col gap-2">
+            <label>Email:</label>
+            <input 
+              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
+              placeholder='johnsmith@email.com'
+              onChange={(e) => setEmail(e.value)}
+              name='email'
+              value={email}
+              type='email'
+              required />
+          </fieldset>
 
-        <fieldset className='flex flex-col gap-1'>
-          <label className='text-navy text-md '>Message:</label>
-          <textarea 
-            type="text" 
-            placeholder='Type your message here...'
-            className='py-1.5 px-2.5 rounded-md shadow-sm focus:shadow-lg text-navy border border-slate-200 bg-slate-50'
-            rows='5'
-            name='entry.1413381921'/>
-        </fieldset>
-        <button 
-          className='bg-navy border border-navy text-slate-50 hover:bg-gradient-to-r from-navy  to-slate-600 hover:text-white active:bg-accent  py-1 px-2 rounded-md my-2 font-sans text-lg'>
-          Send
-        </button>
-      </form>
-    </div>
+          <fieldset className="flex flex-col gap-2">
+            <label>Message:</label>
+            <textarea
+              rows='5'
+              placeholder='I am in need of...'
+              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
+              onChange={(e) => setMessage(e.value)}
+              name='message'
+              value={message}
+              type='text'
+              required />
+          </fieldset>
 
+          <button
+            type='submit'
+            className="mt-4 py-4 px-3 bg-brand-950 hover:bg-brand-900 shadow-lg rounded-md text-xl text-brand-100 transition-all">
+            {state.submitting ? 'Submitting...' : 'Submit'}
+          </button>
+
+        </form>
+      ) : (
+        <div className="bg-blue-50/50 shadow-lg md:w-[600px] font-sans rounded-xl my-16 mx-8 md:m-auto p-8 flex flex-col gap-6 text-slate-600">
+          <p>Thank you for reaching out! I will send a response to your email as soon as I can.</p>
+        </div>
+      )}
+    </>
   )
 }

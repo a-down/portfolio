@@ -1,6 +1,4 @@
-import projectsBG from '../../assets/backgrounds/projects-bg.svg'
 import Project from './Project'
-import Project2 from './Project2'
 import { projects } from './ProjectDescriptions'
 import { HiArrowRight } from 'react-icons/hi'
 import {
@@ -13,13 +11,6 @@ import {
 
 export default function ProjectSection() {
 
-  const backgroundStyle = {
-    backgroundImage: `url(${projectsBG})`, 
-    backgroundRepeat: 'no-repeat', 
-    backgroundSize: 'cover', 
-    backgroundPosition: 'top',
-  }
-
   return (
     <div className="bg-slate-100 w-full md:py-12 lg:mt-24 lg:pb-36 flex justify-center items-center " id="projects">
       <div className="max-w-[1400px] md:px-12 lg:px-24 w-full">
@@ -31,10 +22,14 @@ export default function ProjectSection() {
           </a>
         </span>
         <Carousel className="w-full h-[calc(100dvh-64px)] md:h-auto md:aspect-video shadow-xl">
-          <CarouselContent className="">
+          <CarouselContent>
             {projects.map((project, index) => (
-              <CarouselItem key={index} className="">
-                <Project2 project={project} key={project.title} stackArr={project.techStack} isDark={true}/>
+              <CarouselItem key={index}>
+                <Project 
+                  project={project} 
+                  key={project.title} 
+                  stackArr={project.techStack} 
+                  isDark={true}/>
               </CarouselItem>
             ))}
           </CarouselContent>
