@@ -11,14 +11,14 @@ export default function HeroText(){
   ]
 
   return (
-    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 max-w-[1400px] mx-auto px-24">
+    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 max-w-[1400px] mx-auto px-8 md:px-12 lg:px-24">
       {/* Text and Links */}
       <div className=" flex flex-col justify-between text-gray-200 gap-2 w-full h-full flex-grow mx-auto relative">
         <div className="h-[50%] flex-grow flex flex-col justify-center">
-          <h1 className=' text-[10rem] leading-none text-brand-900 tracking-tight font-bold'>Alec Downing</h1>
-          <div className=" flex flex-row">
+          <h1 className=' text-6xl md:text-[10rem] leading-none text-brand-900 tracking-tight font-bold'>Alec Downing</h1>
+          <div className=" flex flex-col md:flex-row">
             <h2 className=" text-2xl text-slate-500">Frontend Developer</h2>
-            <span className="text-2xl text-slate-400 font-thin mx-2">|</span>
+            <span className="text-2xl text-slate-400 font-thin mx-2 hidden md:inline">|</span>
             <h4 className=' text-2xl text-slate-400'>Making the Internet Easier to Use</h4>
           </div>
         </div>
@@ -43,15 +43,6 @@ export default function HeroText(){
           </div>
         </div>
       </div>
-
-      {/* <div className="w-full max-w-[1200px] mx-auto flex justify-between">
-        {heroQuickLinks.map((object, index) => (
-          <a href={object.link} className="flex flex-col gap-1 items-center rounded-lg bg-brand-400/10 w-[30%] text-center p-6 text-xl text-brand-800 hover:bg-brand-400/25 cursor-pointer transition-all" key={index}>
-            {object.title}
-            <FaArrowDown className="inline text-sm"/>
-          </a>
-        ))}
-      </div> */}
       
     </div>
   )
