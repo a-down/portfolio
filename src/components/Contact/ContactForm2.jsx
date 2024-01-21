@@ -76,7 +76,7 @@ export default function ContactForm() {
 
         </form>
       ) : (
-        <div className="bg-blue-50/50 shadow-lg w-full md:w-[600px] font-sans md:rounded-xl py-36 md:py-12 p-12 flex flex-col gap-6 text-slate-600">
+        <div className="bg-blue-50/50 shadow-lg md:w-[600px] font-sans rounded-xl my-16 mx-8 md:m-auto p-8 flex flex-col gap-6 text-slate-600">
           <p>Thank you for reaching out! I will send a response to your email as soon as I can.</p>
         </div>
       )}
