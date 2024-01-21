@@ -9,13 +9,11 @@ import friendsDbPhone from '../../assets/project-visuals/friends-db-phone.png'
 import friendsDbBrowser from '../../assets/project-visuals/friends-db-browser.png'
 import gameWorldPhone from '../../assets/project-visuals/game-world-phone.png'
 import gameWorldBrowser from '../../assets/project-visuals/game-world-browser.png'
+
 import quickMeasureAuto from '../../assets/project-visuals/quick-measure-auto.png'
 import quickMeasureTap from '../../assets/project-visuals/quick-measure-tap.png'
 import quickMeasureSaving from '../../assets/project-visuals/quick-measure-saving.png'
 import quickMeasureHome from '../../assets/project-visuals/quick-measure-home.png'
-import belcBrowser from '../../assets/project-visuals/belc-browser.png'
-import belcMobile from '../../assets/project-visuals/belc-mobile.png'
-import belcMobileDrawer from '../../assets/project-visuals/belc-mobile-drawer.png'
 
 import jobNotebookBrowser1 from '../../assets/project-visuals/job-notebook-browser-1.png'
 import jobNotebookBrowser2 from '../../assets/project-visuals/job-notebook-browser-2.png'
@@ -31,37 +29,25 @@ import safePawsMobile1 from '../../assets/project-visuals/safe-paws-mobile-1.jpe
 import safePawsMobile2 from '../../assets/project-visuals/safe-paws-mobile-2.jpeg'
 import safePawsMobile3 from '../../assets/project-visuals/safe-paws-mobile-3.jpeg'
 
+import belcBrowser1 from '../../assets/project-visuals/belc-browser-1.png'
+import belcBrowser2 from '../../assets/project-visuals/belc-browser-2.png'
+import belcBrowser3 from '../../assets/project-visuals/belc-browser-3.png'
+import belcMobile1 from '../../assets/project-visuals/belc-mobile-1.png'
+import belcMobile2 from '../../assets/project-visuals/belc-mobile-2.png'
+import belcMobile3 from '../../assets/project-visuals/belc-mobile-3.png'
+
 
 
 export let projects = [
-  // {
-  //   title: 'Braham Evangelical Lutheran Church',
-  //   color: '#6F54B8',
-  //   images: [
-
-  //   ]
-  // }
   {
     title: 'Quick Measure - GPS',
     color: '#6DAB64',
     slug: 'quickmeasure',
     images: [
-      {
-        img: quickMeasureHome,
-        type: 'phone'
-      },
-      {
-        img: quickMeasureAuto,
-        type: 'phone'
-      },
-      {
-        img: quickMeasureTap,
-        type: 'phone'
-      },
-      {
-        img: quickMeasureSaving,
-        type: 'phone'
-      }
+      { img: quickMeasureHome, type: 'phone' },
+      { img: quickMeasureAuto, type: 'phone' },
+      { img: quickMeasureTap, type: 'phone' },
+      { img: quickMeasureSaving, type: 'phone' }
     ],
     repoLink: 'https://github.com/a-down/quick-measure-gps-app',
     deployedLink: '/quickmeasure',
@@ -76,18 +62,12 @@ export let projects = [
     color: '#6F54B8',
     slug: 'belc',
     images: [
-      {
-        img: belcBrowser,
-        type: 'browser'
-      },
-      {
-        img: belcMobile,
-        type: 'browser'
-      },
-      {
-        img: belcMobileDrawer,
-        type: 'browser'
-      },
+      { img: belcBrowser1, type: 'browser' },
+      { img: belcBrowser2, type: 'browser' },
+      { img: belcBrowser3, type: 'browser' },
+      { img: belcMobile1, type: 'browser' },
+      { img: belcMobile2, type: 'browser' },
+      { img: belcMobile3, type: 'browser' },
     ],
     deployedLink: 'https://acst.responsivewebsitebuilder.io/preview/a3ab7be5?device=desktop',  
     documentationLink: 'https://belc-realm-support.vercel.app/',  
