@@ -13,7 +13,7 @@ export default function About() {
           <div className='flex flex-col lg:flex-row flex-start gap-8 md:gap-12 lg:gap-8 relative'>
             <img src={headshot} className='w-[320px] h-[320px] mx-auto md:mx-0 rounded-full shadow-sm flex-shrink-0 z-10'/>
 
-            <div className="text-slate-950 flex flex-wrap lg:flex-col gap-4">
+            <div className="text-slate-700 flex flex-wrap lg:flex-col gap-4">
               <h3 className='pt-0 text-4xl mb-2 text-slate-800 tracking-tight'>I am a Frontend and Mobile App Developer.</h3>
               <p className='text-lg font-thin leading-relaxed tracking-wide'>I build websites that are easy to view, understand, and navigate. I will collaborate and communicate with designers and clients to create user-focused experiences! As a former teacher, I have used everything from beautiful creative websites to outdated software. Confusing websites either impede the user or get ignored. Accessible websites make for a better internet!</p>
               <p className='text-lg font-thin leading-relaxed tracking-wide'>I mostly develop with React, NextJS, React Native, JavaScript, and Tailwind. I am also comfortable using jQuery, various CSS Frameworks (Shadcn, Bootstrap, Material UI, Radix UI, Chakra, Bulma), GitHub, and Figma. I have full-stack experience with NodeJS, ExpressJS, MongoDB, Mongoose, MySQL, Sequelize, JWT, and Clerk. I love learning new languages and technologies, because there are always multiple solutions to a problem!</p>

@@ -9,6 +9,11 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      'sans': 'Outfit, sans-serif',
+      'serif': 'Zilla Slab, serif',
+      'jost': 'Jost, sans-serif'
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -32,6 +37,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       colors: {
+        // orriginal portfolio color pallette
         'accent': '#95ADCF',
         'navy': '#1B2032',
         'navy-faded': 'rgba(27, 32, 50, 0.20)',
