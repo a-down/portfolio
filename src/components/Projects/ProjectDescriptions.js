@@ -10,8 +10,6 @@ import friendsDbPhone from '../../assets/project-visuals/friends-db-phone.png'
 import friendsDbBrowser from '../../assets/project-visuals/friends-db-browser.png'
 import gameWorldPhone from '../../assets/project-visuals/game-world-phone.png'
 import gameWorldBrowser from '../../assets/project-visuals/game-world-browser.png'
-import jobNotebookPhone from '../../assets/project-visuals/job-notebook-phone.png'
-import jobNotebookBrowser from '../../assets/project-visuals/job-notebook-browser.png'
 import quickMeasureAuto from '../../assets/project-visuals/quick-measure-auto.png'
 import quickMeasureTap from '../../assets/project-visuals/quick-measure-tap.png'
 import quickMeasureSaving from '../../assets/project-visuals/quick-measure-saving.png'
@@ -19,6 +17,13 @@ import quickMeasureHome from '../../assets/project-visuals/quick-measure-home.pn
 import belcBrowser from '../../assets/project-visuals/belc-browser.png'
 import belcMobile from '../../assets/project-visuals/belc-mobile.png'
 import belcMobileDrawer from '../../assets/project-visuals/belc-mobile-drawer.png'
+
+import jobNotebookBrowser1 from '../../assets/project-visuals/job-notebook-browser-1.png'
+import jobNotebookBrowser2 from '../../assets/project-visuals/job-notebook-browser-2.png'
+import jobNotebookBrowser3 from '../../assets/project-visuals/job-notebook-browser-3.png'
+import jobNotebookMobile1 from '../../assets/project-visuals/job-notebook-mobile-1.png'
+import jobNotebookMobile2 from '../../assets/project-visuals/job-notebook-mobile-2.png'
+import jobNotebookMobile3 from '../../assets/project-visuals/job-notebook-mobile-3.jpeg'
 
 
 
@@ -89,14 +94,12 @@ export let projects = [
     color: '#9dd4c7',
     slug: 'jobnotebook',
     images: [
-      {
-        img: jobNotebookBrowser,
-        type: 'browser'
-      },
-      {
-        img: jobNotebookPhone,
-        type: 'browser'
-      },
+      { img: jobNotebookBrowser1, type: 'browser' },
+      { img: jobNotebookBrowser2, type: 'browser' },
+      { img: jobNotebookBrowser3, type: 'browser' },
+      { img: jobNotebookMobile1, type: 'browser' },
+      { img: jobNotebookMobile2, type: 'browser' },
+      { img: jobNotebookMobile3, type: 'browser' },
     ],
     repoLink: 'https://github.com/a-down/job-notebook-application-tracker',
     deployedLink: 'https://jobnotebook.vercel.app',     
