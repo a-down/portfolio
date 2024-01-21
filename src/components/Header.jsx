@@ -49,12 +49,12 @@ export default function Header({ location }) {
 
           <Sheet>
             <SheetTrigger className="md:hidden">
-              <HiMenu className="text-2xl hover:scale-105 text-brand-800"/>
+              <HiMenu className="text-2xl hover:scale-105 text-brand-400"/>
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
                 <SheetTitle>
-                  <img src={smileIcon} className='w-8 h-8 mb-4'/>
+                  <img src={smileIcon} className='w-8 h-8 mt-3 mb-10'/>
                 </SheetTitle>
                 <Navigation />
               </SheetHeader>
