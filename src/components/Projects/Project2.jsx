@@ -52,17 +52,17 @@ export default function Project({ project, stackArr, isDark }) {
 
       <div className="absolute top-0 left-0 w-full md:top-auto md:w-auto md:left-4 md:bottom-4 lg:bottom-12 lg:left-12 p-4 shadow-md md:shadow-none md:rounded-lg text-slate-50" style={{backgroundColor: project.color}}>
         <a href={`/projects/${project.slug}`}>
-          <h5 className=" text-2xl md:text-2xl lg:text-4xl font-medium flex gap-2 items-center">
+          <h5 className=" text-2xl md:text-2xl lg:text-4xl font-medium flex w-fit gap-2 items-center hover:scale-105">
             {project.title}
             <HiOutlineExternalLink className="md:hidden"/>
           </h5>
         </a>
         
-        <div className="hidden md:flex flex-row gap-2">
+        <div className="flex flex-row gap-2 text-slate-50/90">
           <a href={project.repoLink} className="hover:scale-105 transition-all" target="_blank">Repo</a>
-          <span>/</span>
+          <span className="select-none">/</span>
           <a href={project.deployedLink} className="hover:scale-105 transition-all" target="_blank">Deployed Site</a>
-          <span>/</span>
+          <span className="select-none">/</span>
           <a href={`/projects/${project.slug}`} className="hover:scale-105 transition-all">Full Project Details</a>
         </div>
       </div>
