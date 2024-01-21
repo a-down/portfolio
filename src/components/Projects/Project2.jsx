@@ -51,10 +51,12 @@ export default function Project({ project, stackArr, isDark }) {
       </div>
 
       <div className="absolute bottom-2 left-2 md:left-4 md:bottom-4 lg:bottom-12 lg:left-12 p-2 md:py-4 md:px-6 rounded-lg text-slate-50" style={{backgroundColor: project.color}}>
-        <h5 className=" text-lg md:text-2xl lg:text-4xl font-medium flex gap-2 items-center">
-          {project.title}
-          <HiOutlineExternalLink className="md:hidden"/>
-        </h5>
+        <a href={`/projects/${project.slug}`}>
+          <h5 className=" text-lg md:text-2xl lg:text-4xl font-medium flex gap-2 items-center">
+            {project.title}
+            <HiOutlineExternalLink className="md:hidden"/>
+          </h5>
+        </a>
         
         <div className="hidden md:flex flex-row gap-2">
           <a href={project.repoLink} className="hover:scale-105 transition-all" target="_blank">Repo</a>
