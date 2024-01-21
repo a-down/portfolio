@@ -65,7 +65,7 @@ export default function Footer() {
         <LinkColumn column={linksLinks}/>
         <LinkColumn column={contactLinks}/>
         <LinkColumn column={projectsLinks}/>
-        <div className="flex flex-col mx-auto lg:mx-0 lg:ml-auto justify-start items-center lg:items-end gap-2">
+        <div className="flex flex-col lg:ml-auto justify-start items-center lg:items-end gap-2">
           <h5 className='text-slate-300 w-full text-center'>alecdowning.com is built with</h5>
           <StackDisplay stackArr={footerStack} isDark={false} centered={true}/>
         </div>
