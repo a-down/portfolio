@@ -1,5 +1,4 @@
-import safePawsPhone from '../../assets/project-visuals/safe-paws-phone.png'
-import safePawsBrowser from '../../assets/project-visuals/safe-paws-browser.png'
+
 import techBlogPhone from '../../assets/project-visuals/tech-blog-phone.png'
 import techBlogBrowser from '../../assets/project-visuals/tech-blog-browser.png'
 import weatherDashboardPhone from '../../assets/project-visuals/weather-dashboard-phone.png'
@@ -24,6 +23,13 @@ import jobNotebookBrowser3 from '../../assets/project-visuals/job-notebook-brows
 import jobNotebookMobile1 from '../../assets/project-visuals/job-notebook-mobile-1.png'
 import jobNotebookMobile2 from '../../assets/project-visuals/job-notebook-mobile-2.png'
 import jobNotebookMobile3 from '../../assets/project-visuals/job-notebook-mobile-3.jpeg'
+
+import safePawsBrowser1 from '../../assets/project-visuals/safe-paws-browser-1.png'
+import safePawsBrowser2 from '../../assets/project-visuals/safe-paws-browser-2.png'
+import safePawsBrowser3 from '../../assets/project-visuals/safe-paws-browser-3.png'
+import safePawsMobile1 from '../../assets/project-visuals/safe-paws-mobile-1.jpeg'
+import safePawsMobile2 from '../../assets/project-visuals/safe-paws-mobile-2.jpeg'
+import safePawsMobile3 from '../../assets/project-visuals/safe-paws-mobile-3.jpeg'
 
 
 
@@ -113,14 +119,12 @@ export let projects = [
     color: '#DB7F67',
     slug: 'safepaws',
     images: [
-      {
-        img: safePawsBrowser,
-        type: 'browser'
-      },
-      {
-        img: safePawsPhone,
-        type: 'browser'
-      },
+      { img: safePawsBrowser1, type: 'browser' },
+      { img: safePawsBrowser2, type: 'browser' },
+      { img: safePawsBrowser3, type: 'browser' },
+      { img: safePawsMobile1, type: 'browser' },
+      { img: safePawsMobile2, type: 'browser' },
+      { img: safePawsMobile3, type: 'browser' },
     ],
     repoLink: 'https://github.com/a-down/safe-paws',
     deployedLink: 'https://safe-paws-da967720d734.herokuapp.com/',     
