@@ -8,7 +8,7 @@ export default function Footer() {
   const [projectsArr, setProjectsArr] = useState([])
 
   const footerStack = [
-    'React', 'Tailwind', 'JavaScript', 'Vite', 'Vercel', 
+    'React', 'Tailwind', 'JavaScript', 'Vite', 'Vercel'
   ]
 
   const linksLinks = {
@@ -66,7 +66,7 @@ export default function Footer() {
         <LinkColumn column={contactLinks}/>
         <LinkColumn column={projectsLinks}/>
         <div className="flex flex-col ml-auto justify-start items-end gap-2">
-          <h5 className='text-slate-400 w-full text-center'>alecdowning.com is built with</h5>
+          <h5 className='text-slate-300 w-full text-center'>alecdowning.com is built with</h5>
           <StackDisplay stackArr={footerStack} isDark={false}/>
         </div>
       </div>

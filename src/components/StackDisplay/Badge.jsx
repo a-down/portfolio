@@ -227,7 +227,7 @@ export default function Language({stack, isDark}) {
         {icon}
       </div>
 
-      <p className=' font-thin text-center text-sm text-slate-600 select-none'>{stack}</p>
+      <p className={` text-center text-sm text-slate-${isDark ? '600 font-thin ' : '300'} select-none`}>{stack}</p>
     </div>
   )
   }
