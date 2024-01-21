@@ -58,7 +58,7 @@ export default function Header({ location }) {
 
         <div className='h-full items-center flex justify-between w-full'>
 
-          <a href='/' className="hover:scale-105">
+          <a href='/' className="hover:scale-105 active:scale-[102%]">
             <img src={smileIcon} className='w-8 h-8'/>
           </a>
 
