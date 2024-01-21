@@ -8,10 +8,10 @@ export default function About() {
   return (
     <div className='bg-gradient-to-br from-brand-300 to-brand-200/20 py-12 md:py-16 lg:py-28 w-full flex justify-center items-center relative overflow-clip' id="about">
       <div>
-        <div className=" w-full flex flex-col justify-center max-w-[1400px] px-8 md:px-12 lg:px-24 gap-12 md:gap-16 lg:gap-24">
+        <div className=" w-full flex flex-col justify-center max-w-[1400px] px-4 md:px-12 lg:px-24 gap-12 md:gap-16 lg:gap-24">
 
           <div className='flex flex-col lg:flex-row flex-start gap-8 md:gap-12 lg:gap-8 relative'>
-            <img src={headshot} className='w-[320px] h-[320px] rounded-full shadow-sm flex-shrink-0 z-10'/>
+            <img src={headshot} className='w-[320px] h-[320px] mx-auto md:mx-0 rounded-full shadow-sm flex-shrink-0 z-10'/>
 
             <div className="text-slate-950 flex flex-wrap lg:flex-col gap-4">
               <h3 className='pt-0 text-4xl mb-2 text-slate-800 tracking-tight'>I am a Frontend and Mobile App Developer.</h3>

@@ -21,14 +21,9 @@ export const ExternalLinks = () => (
 )
 
 export default function HeroText(){
-  const heroQuickLinks = [
-    { title: 'About', link: '#about' },
-    { title: 'Projects', link: '#projects' },
-    { title: 'Contact', link: '#contact'}
-  ]
 
   return (
-    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 max-w-[1400px] mx-auto px-8 md:px-12 lg:px-24">
+    <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 max-w-[1400px] mx-auto px-4 md:px-12 lg:px-24">
       {/* Text and Links */}
       <div className=" flex flex-col justify-between text-gray-200 gap-2 w-full h-full flex-grow mx-auto relative">
         <div className="h-[50%] flex-grow flex flex-col justify-center gap-4 lg:gap-1">

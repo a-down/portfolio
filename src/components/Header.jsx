@@ -36,7 +36,7 @@ export default function Header({ location }) {
 
 
   return (
-    <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-24 w-full sticky top-0 left-0 md:static bg-slate-100 shadow-md md:shadow-none md:bg-transparent z-20">
+    <div className="max-w-[1400px] mx-auto px-4 md:px-12 lg:px-24 w-full sticky top-0 left-0 md:static bg-slate-100 shadow-md md:shadow-none md:bg-transparent z-20">
       <header className=' w-full h-[64px] md:h-[100px]'>
 
         <div className='h-full items-center flex justify-between w-full'>
