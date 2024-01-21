@@ -36,10 +36,10 @@ export default function Project({ project, stackArr, isDark }) {
       onMouseLeave={() => setOverlay(false)}>
       <div 
         onClick={() => window.location.href = `/projects/${project.slug}`}
-        className="w-full aspect-video bg-slate-50/20 flex justify-center items-center">
+        className="p-4 md:p-0 w-full h-[calc(100dvh-64px)] md:h-auto md:aspect-video bg-slate-50/20 flex justify-center items-center">
         <img 
           src={project.images[0].img} 
-          className={`h-[80%] shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}
+          className={`max-h-[70%] md:h-[80%] shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}
           style={{borderRadius: project.images[0].type === 'phone' ? 36 : 8}}/>
 
         {overlay && ( 
@@ -50,9 +50,9 @@ export default function Project({ project, stackArr, isDark }) {
         )}
       </div>
 
-      <div className="absolute bottom-2 left-2 md:left-4 md:bottom-4 lg:bottom-12 lg:left-12 p-2 md:py-4 md:px-6 rounded-lg text-slate-50" style={{backgroundColor: project.color}}>
+      <div className="absolute bottom-32 left-4 md:bottom-4 lg:bottom-12 lg:left-12 py-4 px-6 shadow-md md:shadow-none rounded-lg text-slate-50" style={{backgroundColor: project.color}}>
         <a href={`/projects/${project.slug}`}>
-          <h5 className=" text-lg md:text-2xl lg:text-4xl font-medium flex gap-2 items-center">
+          <h5 className=" text-2xl md:text-2xl lg:text-4xl font-medium flex gap-2 items-center">
             {project.title}
             <HiOutlineExternalLink className="md:hidden"/>
           </h5>

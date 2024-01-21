@@ -36,24 +36,23 @@ import belcMobile3 from '../../assets/project-visuals/belc-mobile-3.png'
 
 export let projects = [
   {
-    title: 'Quick Measure - GPS',
-    color: '#6DAB64',
-    slug: 'quickmeasure',
+    title: 'Job Notebook',
+    color: '#9dd4c7',
+    slug: 'jobnotebook',
     images: [
-      { img: quickMeasureHome, type: 'phone' },
-      { img: quickMeasureAuto, type: 'phone' },
-      { img: quickMeasureTap, type: 'phone' },
-      { img: quickMeasureSaving, type: 'phone' },
-      { img: quickMeasureBrowser1, type: 'browser' },
-      { img: quickMeasureBrowser2, type: 'browser' }
+      { img: jobNotebookBrowser1, type: 'browser' },
+      { img: jobNotebookBrowser2, type: 'browser' },
+      { img: jobNotebookBrowser3, type: 'browser' },
+      { img: jobNotebookMobile1, type: 'browser' },
+      { img: jobNotebookMobile2, type: 'browser' },
+      { img: jobNotebookMobile3, type: 'browser' },
     ],
-    repoLink: 'https://github.com/a-down/quick-measure-gps-app',
-    deployedLink: '/quickmeasure',
-    appStoreLink: 'https://apps.apple.com/us/app/quick-measure-gps/id6473677147',     
-    description: `Quick Measure is a quick and simple mobile app to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!`,
-    description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
-    description3: `I built Quick Measure with React Native, Expo, and React-Native-Maps. React Native allowed me to build a cross-platform mobile app with JavaScript, and Expo provided various plugins/packages, a build environment, version management, and a compiler for the App Store. I styled with Nativewind (TailwindCSS for React Native), provide ads with Google AdMob, and used Revenue Cat to track and manage in-app purchases with their api and package "react-native-purchases". Currently, the app is only available on iOS. I look forward to working on the Android build and releasing it on the Google Play Store in the next couple of months.`,
-    techStack: ['React Native', 'Expo', 'Tailwind', 'JavaScript', 'App Store', 'Google AdMob', 'GitHub']
+    repoLink: 'https://github.com/a-down/job-notebook-application-tracker',
+    deployedLink: 'https://jobnotebook.vercel.app',     
+    description: `Notebook is a tool for job seekers to keep track of their current applications. In today's job market, there are many steps for potential candidates. Applications that take their time can struggle to keep each one straight. Unlike other job trackers, Job Notebook focuses on what the user needs to do BEFORE submitting their application.`,
+    description2: `I created Job Notebook in the first month after I graduated from my Full Stack Bootcamp. I was searching several job boards and trying to track it all in a spreadsheet. This spreadsheet got pretty long pretty quickly. I needed a tool to keep track of a job's details, links, tasks, contacts, files, and notes.`,
+    description3: `I chose to use Next.js, Tailwind, and MongoDB because I needed a reactive app. Users are constantly displaying/hiding UI elements. I chose React as a framework, so I implemented Next.js because I wanted to learn it as a Full-Stack solution. Clerk provides the authentication for Job Notebook. I chose Clerk because it provided third-party sign up, a simple developer experience, and holds user data in their own secure database.`,
+    techStack: ['Next.js', 'React', 'Tailwind', 'MongoDB', 'Clerk', 'Radix UI', 'CSS', 'JavaScript', 'GitHub', 'Vercel']
   },
   {
     title: 'Braham Evangelical Lutheran Church',
@@ -74,23 +73,24 @@ export let projects = [
     techStack: ['Refresh', 'Figma', 'Docusaurus', 'Markdown', 'Vercel']
   },
   {
-    title: 'Job Notebook',
-    color: '#9dd4c7',
-    slug: 'jobnotebook',
+    title: 'Quick Measure - GPS',
+    color: '#6DAB64',
+    slug: 'quickmeasure',
     images: [
-      { img: jobNotebookBrowser1, type: 'browser' },
-      { img: jobNotebookBrowser2, type: 'browser' },
-      { img: jobNotebookBrowser3, type: 'browser' },
-      { img: jobNotebookMobile1, type: 'browser' },
-      { img: jobNotebookMobile2, type: 'browser' },
-      { img: jobNotebookMobile3, type: 'browser' },
+      { img: quickMeasureHome, type: 'phone' },
+      { img: quickMeasureAuto, type: 'phone' },
+      { img: quickMeasureTap, type: 'phone' },
+      { img: quickMeasureSaving, type: 'phone' },
+      { img: quickMeasureBrowser1, type: 'browser' },
+      { img: quickMeasureBrowser2, type: 'browser' }
     ],
-    repoLink: 'https://github.com/a-down/job-notebook-application-tracker',
-    deployedLink: 'https://jobnotebook.vercel.app',     
-    description: `Notebook is a tool for job seekers to keep track of their current applications. In today's job market, there are many steps for potential candidates. Applications that take their time can struggle to keep each one straight. Unlike other job trackers, Job Notebook focuses on what the user needs to do BEFORE submitting their application.`,
-    description2: `I created Job Notebook in the first month after I graduated from my Full Stack Bootcamp. I was searching several job boards and trying to track it all in a spreadsheet. This spreadsheet got pretty long pretty quickly. I needed a tool to keep track of a job's details, links, tasks, contacts, files, and notes.`,
-    description3: `I chose to use Next.js, Tailwind, and MongoDB because I needed a reactive app. Users are constantly displaying/hiding UI elements. I chose React as a framework, so I implemented Next.js because I wanted to learn it as a Full-Stack solution. Clerk provides the authentication for Job Notebook. I chose Clerk because it provided third-party sign up, a simple developer experience, and holds user data in their own secure database.`,
-    techStack: ['Next.js', 'React', 'Tailwind', 'MongoDB', 'Clerk', 'Radix UI', 'CSS', 'JavaScript', 'GitHub', 'Vercel']
+    repoLink: 'https://github.com/a-down/quick-measure-gps-app',
+    deployedLink: '/quickmeasure',
+    appStoreLink: 'https://apps.apple.com/us/app/quick-measure-gps/id6473677147',     
+    description: `Quick Measure is a quick and simple mobile app to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!`,
+    description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
+    description3: `I built Quick Measure with React Native, Expo, and React-Native-Maps. React Native allowed me to build a cross-platform mobile app with JavaScript, and Expo provided various plugins/packages, a build environment, version management, and a compiler for the App Store. I styled with Nativewind (TailwindCSS for React Native), provide ads with Google AdMob, and used Revenue Cat to track and manage in-app purchases with their api and package "react-native-purchases". Currently, the app is only available on iOS. I look forward to working on the Android build and releasing it on the Google Play Store in the next couple of months.`,
+    techStack: ['React Native', 'Expo', 'Tailwind', 'JavaScript', 'App Store', 'Google AdMob', 'GitHub']
   },
   {
     title: 'Safe Paws',
