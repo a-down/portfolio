@@ -25,7 +25,7 @@ export default function Footer() {
     title: 'Links',
     links: [
       {name: 'Form', link: '/contact'},
-      {name: 'Email', link: 'mailto:alec@alecdowning.com', icon: <HiOutlineMail/>},
+      {name: 'Email', link: 'mailto:alec.downing.development@gmail.com', icon: <HiOutlineMail/>},
       {name: 'LinkedIn', link: 'https://linkedin.com/in/alec-downing/', isExternal: true, icon: <HiOutlineExternalLink/>}
     ]
   }

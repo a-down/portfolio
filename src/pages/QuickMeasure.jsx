@@ -108,7 +108,7 @@ export default function QuickMeasure() {
 
           <p className="text-xl">
             Please reach out at{' '}
-            <a href="mailto: alec@alecdowning.com" className="text-green-700 underline hover:text-green-500 transition-all">alec@alecdowning.com</a>
+            <a href="mailto:alec.downing.development@gmail.com" className="text-green-700 underline hover:text-green-500 transition-all">alec.downing.development@gmail.com</a>
             {' '} with any questions, concerns, or feedback. I'd love to hear from you!
           </p>
         </div>
