@@ -6,9 +6,11 @@ import {
   SheetContent,
   SheetDescription,
   SheetHeader,
+  SheetFooter,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
+import { ExternalLinks } from './Hero'
 
 
 export default function Header({ location }) {
@@ -51,13 +53,16 @@ export default function Header({ location }) {
             <SheetTrigger className="md:hidden">
               <HiMenu className="text-2xl hover:scale-105 text-brand-400"/>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent className="h-full flex flex-col justify-between">
               <SheetHeader>
                 <SheetTitle>
                   <img src={smileIcon} className='w-8 h-8 mb-10'/>
                 </SheetTitle>
                 <Navigation />
               </SheetHeader>
+              <SheetFooter className=" bg-slate-200">
+                <ExternalLinks />
+              </SheetFooter>
             </SheetContent>
           </Sheet>
 
