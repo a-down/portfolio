@@ -20,7 +20,14 @@ export default function About() {
             </div>
           </div>
 
-          <StackDisplay stackArr={myTechStack} isDark={true} centered={true}/>
+          <span className="lg:hidden">
+            <StackDisplay stackArr={myTechStack} isDark={true} centered={false}/>
+          </span>
+
+          <span className="hidden lg:inline">
+            <StackDisplay stackArr={myTechStack} isDark={true} centered={true}/>
+          </span>
+          
 
         </div>
       </div>
