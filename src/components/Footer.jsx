@@ -25,7 +25,7 @@ export default function Footer() {
     title: 'Links',
     links: [
       {name: 'Form', link: '/contact'},
-      {name: 'Email', link: 'mailto: alec@alecdowning.com', icon: <HiOutlineMail/>},
+      {name: 'Email', link: 'mailto:alec@alecdowning.com', icon: <HiOutlineMail/>},
       {name: 'LinkedIn', link: 'https://linkedin.com/in/alec-downing/', isExternal: true, icon: <HiOutlineExternalLink/>}
     ]
   }
@@ -67,7 +67,7 @@ export default function Footer() {
         <LinkColumn column={projectsLinks}/>
         <div className="flex flex-col ml-auto justify-start items-end gap-2">
           <h5 className='text-slate-400 w-full text-center'>alecdowning.com is built with</h5>
-          <StackDisplay stackArr={footerStack} isDark={true}/>
+          <StackDisplay stackArr={footerStack} isDark={false}/>
         </div>
       </div>
     </footer>

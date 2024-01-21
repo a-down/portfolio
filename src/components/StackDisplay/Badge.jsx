@@ -38,7 +38,7 @@ import refresh from '../../assets/refresh.svg'
 
 export default function Language({stack, isDark}) {
   let badgeColor
-  isDark ? badgeColor = '' : badgeColor = 'bg-navy'
+  isDark ? badgeColor = '' : badgeColor = ''
 
   // default icon color if isDark === true
   let iconColor = '#64748B'
