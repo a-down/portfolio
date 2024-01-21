@@ -34,10 +34,10 @@ export default function Header({ location }) {
 
 
   return (
-    <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-24 w-full">
-      <header className=' w-full h-[100px]'>
+    <div className="max-w-[1400px] mx-auto px-8 md:px-12 lg:px-24 w-full sticky top-0 left-0 md:static bg-slate-100 shadow-md md:shadow-none md:bg-transparent z-20">
+      <header className=' w-full h-[64px] md:h-[100px]'>
 
-        <div className='h-full items-center flex justify-between w-full opacity-100'>
+        <div className='h-full items-center flex justify-between w-full'>
 
           <a href='/' className="hover:scale-105">
             <img src={smileIcon} className='w-8 h-8'/>
@@ -54,7 +54,7 @@ export default function Header({ location }) {
             <SheetContent>
               <SheetHeader>
                 <SheetTitle>
-                  <img src={smileIcon} className='w-8 h-8 mt-3 mb-10'/>
+                  <img src={smileIcon} className='w-8 h-8 mb-10'/>
                 </SheetTitle>
                 <Navigation />
               </SheetHeader>
