@@ -60,7 +60,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className=" bg-brand-950 w-full py-12 flex flex-col lg:flex-row justify-center">
+    <footer className=" bg-brand-950 w-full py-12 flex flex-col lg:flex-row justify-center font-thin">
       <div className="w-full max-w-[1400px] px-4 md:px-12 lg:px-24 flex flex-wrap md:flex-row gap-12 gap-y-16 flex-shrink-0">
         <LinkColumn column={linksLinks}/>
         <LinkColumn column={contactLinks}/>
