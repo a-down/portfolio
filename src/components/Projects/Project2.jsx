@@ -50,7 +50,7 @@ export default function Project({ project, stackArr, isDark }) {
         )}
       </div>
 
-      <div className="absolute bottom-32 left-4 md:bottom-4 lg:bottom-12 lg:left-12 py-4 px-6 shadow-md md:shadow-none rounded-lg text-slate-50" style={{backgroundColor: project.color}}>
+      <div className="absolute top-0 left-0 w-full md:top-auto md:w-auto md:left-4 md:bottom-4 lg:bottom-12 lg:left-12 p-4 shadow-md md:shadow-none md:rounded-lg text-slate-50" style={{backgroundColor: project.color}}>
         <a href={`/projects/${project.slug}`}>
           <h5 className=" text-2xl md:text-2xl lg:text-4xl font-medium flex gap-2 items-center">
             {project.title}
