@@ -39,8 +39,7 @@ export default function Project({ project, stackArr, isDark }) {
         className="p-4 md:p-0 w-full h-[calc(100dvh-64px)] md:h-auto md:aspect-video bg-slate-50/20 flex justify-center items-center">
         <img 
           src={project.images[0].img} 
-          className={`max-h-[70%] md:h-[80%] shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}
-          style={{borderRadius: project.images[0].type === 'phone' ? 36 : 8}}/>
+          className={`max-h-[70%] md:h-[80%] drop-shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}/>
 
         {overlay && ( 
         <>

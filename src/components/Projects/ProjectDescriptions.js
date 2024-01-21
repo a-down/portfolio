@@ -16,14 +16,14 @@ import jobNotebookBrowser2 from '../../assets/project-visuals/job-notebook-brows
 import jobNotebookBrowser3 from '../../assets/project-visuals/job-notebook-browser-3.png'
 import jobNotebookMobile1 from '../../assets/project-visuals/job-notebook-mobile-1.png'
 import jobNotebookMobile2 from '../../assets/project-visuals/job-notebook-mobile-2.png'
-import jobNotebookMobile3 from '../../assets/project-visuals/job-notebook-mobile-3.jpeg'
+import jobNotebookMobile3 from '../../assets/project-visuals/job-notebook-mobile-3.png'
 
 import safePawsBrowser1 from '../../assets/project-visuals/safe-paws-browser-1.png'
 import safePawsBrowser2 from '../../assets/project-visuals/safe-paws-browser-2.png'
 import safePawsBrowser3 from '../../assets/project-visuals/safe-paws-browser-3.png'
-import safePawsMobile1 from '../../assets/project-visuals/safe-paws-mobile-1.jpeg'
-import safePawsMobile2 from '../../assets/project-visuals/safe-paws-mobile-2.jpeg'
-import safePawsMobile3 from '../../assets/project-visuals/safe-paws-mobile-3.jpeg'
+import safePawsMobile1 from '../../assets/project-visuals/safe-paws-mobile-1.png'
+import safePawsMobile2 from '../../assets/project-visuals/safe-paws-mobile-2.png'
+import safePawsMobile3 from '../../assets/project-visuals/safe-paws-mobile-3.png'
 
 import belcBrowser1 from '../../assets/project-visuals/belc-browser-1.png'
 import belcBrowser2 from '../../assets/project-visuals/belc-browser-2.png'

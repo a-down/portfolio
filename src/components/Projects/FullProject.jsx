@@ -73,7 +73,7 @@ export default function FullProject({ project, stackArr, isDark }) {
               <CarouselItem key={index} className="">
                 <div className=" relative" >
                   <div className="aspect-video flex justify-center items-center">
-                    <img src={image.img} className='h-[80%] shadow-2xl' style={{borderRadius: image.type === 'phone' ? 36 : 8}}/>
+                    <img src={image.img} className='h-[80%] drop-shadow-2xl' />
                   </div>
                 </div>
               </CarouselItem>
