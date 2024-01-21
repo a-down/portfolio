@@ -30,7 +30,7 @@ export default function Header({ location }) {
         Contact
       </a>
 
-      <a href={resume} download='alec-downing-resume' className='bg-brand-400/80 py-2 px-4 rounded-md text-slate-50 font-semibold hover:scale-105 active:bg-brand-400 transition-all'>Resume</a>
+      <a href={resume} download='alec-downing-resume' className='bg-brand-400/80 py-2 px-4 rounded-md text-slate-50 font-semibold hover:scale-105 active:bg-brand-400 transition-all w-full md:w-auto'>Resume</a>
     </nav>
   )
 
