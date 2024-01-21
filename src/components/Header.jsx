@@ -16,7 +16,7 @@ import { ExternalLinks } from './Hero'
 export default function Header({ location }) {
 
   const Navigation = () => (
-    <nav className=' text-base flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-6 text-brand-400 font-semibold'>
+    <nav className=' text-base flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-6 text-brand-400'>
       <a href='/' className={` hover:scale-105 transition-all active:text-brand-800 text-brand-${location === 'home' ? '800' : '400'}`}>
         Home
       </a>
@@ -30,7 +30,7 @@ export default function Header({ location }) {
         Contact
       </a>
 
-      <a href={resume} download='alec-downing-resume' className='bg-brand-400/80 py-2 px-4 rounded-md text-slate-50 font-semibold hover:scale-105 active:bg-brand-400 transition-all w-full md:w-auto text-center'>Resume</a>
+      <a href={resume} download='alec-downing-resume' className='bg-brand-400/80 py-2 px-4 rounded-md text-slate-50 hover:scale-105 active:bg-brand-400 transition-all w-full md:w-auto text-center'>Resume</a>
     </nav>
   )
 

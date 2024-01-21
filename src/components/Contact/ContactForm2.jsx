@@ -27,14 +27,14 @@ export default function ContactForm() {
           className="bg-blue-50/50 shadow-lg w-full md:w-[600px] font-sans md:rounded-xl py-12 px-4 md:p-12 flex flex-col gap-6 text-slate-600"
           onSubmit={handleSubmit}>
           <div>
-            <h3 className='text-2xl md:text-4xl text-slate-800 w-full font-semibold mb-1'>Get In Touch</h3>
-            <p>Send me a message and I will get back to you as soon as I can!</p>
+            <h3 className='text-2xl md:text-4xl text-slate-800 w-full mb-1'>Get In Touch</h3>
+            <p className="font-thin">Send me a message and I will get back to you as soon as I can!</p>
           </div>
 
           <fieldset className="flex flex-col gap-2">
             <label>Name:</label>
             <input 
-              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3"
+              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
               placeholder='John Smith'
               onChange={(e) => setName(e.value)}
               name='name'
@@ -46,7 +46,7 @@ export default function ContactForm() {
           <fieldset className="flex flex-col gap-2">
             <label>Email:</label>
             <input 
-              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3"
+              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
               placeholder='johnsmith@email.com'
               onChange={(e) => setEmail(e.value)}
               name='email'
@@ -60,7 +60,7 @@ export default function ContactForm() {
             <textarea
               rows='5'
               placeholder='I am in need of...'
-              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3"
+              className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
               onChange={(e) => setMessage(e.value)}
               name='message'
               value={message}
@@ -70,13 +70,13 @@ export default function ContactForm() {
 
           <button
             type='submit'
-            className="mt-4 py-4 px-3 bg-brand-950 hover:bg-brand-900 shadow-lg rounded-md text-xl font-semibold text-brand-100 transition-all">
+            className="mt-4 py-4 px-3 bg-brand-950 hover:bg-brand-900 shadow-lg rounded-md text-xl text-brand-100 transition-all">
             {state.submitting ? 'Submitting...' : 'Submit'}
           </button>
 
         </form>
       ) : (
-        <div className="bg-blue-50/50 shadow-lg w-[600px] font-sans rounded-xl p-12 flex flex-col gap-6 text-slate-600">
+        <div className="bg-blue-50/50 shadow-lg w-full md:w-[600px] font-sans md:rounded-xl py-36 md:py-12 p-12 flex flex-col gap-6 text-slate-600">
           <p>Thank you for reaching out! I will send a response to your email as soon as I can.</p>
         </div>
       )}
