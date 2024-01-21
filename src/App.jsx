@@ -5,13 +5,15 @@ import { Footer } from "./components";
 
 
 export default function App() {
-  let { projectSlug } = useParams();
+  let { projectSlug, section } = useParams();
 
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/*" element={<Home />} />
+          <Route path="/*" element={<Home />} >
+            <Route path=":section?" />
+          </Route>
           <Route path="/projects" >
             <Route path=":projectSlug?" element={<Projects />} />
           </Route>

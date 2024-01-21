@@ -1,5 +1,7 @@
 import { About, Contact, Header, Hero, ProjectsSection } from '../components'
 import gradientLightBG from '../assets/backgrounds/gradient-light.svg'
+import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 
 
 export default function Home() {
@@ -9,6 +11,15 @@ export default function Home() {
     backgroundSize: 'cover', 
     backgroundPosition: 'center'
   }
+
+  const { section } = useParams()
+  useEffect(() => {
+    const element = document.getElementById(section);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [])
 
   return (
     <div className="bg-slate-100">
