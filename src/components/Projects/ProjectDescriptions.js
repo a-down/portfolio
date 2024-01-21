@@ -63,6 +63,7 @@ export let projects = [
   {
     title: 'Braham Evangelical Lutheran Church',
     color: '#6F54B8',
+    slug: 'belc',
     images: [
       {
         img: belcBrowser,
@@ -86,6 +87,7 @@ export let projects = [
   {
     title: 'Job Notebook',
     color: '#9dd4c7',
+    slug: 'jobnotebook',
     images: [
       {
         img: jobNotebookBrowser,
@@ -106,6 +108,7 @@ export let projects = [
   {
     title: 'Safe Paws',
     color: '#DB7F67',
+    slug: 'safepaws',
     images: [
       {
         img: safePawsBrowser,
@@ -125,6 +128,7 @@ export let projects = [
   {
     title: 'Friends.db',
     color: '#62BCF4',
+    slug: 'friendsdb',
     images: [
       {
         img: friendsDbBrowser,

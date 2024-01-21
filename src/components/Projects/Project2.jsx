@@ -29,12 +29,12 @@ export default function Project({ project, stackArr, isDark }) {
 
   return (
     <div 
-      className="block cursor-pointer relative" 
+      className="block cursor-pointer relative active:scale-[101%] transition-all" 
       style={{backgroundColor: project.color}} 
       onMouseEnter={() => setOverlay(true)}
       onMouseLeave={() => setOverlay(false)}>
       <div 
-        onClick={() => window.location.href = '/projects'}
+        onClick={() => window.location.href = `/projects/${project.slug}`}
         className="w-full aspect-video bg-slate-50/20 flex justify-center items-center">
         <img 
           src={project.images[0].img} 
@@ -57,7 +57,7 @@ export default function Project({ project, stackArr, isDark }) {
           <span>/</span>
           <a href={project.deployedLink} className="hover:scale-105 transition-all" target="_blank">Deployed Site</a>
           <span>/</span>
-          <a href="/projects" className="hover:scale-105 transition-all">Full Project Details</a>
+          <a href={`/projects/${project.slug}`} className="hover:scale-105 transition-all">Full Project Details</a>
         </div>
       </div>
     </div>

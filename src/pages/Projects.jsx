@@ -14,7 +14,7 @@ export default function Projects() {
       // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  })
+  }, [])
 
   return (
     <div className='bg-slate-100 flex flex-col items-center mx-auto'>

@@ -13,7 +13,7 @@ export default function App() {
         <Routes>
           <Route path="/*" element={<Home />} />
           <Route path="/projects" >
-            <Route path=":projectSlug" element={<Projects />} />
+            <Route path=":projectSlug?" element={<Projects />} />
           </Route>
           <Route path="/quickmeasure" element={<QuickMeasure />} />
         </Routes>
