@@ -3,7 +3,6 @@ import StackDisplay from '../StackDisplay/StackDisplay'
 import { HiExternalLink } from 'react-icons/hi'
 import { SiGithub, SiAppstore } from 'react-icons/si'
 import { HiDocumentMagnifyingGlass } from "react-icons/hi2";
-// import { useParams } from 'react-router-dom'
 import {
   Carousel,
   CarouselContent,
@@ -14,14 +13,13 @@ import {
 
 
 export default function FullProject({ project, stackArr, isDark }) {
-  // let { scrollTarget } = useParams()
   
 
   return (
     <div className="flex flex-col gap-8 py-12 text-slate-800" id={project.slug}>
-      <div className="flex justify-between">
-        <h2 className="text-6xl font-bold" style={{color: project.color}}>{project.title}</h2>
-        <div className="flex gap-4 items-center">
+      <div className="flex flex-wrap gap-4 justify-between">
+        <h2 className="text-3xl md:text-6xl font-bold" style={{color: project.color}}>{project.title}</h2>
+        <div className="flex flex-grow gap-4 items-center justify-end">
           {project.deployedLink && (
             <a 
               href={project.deployedLink} 
@@ -61,8 +59,8 @@ export default function FullProject({ project, stackArr, isDark }) {
         </div>
       </div>
 
-      <div className="flex justify-between gap-8 mb-2">
-        <div className="flex flex-col gap-4 leading-loose tracking-wide w-2/5 overflow-clip">
+      <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 mb-2">
+        <div className="flex flex-col gap-4 leading-loose tracking-wide lg:w-2/5 overflow-clip">
           <p>{project.description}</p>
           <p>{project.description2}</p>
           {/* <p>{project.description3}</p> */}
