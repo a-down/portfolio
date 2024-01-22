@@ -12,8 +12,8 @@ export const ExternalLinks = () => (
       <FaGithubSquare className='w-12 h-12 mt-[3px]  text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all'/>
     </a>
 
-    <a href='mailto:alec.downing.development@gmail.com' className='flex items-center gap-4 text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all'>
-      {/* <p className="hidden lg:inline">alec.downing.development@gmail.com</p> */}
+    <a href='mailto:alec@alecdowning.com' className='flex items-center gap-4 text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all'>
+      {/* <p className="hidden lg:inline">alec@alecdowning.com</p> */}
       <FaEnvelope className='w-11 h-12 mr-[3px]'/>
     </a>
   </div>
