@@ -1,110 +1,46 @@
 import { useState } from 'react'
-import StackDisplay from '../StackDisplay/StackDisplay'
-import { motion, useScroll } from "framer-motion"
+import { HiOutlineExternalLink } from 'react-icons/hi'
 
-export default function Project({ project, stackArr, isDark }) {
-  const [ repoLink, setRepoLink ] = useState({color: '#e2e8f0'})
-  const [ liveLink, setLiveLink ] = useState({color: '#e2e8f0'})
-  const [ extraLink, setExtraLink ] = useState({color: '#e2e8f0'})
-  const { scrollYProgress } = useScroll();
 
-  function setRepoLinkColor(isActive){
-    const newColor = (isActive) ? project.color : '#e2e8f0'
-    setRepoLink({...repoLink, color: newColor})
-  }
-
-  function setLiveLinkColor(isActive){
-    const newColor = (isActive) ? project.color : '#e2e8f0'
-    setLiveLink({...liveLink, color: newColor})
-  }
-
-  function setExtraLinkColor(isActive){
-    const newColor = (isActive) ? project.color : '#e2e8f0'
-    setExtraLink({...liveLink, color: newColor})
-  }
+export default function Project({ project }) {
+  const [ overlay, setOverlay ] = useState(false)
 
   return (
-    <motion.div
-      viewport={{ once: true, amount: 0.4 }}
-      initial={{ visibility: 'hidden', opacity: 0.4 }}
-      whileInView={{ visibility: 'visible', opacity: 1 }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="flex flex-col items-center lg:pt-24 md:pt-16 pt-14 px-8 md:px-10 lg:px-24 gap-4 md:gap-10">
-        <div className='text-center select-none'>
-          <h2 className='text-5xl md:text-7xl font-semibold' style={{color: `${project.color}`}}>{project.title}</h2>
-          <div className="text-gray-200 font-serif text-xl font-thin">
-            <p className='select-none'>
-              -
-              <a href={project.repoLink} target='_blank' style={repoLink} onMouseEnter={() => setRepoLinkColor(true)} onMouseLeave={()=>setRepoLinkColor(false)}> Repo </a>
-              
-              -
-                
-              <a href={project.deployedLink} target='_blank' style={liveLink} onMouseEnter={() => setLiveLinkColor(true)} onMouseLeave={()=>setLiveLinkColor(false)}>{` ${project.mobileAppImages ? 'App Store' : 'Deployed Site'} `}</a> 
-              -
+    <div 
+      className="block cursor-pointer relative active:scale-[101%] transition-all" 
+      style={{backgroundColor: project.color}} 
+      onMouseEnter={() => setOverlay(true)}
+      onMouseLeave={() => setOverlay(false)}>
+      <div 
+        onClick={() => window.location.href = `/projects/${project.slug}`}
+        className="p-4 md:p-0 w-full h-[calc(100dvh-64px)] md:h-auto md:aspect-video bg-slate-50/20 flex justify-center items-center">
+        <img 
+          src={project.images[0].img} 
+          className={`max-h-[70%] md:h-[80%] drop-shadow-2xl ${overlay ? 'scale-[101%]' : ''}`}/>
 
-              {(project.extraLink) && (
-                <>
-                  <a href={project.extraLink} target='_blank' style={extraLink} onMouseEnter={() => setExtraLinkColor(true)} onMouseLeave={()=> setExtraLinkColor(false)}> {project.extraLinkTitle} </a> 
-                  -
-                </>
-              )}
-
-              {project.productPageLink && (
-                <>
-                  <a href={project.productPageLink} target='_blank' style={extraLink} onMouseEnter={() => setExtraLinkColor(true)} onMouseLeave={()=> setExtraLinkColor(false)}> Product Page </a> 
-                  -
-                </>
-              ) }
-            </p>
-          </div>
-        </div>
-
-        <div className=' w-full flex flex-col gap-2 md:gap-4 lg:w-[974px]'>
-          <div className=' w-full text-neutral-200 font-sans font-thin py-1.5 px-3.5 text-md flex flex-col gap-3.5 order-1 text-justify rounded  leading-loose' >
-            <p>{project.description}</p>
-
-            { (project.description2) && (
-            <p>{project.description2}</p>
-            )}
-
-            { (project.description3) && (
-            <p>{project.description3}</p>
-            )}
-          </div>
-
-          <div className='flex gap-2 md:gap-4 w-full md:order-2'>
-            {!project.mobileAppImages
-              ? (
-                <>
-                  <div className='xs:w-full md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
-                    <img src={project.phoneImg} className='' style={{borderRadius: '4px'}}/>
-                  </div>
-
-                  <div className='flex-grow' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
-                    <img src={project.browserImg} className='' style={{borderRadius: '4px'}}/>
-                  </div>
-                </>
-              ) : (
-                <>
-                  {project.mobileAppImages.map((image, index) => (
-                    <div key={index}>
-                      <div className='xs:w-full md:inline' style={{filter: `drop-shadow(0px 2px 3px ${project.color})`}}>
-                        <img src={image} />
-                      </div>
-                    </div>
-                  ))}
-                </>
-              )}
-            
-          </div>
-
-          
-        </div>
-
-        <StackDisplay stackArr={stackArr} isDark={isDark}/>
-      
+        {overlay && ( 
+        <>
+          <div className='h-full w-full absolute top-0 left-0 opacity-20 flex justify-center items-center' style={{backgroundColor: project.color}}></div> 
+        </>
+        )}
       </div>
-    </motion.div>
+
+      <div className="absolute top-0 left-0 w-full md:top-auto md:w-auto md:left-4 md:bottom-4 lg:bottom-12 lg:left-12 p-4 shadow-md md:shadow-none md:rounded-lg text-slate-50" style={{backgroundColor: project.color}}>
+        <a href={`/projects/${project.slug}`}>
+          <h5 className=" text-2xl md:text-2xl lg:text-4xl font-medium flex w-fit gap-2 items-center hover:scale-105">
+            {project.title}
+            <HiOutlineExternalLink className="md:hidden"/>
+          </h5>
+        </a>
+        
+        <div className="flex flex-row gap-2 text-slate-50/90">
+          <a href={project.repoLink} className="hover:scale-105 transition-all" target="_blank">Repo</a>
+          <span className="select-none">/</span>
+          <a href={project.deployedLink} className="hover:scale-105 transition-all" target="_blank">Deployed Site</a>
+          <span className="select-none">/</span>
+          <a href={`/projects/${project.slug}`} className="hover:scale-105 transition-all">Full Project Details</a>
+        </div>
+      </div>
+    </div>
   )
 }

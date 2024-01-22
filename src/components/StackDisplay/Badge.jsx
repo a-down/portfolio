@@ -28,17 +28,20 @@ import {
   SiRender,
   SiExpo,
   SiGoogleadmob,
-  SiAppstore
+  SiAppstore,
+  SiDocusaurus,
+  SiMarkdown
 } from 'react-icons/si'
 import clerkDark from '../../assets/clerk-dark.png'
+import refresh from '../../assets/refresh.svg'
 
 
 export default function Language({stack, isDark}) {
   let badgeColor
-  isDark ? badgeColor = '' : badgeColor = 'bg-navy'
+  isDark ? badgeColor = '' : badgeColor = ''
 
   // default icon color if isDark === true
-  let iconColor = '#475569'
+  let iconColor = '#64748B'
 
   const getIcon = (iconName) => {
     switch (iconName) {
@@ -157,7 +160,11 @@ export default function Language({stack, isDark}) {
         break;
 
       case 'Clerk':
-        return <img src={clerkDark} className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        return <img src={clerkDark} className=' w-full h-full p-2 opacity-80' style={{color: iconColor}}/>
+        break;
+
+      case 'Refresh':
+        return <img src={refresh} className=' w-full h-full p-2 opacity-80' style={{color: iconColor}}/>
         break;
 
       case 'React Router':
@@ -195,9 +202,19 @@ export default function Language({stack, isDark}) {
         return <SiGoogleadmob className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
 
-      case 'App Store Connect':
+      case 'App Store':
         if (!isDark) iconColor = '#0D96F6'
         return <SiAppstore className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Docusaurus':
+        if (!isDark) iconColor = '#3ECC5F'
+        return <SiDocusaurus className=' w-full h-full p-2 ' style={{color: iconColor}}/>
+        break;
+
+      case 'Markdown':
+        if (!isDark) iconColor = '#000000'
+        return <SiMarkdown className=' w-full h-full p-2 ' style={{color: iconColor}}/>
         break;
     }
   }
@@ -210,7 +227,7 @@ export default function Language({stack, isDark}) {
         {icon}
       </div>
 
-      <p className=' font-serif font-thin text-center text-sm text-gray-200 select-none'>{stack}</p>
+      <p className={` text-center text-sm text-slate-${isDark ? '600 font-thin ' : '300'} select-none`}>{stack}</p>
     </div>
   )
   }
