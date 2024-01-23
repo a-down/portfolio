@@ -15,7 +15,7 @@ export default function ProjectSection() {
     <div className="bg-slate-100 w-full md:py-12 lg:mt-24 lg:pb-36 flex justify-center items-center " id="projects">
       <div className="max-w-[1400px] md:px-12 lg:px-24 w-full">
         <span className="hidden md:flex justify-between items-end mb-4 md:mb-8 lg:mb-12">
-          <h3 className=" md:text-4xl lg:text-6xl text-slate-800 font-semibold">My Projects</h3>
+          <h3 className=" md:text-4xl lg:text-6xl text-brand-950 font-semibold">My Projects</h3>
           <a href="/projects" className=" text-xl lg:text-2xl text-brand-400/80 hover:scale-105 transition-all flex gap-2 items-center font-thin">
             View All
             <HiArrowRight />
