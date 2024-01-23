@@ -32,6 +32,15 @@ import belcMobile1 from '../../assets/project-visuals/belc-mobile-1.png'
 import belcMobile2 from '../../assets/project-visuals/belc-mobile-2.png'
 import belcMobile3 from '../../assets/project-visuals/belc-mobile-3.png'
 
+import portfolioBrowser1 from '../../assets/project-visuals/portfolio-browser-1.png'
+import portfolioBrowser2 from '../../assets/project-visuals/portfolio-browser-2.png'
+import portfolioBrowser3 from '../../assets/project-visuals/portfolio-browser-3.png'
+import portfolioBrowser4 from '../../assets/project-visuals/portfolio-browser-4.png'
+import portfolioMobile1 from '../../assets/project-visuals/portfolio-mobile-1.png'
+import portfolioMobile2 from '../../assets/project-visuals/portfolio-mobile-2.png'
+import portfolioMobile3 from '../../assets/project-visuals/portfolio-mobile-3.png'
+import portfolioMobile4 from '../../assets/project-visuals/portfolio-mobile-4.png'
+
 
 
 export let projects = [
@@ -130,11 +139,25 @@ export let projects = [
     description2: `I was the primary React developer and site designer. I led the way on the front end while managing the project's GitHub repo, site deployment, and database hosting.`,
     techStack: ['React', 'JavaScript', 'Tailwind', 'HTML', 'CSS', 'GitHub', 'Node.js', 'Express.js', 'MongoDB', 'Heroku']
   },
-
-
-
-
-
+  {
+    title: 'My Portfolio!',
+    color: '#699EE8',
+    slug: 'myportfolio',
+    images: [
+      { img: portfolioBrowser1, type: 'browser' },
+      { img: portfolioBrowser2, type: 'browser' },
+      { img: portfolioBrowser3, type: 'browser' },
+      { img: portfolioBrowser4, type: 'browser' },
+      { img: portfolioMobile1, type: 'browser' },
+      { img: portfolioMobile2, type: 'browser' },
+      { img: portfolioMobile3, type: 'browser' },
+      { img: portfolioMobile4, type: 'browser' },
+    ],
+    repoLink: 'https://github.com/a-down/portfolio',
+    description: `Even the website you are currently on deserves to be featured!`,
+    description2: `I designed my portfolio to be light, bouncy, and pleasant to peruse! I created a color pallette that is catchy, but neutral enough to compliment the primary colors from my projects. I used scale-transformations for hover states to add a little life to navigation. I hope the site is a fun browse on devices of all sizes!`,
+    techStack: ['React', 'JavaScript', 'Tailwind', 'CSS', 'Vite', 'Vercel', 'GitHub', 'Figma']
+  },
 
   // {
   //   title: 'Game World',
