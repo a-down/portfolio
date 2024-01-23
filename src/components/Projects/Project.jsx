@@ -34,10 +34,18 @@ export default function Project({ project }) {
         </a>
         
         <div className="flex flex-row gap-2 text-slate-50/90">
-          <a href={project.repoLink} className="hover:scale-105 transition-all" target="_blank">Repo</a>
-          <span className="select-none">/</span>
-          <a href={project.deployedLink} className="hover:scale-105 transition-all" target="_blank">Deployed Site</a>
-          <span className="select-none">/</span>
+          {project.repoLink && (
+            <>
+              <a href={project.repoLink} className="hover:scale-105 transition-all" target="_blank">Repo</a>
+              <span className="select-none">/</span>
+            </>
+          )}
+          {project.deployedLink && (
+            <>
+              <a href={project.deployedLink} className="hover:scale-105 transition-all" target="_blank">Deployed Site</a>
+              <span className="select-none">/</span>
+            </>
+          )}
           <a href={`/projects/${project.slug}`} className="hover:scale-105 transition-all">Full Project Details</a>
         </div>
       </div>
