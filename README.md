@@ -3,6 +3,7 @@
 [alecdowning.com](https://alecdowning.com) is my professional portfolio. I chose to build with React because of the number of reusable components. Below are the site details:
 
 ## Sections
+
 - Hero Section with highlighted technologies and external links: [LinkedIn](https://linkedin.com/in/alec-downing/), [GitHub](https://github.com/a-down), and [email](mailto:alec@alecdowning.com)
 - About Section with developer description, developer tech stack, and a photo
 
@@ -11,6 +12,7 @@
 - Contact Section with contact form
 
 ## Tech Stack
+
 - React
 - Tailwind
 - JavaScript
@@ -20,9 +22,9 @@
 - Vercel
 
 ### Reusable Components
+
 - Display for Individual Projects
 - Tech Stack Displays
   - About Section
   - Individual Project Tech Stacks
   - Footer
-  

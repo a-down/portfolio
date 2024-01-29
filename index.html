@@ -4,25 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Zilla+Slab:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Alec Downing</title>
-    <link rel="icon" type="image/x-icon" href="./smile.ico">
+    <link rel="icon" type="image/x-icon" href="./smile.ico" />
   </head>
   <body id="body">
     <div id="root"></div>
 
     <script type="application/javascript">
       const body = document.getElementById("body");
-      if (window.location.pathname === "/quickmeasure" || window.location.pathname === "/quickmeasure/privacy") {
+      if (
+        window.location.pathname === "/quickmeasure" ||
+        window.location.pathname === "/quickmeasure/privacy"
+      ) {
         body.style.backgroundColor = "#fff";
       } else {
         body.style.backgroundColor = "#f1f5f9";
       }
     </script>
-    
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
