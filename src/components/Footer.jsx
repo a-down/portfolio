@@ -24,7 +24,7 @@ export default function Footer() {
   };
 
   const contactLinks = {
-    title: "Links",
+    title: "Contact",
     links: [
       { name: "Form", link: "/contact" },
       {
