@@ -1,4 +1,4 @@
-import headshot from "../assets/headshot.png";
+import headshot from "../assets/headshot_cropped.jpg";
 import StackDisplay from "./StackDisplay/StackDisplay";
 
 export default function About() {
@@ -6,25 +6,27 @@ export default function About() {
     "React",
     "React Native",
     "Next.js",
-    "HTML",
-    "CSS",
+    "TypeScript",
     "JavaScript",
     "Tailwind",
     "Expo",
     "Figma",
     "React Router",
-    "Radix UI",
     "Bootstrap",
-    "jQuery",
     "Node.js",
     "Express.js",
     "MongoDB",
     "MySQL",
     "Clerk",
-    "npm",
     "App Store",
     "Google AdMob",
     "GitHub",
+    "OpenAPI",
+    "AWS Lambda",
+    "AWS DynamoDB",
+    "AWS S3",
+    "Vitest",
+    "Docker",
   ];
 
   return (
