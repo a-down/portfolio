@@ -46,6 +46,7 @@ export default function QuickMeasure() {
             <a
               href="https://apps.apple.com/us/app/quick-measure-gps/id6473677147"
               target="_blank"
+              rel="noreferrer"
               className="bg-black/90 backdrop-blur-xl hover:bg-black/75 transition-all rounded-2xl flex justify-between items-center text-lg text-white font-medium px-4 py-2.5"
             >
               <p className="hidden md:inline mr-1.5">View on the Apple</p>
@@ -189,6 +190,7 @@ export default function QuickMeasure() {
             <a
               href="https://apps.apple.com/us/app/quick-measure-gps/id6473677147"
               target="_blank"
+              rel="noreferrer"
               className="bg-black/90 backdrop-blur-xl hover:bg-black/75 transition-all rounded-2xl flex justify-between items-center text-lg text-white font-medium px-4 py-2.5"
             >
               <p className="hidden md:inline mr-1.5">View on the Apple</p>

@@ -31,6 +31,14 @@ import {
   SiAppstore,
   SiDocusaurus,
   SiMarkdown,
+  SiTypescript,
+  SiAwslambda,
+  SiAmazondynamodb,
+  SiAmazons3,
+  SiOpenapiinitiative,
+  SiVitest,
+  SiDocker,
+  SiMantine,
 } from "react-icons/si";
 import clerkDark from "../../assets/clerk-dark.png";
 import refresh from "../../assets/refresh.svg";
@@ -52,7 +60,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
       case "React Native":
         if (!isDark) iconColor = "#61DAFB";
         return (
@@ -61,7 +68,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "JavaScript":
         if (!isDark) iconColor = "#F7DF1E";
@@ -71,7 +77,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "HTML":
         if (!isDark) iconColor = "#E34F26";
@@ -81,14 +86,12 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "CSS":
         if (!isDark) iconColor = "#1572B6";
         return (
           <SiCss3 className=" w-full h-full p-2" style={{ color: iconColor }} />
         );
-        break;
 
       case "Tailwind":
         if (!isDark) iconColor = "#06B6D4";
@@ -98,7 +101,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Bootstrap":
         if (!isDark) iconColor = "#7952B3";
@@ -108,7 +110,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Chakra":
         if (!isDark) iconColor = "#318795";
@@ -118,7 +119,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "jQuery":
         if (!isDark) iconColor = "#0769AD";
@@ -128,7 +128,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "GitHub":
         if (!isDark) iconColor = "#181717";
@@ -138,7 +137,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Node.js":
         if (!isDark) iconColor = "#339933";
@@ -148,7 +146,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Express.js":
         if (!isDark) iconColor = "#000000";
@@ -158,7 +155,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "MongoDB":
         if (!isDark) iconColor = "#47A248";
@@ -168,7 +164,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Handlebars":
         if (!isDark) iconColor = "#000000";
@@ -178,7 +173,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "MySQL":
         if (!isDark) iconColor = "#4479A1";
@@ -188,7 +182,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Sequelize":
         if (!isDark) iconColor = "#52B0E7";
@@ -198,7 +191,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Bulma":
         if (!isDark) iconColor = "#00D1B2";
@@ -208,7 +200,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Heroku":
         if (!isDark) iconColor = "#430098";
@@ -218,7 +209,7 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
+        brak;
 
       case "Vercel":
         if (!isDark) iconColor = "#000000";
@@ -228,7 +219,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Framer Motion":
         if (!isDark) iconColor = "#0055FF";
@@ -238,7 +228,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Vite":
         if (!isDark) iconColor = "#646CFF";
@@ -248,7 +237,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Radix UI":
         if (!isDark) iconColor = "#646CFF";
@@ -258,7 +246,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Next.js":
         if (!isDark) iconColor = "#000000";
@@ -268,7 +255,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Clerk":
         return (
@@ -278,7 +264,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Refresh":
         return (
@@ -288,7 +273,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "React Router":
         if (!isDark) iconColor = "#CA4245";
@@ -298,14 +282,12 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "npm":
         if (!isDark) iconColor = "#CB3837";
         return (
           <SiNpm className=" w-full h-full p-2 " style={{ color: iconColor }} />
         );
-        break;
 
       case "Figma":
         if (!isDark) iconColor = "#F24E1E";
@@ -315,7 +297,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Mongoose":
         if (!isDark) iconColor = "#880000";
@@ -325,7 +306,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Render":
         if (!isDark) iconColor = "#46E3B7";
@@ -335,7 +315,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Expo":
         if (!isDark) iconColor = "#000020";
@@ -345,7 +324,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Google AdMob":
         if (!isDark) iconColor = "#EA4335";
@@ -355,7 +333,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "App Store":
         if (!isDark) iconColor = "#0D96F6";
@@ -365,7 +342,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Docusaurus":
         if (!isDark) iconColor = "#3ECC5F";
@@ -375,7 +351,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
 
       case "Markdown":
         if (!isDark) iconColor = "#000000";
@@ -385,7 +360,78 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        break;
+
+      case "TypeScript":
+        if (!isDark) iconColor = "#3178C6";
+        return (
+          <SiTypescript
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "AWS Lambda":
+        if (!isDark) iconColor = "#FF9900";
+        return (
+          <SiAwslambda
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "AWS DynamoDB":
+        if (!isDark) iconColor = "#4053D6";
+        return (
+          <SiAmazondynamodb
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "AWS S3":
+        if (!isDark) iconColor = "#569A31";
+        return (
+          <SiAmazons3
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "OpenAPI":
+        if (!isDark) iconColor = "#6BA539";
+        return (
+          <SiOpenapiinitiative
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "Vitest":
+        if (!isDark) iconColor = "#6E9F18";
+        return (
+          <SiVitest
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "Docker":
+        if (!isDark) iconColor = "#2496ED";
+        return (
+          <SiDocker
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "Mantine UI":
+        if (!isDark) iconColor = "#18AABF";
+        return (
+          <SiMantine
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
     }
   };
 
