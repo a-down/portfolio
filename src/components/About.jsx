@@ -3,10 +3,10 @@ import StackDisplay from "./StackDisplay/StackDisplay";
 
 export default function About() {
   const myTechStack = [
+    "TypeScript",
     "React",
     "React Native",
     "Next.js",
-    "TypeScript",
     "JavaScript",
     "Tailwind",
     "Expo",
@@ -27,6 +27,7 @@ export default function About() {
     "AWS S3",
     "Vitest",
     "Docker",
+    "Mantine UI",
   ];
 
   return (

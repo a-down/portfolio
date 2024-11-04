@@ -38,6 +38,7 @@ import {
   SiOpenapiinitiative,
   SiVitest,
   SiDocker,
+  SiMantine,
 } from "react-icons/si";
 import clerkDark from "../../assets/clerk-dark.png";
 import refresh from "../../assets/refresh.svg";
@@ -418,6 +419,15 @@ export default function Language({ stack, isDark }) {
         if (!isDark) iconColor = "#2496ED";
         return (
           <SiDocker
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "Mantine UI":
+        if (!isDark) iconColor = "#18AABF";
+        return (
+          <SiMantine
             className=" w-full h-full p-2 "
             style={{ color: iconColor }}
           />
