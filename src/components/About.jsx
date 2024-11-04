@@ -5,29 +5,27 @@ export default function About() {
   const myTechStack = [
     "TypeScript",
     "React",
-    "React Native",
     "Next.js",
-    "JavaScript",
-    "Tailwind",
-    "Expo",
+    "AWS S3",
+    "AWS DynamoDB",
+    "MySQL",
+    "MongoDB",
     "Figma",
     "React Router",
+    "Mantine UI",
+    "Tailwind",
     "Bootstrap",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "MySQL",
-    "Clerk",
-    "App Store",
-    "Google AdMob",
-    "GitHub",
-    "OpenAPI",
     "AWS Lambda",
-    "AWS DynamoDB",
-    "AWS S3",
+    "OpenAPI",
+    "Express.js",
+    "GitHub",
     "Vitest",
     "Docker",
-    "Mantine UI",
+    "React Native",
+    "Clerk",
+    "Expo",
+    "App Store",
+    "Google AdMob",
   ];
 
   return (
@@ -45,24 +43,42 @@ export default function About() {
 
             <div className="text-slate-700 flex flex-wrap lg:flex-col gap-4">
               <h3 className="pt-0 text-4xl mb-2 text-slate-800 tracking-tight">
-                I am a Frontend and Mobile App Developer.
+                I am a Full Stack Web and Mobile App Developer.
               </h3>
               <p className="text-lg font-thin leading-relaxed tracking-wide">
                 I build websites that are easy to view, understand, and
-                navigate. I will collaborate and communicate with designers and
-                clients to create user-focused experiences! As a former teacher,
-                I have used everything from beautiful creative websites to
-                outdated software. Confusing websites either impede the user or
-                get ignored. Accessible websites make for a better internet!
+                navigate. I will communicte and collaborate with designers and
+                stakeholders to create a user-focused and technically-sound
+                product. Applications should never impede the user, so I strive
+                to make every website accessible to all.
               </p>
               <p className="text-lg font-thin leading-relaxed tracking-wide">
-                I mostly develop with React, NextJS, React Native, JavaScript,
-                and Tailwind. I am also comfortable using jQuery, various CSS
-                Frameworks (Shadcn, Bootstrap, Material UI, Radix UI, Chakra,
-                Bulma), GitHub, and Figma. I have full-stack experience with
-                NodeJS, ExpressJS, MongoDB, Mongoose, MySQL, Sequelize, JWT, and
-                Clerk. I love learning new languages and technologies, because
-                there are always multiple solutions to a problem!
+                I currently work at{" "}
+                <a
+                  href="https://characterstrong.com"
+                  target="_blank"
+                  className="underline"
+                >
+                  CharacterStrong
+                </a>{" "}
+                building curriculum software for educators. I use TypeScript,
+                React, AWS Services, and Mantine UI daily, while also utilizint
+                various AWS service, OpenAPI-specced Lamdba functions, Vitest,
+                Playwright, GitHub, and Docker.
+              </p>
+              <p className="text-lg font-thin leading-relaxed tracking-wide">
+                I have experience building mobile applications from deploying{" "}
+                <a
+                  href="https://apps.apple.com/us/app/quick-measure-gps/id6473677147"
+                  target="_blank"
+                  className="underline"
+                >
+                  Quick Measure - GPS
+                </a>{" "}
+                to the App Store. I used React Native and Expo for the
+                application code, set up Testflight for beta testing, and
+                handled the App Store Connect review process. Ads are
+                implemented with RevenueCat and Google AdMob.
               </p>
             </div>
           </div>

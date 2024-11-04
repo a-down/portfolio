@@ -39,6 +39,7 @@ import {
   SiVitest,
   SiDocker,
   SiMantine,
+  SiAmazonwebservices,
 } from "react-icons/si";
 import clerkDark from "../../assets/clerk-dark.png";
 import refresh from "../../assets/refresh.svg";
@@ -428,6 +429,15 @@ export default function Language({ stack, isDark }) {
         if (!isDark) iconColor = "#18AABF";
         return (
           <SiMantine
+            className=" w-full h-full p-2 "
+            style={{ color: iconColor }}
+          />
+        );
+
+      case "AWS":
+        if (!isDark) iconColor = "#232F3E";
+        return (
+          <SiAmazonwebservices
             className=" w-full h-full p-2 "
             style={{ color: iconColor }}
           />
