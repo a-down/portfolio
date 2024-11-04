@@ -26,6 +26,17 @@ export const ExternalLinks = () => (
 );
 
 export default function HeroText() {
+  const heroTechStack = [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "AWS",
+    "Figma",
+    "React Native",
+    "App Store",
+    "Expo",
+  ];
+
   return (
     <div className="flex flex-col w-full items-start justify-between h-full min-h-[calc(100dvh-100px)] pb-12 max-w-[1400px] mx-auto px-4 md:px-12 lg:px-24">
       <div className=" flex flex-col justify-between text-gray-200 gap-2 md:gap-24 w-full h-full flex-grow mx-auto relative">
@@ -47,32 +58,14 @@ export default function HeroText() {
         <div className="flex justify-between items-end w-full h-[50%]">
           <div className="md:w-2/3 lg:hidden">
             <StackDisplay
-              stackArr={[
-                "React",
-                "Next.js",
-                "React Native",
-                "JavaScript",
-                "Tailwind",
-                "Figma",
-                "Clerk",
-                "App Store",
-              ]}
+              stackArr={heroTechStack}
               isDark={true}
               centered={false}
             />
           </div>
           <div className="hidden lg:flex">
             <StackDisplay
-              stackArr={[
-                "React",
-                "Next.js",
-                "React Native",
-                "JavaScript",
-                "Tailwind",
-                "Figma",
-                "Clerk",
-                "App Store",
-              ]}
+              stackArr={heroTechStack}
               isDark={true}
               centered={true}
             />

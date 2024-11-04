@@ -28,6 +28,7 @@ export default function About() {
     "Vitest",
     "Docker",
     "Mantine UI",
+    "AWS",
   ];
 
   return (
