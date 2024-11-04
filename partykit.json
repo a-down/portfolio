@@ -1,0 +1,6 @@
+{
+  "$schema": "https://www.partykit.io/schema.json",
+  "name": "portfolio-party",
+  "main": "party/index.js",
+  "compatibilityDate": "2024-11-03"
+}
