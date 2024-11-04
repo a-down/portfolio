@@ -11,7 +11,7 @@ export default function Projects() {
   useEffect(() => {
     const element = document.getElementById(projectSlug);
     if (element) element.scrollIntoView({ behavior: "smooth" });
-  }, []);
+  }, [projectSlug]);
 
   return (
     <>

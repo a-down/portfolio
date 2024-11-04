@@ -1,9 +1,7 @@
 import { QuickMeasure, Home, Projects } from "./pages";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
-  let { projectSlug, section } = useParams();
-
   return (
     <>
       <BrowserRouter>
