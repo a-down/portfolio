@@ -1,10 +1,10 @@
+import React from "react";
 import smileIcon from "../assets/smile.svg";
 import resume from "../assets/alec-downing-resume.pdf";
 import { HiMenu } from "react-icons/hi";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetFooter,
   SheetTitle,
@@ -12,6 +12,12 @@ import {
 } from "@/components/ui/sheet";
 import { ExternalLinks } from "./Hero";
 
+/**
+ * @typedef {object} HeaderProps
+ * @property {string} location - page location
+ * @param {HeaderProps} props - props
+ * @returns {React.JSX} Header Component
+ */
 export default function Header({ location }) {
   const Navigation = ({ location }) => {
     return (
