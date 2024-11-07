@@ -7,11 +7,12 @@ export const ExternalLinks = () => (
       href="https://www.linkedin.com/in/alec-downing"
       target="_blank"
       className=" text-accent"
+      rel="noreferrer"
     >
       <FaLinkedin className="w-12 h-12 mt-[3px] text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all" />
     </a>
 
-    <a href="https://www.github.com/a-down" target="_blank">
+    <a href="https://www.github.com/a-down" target="_blank" rel="noreferrer">
       <FaGithubSquare className="w-12 h-12 mt-[3px]  text-brand-400/90 hover:scale-105 active:text-brand-400 transition-all" />
     </a>
 
@@ -25,6 +26,10 @@ export const ExternalLinks = () => (
   </div>
 );
 
+/**
+ *
+ * @returns {Element}
+ */
 export default function HeroText() {
   const heroTechStack = [
     "TypeScript",

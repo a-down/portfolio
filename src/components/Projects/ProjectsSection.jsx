@@ -9,6 +9,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+/**
+ *
+ * @returns {Element}
+ */
 export default function ProjectSection() {
   return (
     <div

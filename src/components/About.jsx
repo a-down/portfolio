@@ -1,6 +1,10 @@
 import headshot from "../assets/headshot_cropped.jpg";
 import StackDisplay from "./StackDisplay/StackDisplay";
 
+/**
+ *
+ * @returns {Element}
+ */
 export default function About() {
   const myTechStack = [
     "TypeScript",
@@ -58,6 +62,7 @@ export default function About() {
                   href="https://characterstrong.com"
                   target="_blank"
                   className="underline"
+                  rel="noreferrer"
                 >
                   CharacterStrong
                 </a>{" "}
@@ -72,6 +77,7 @@ export default function About() {
                   href="https://apps.apple.com/us/app/quick-measure-gps/id6473677147"
                   target="_blank"
                   className="underline"
+                  rel="noreferrer"
                 >
                   Quick Measure - GPS
                 </a>{" "}
@@ -100,8 +106,6 @@ export default function About() {
           </span>
         </div>
       </div>
-
-      {/* <div className=" bg-brand-950/90 w-[800px] h-[800px] absolute -left-[520px] -top-[400px] rotate-45 blur-3xl"></div> */}
     </div>
   );
 }
