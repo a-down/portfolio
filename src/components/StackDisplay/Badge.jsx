@@ -43,7 +43,14 @@ import {
 } from "react-icons/si";
 import clerkDark from "../../assets/clerk-dark.png";
 import refresh from "../../assets/refresh.svg";
-
+/**
+ * @typedef {object} LanguageProps
+ * @property {string} stack - name of the language or technology
+ * @property {boolean} isDark
+ *
+ * @param {LanguageProps} props
+ * @returns {Element}
+ */
 export default function Language({ stack, isDark }) {
   let badgeColor;
   isDark ? (badgeColor = "") : (badgeColor = "");
@@ -210,7 +217,6 @@ export default function Language({ stack, isDark }) {
             style={{ color: iconColor }}
           />
         );
-        brak;
 
       case "Vercel":
         if (!isDark) iconColor = "#000000";

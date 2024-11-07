@@ -1,8 +1,8 @@
 import friendsDbPhone from "../../assets/project-visuals/friends-db-phone.png";
 import friendsDbBrowser from "../../assets/project-visuals/friends-db-browser.png";
 
-import gameWorldPhone from "../../assets/project-visuals/game-world-phone.png";
-import gameWorldBrowser from "../../assets/project-visuals/game-world-browser.png";
+// import gameWorldPhone from "../../assets/project-visuals/game-world-phone.png";
+// import gameWorldBrowser from "../../assets/project-visuals/game-world-browser.png";
 
 import quickMeasureAuto from "../../assets/project-visuals/quick-measure-auto.png";
 import quickMeasureTap from "../../assets/project-visuals/quick-measure-tap.png";
