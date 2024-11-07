@@ -7,6 +7,10 @@ import { Button } from "@/components/ui/button";
 
 const CarouselContext = React.createContext(null);
 
+/**
+ *
+ * @returns {object} carousel context
+ */
 function useCarousel() {
   const context = React.useContext(CarouselContext);
 

@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 
+/**
+ *
+ * @returns {Element}
+ */
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

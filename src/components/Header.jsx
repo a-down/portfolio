@@ -4,7 +4,6 @@ import { HiMenu } from "react-icons/hi";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetFooter,
   SheetTitle,
@@ -12,6 +11,13 @@ import {
 } from "@/components/ui/sheet";
 import { ExternalLinks } from "./Hero";
 
+/**
+ * @typedef {object} HeaderProps
+ * @property {string} location - page location
+ *
+ * @param {HeaderProps} props
+ * @returns {Element}
+ */
 export default function Header({ location }) {
   const Navigation = ({ location }) => {
     return (

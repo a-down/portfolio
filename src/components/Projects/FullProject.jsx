@@ -10,6 +10,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+/**
+ * @typedef {object} FullProjectProps
+ * @property {object} project
+ * @param {FullProjectProps} props
+ * @returns {Element}
+ */
 export default function FullProject({ project, stackArr }) {
   return (
     <div className="flex flex-col gap-8 py-12 text-slate-800" id={project.slug}>
@@ -27,6 +33,7 @@ export default function FullProject({ project, stackArr }) {
               target="_blank"
               style={{ color: project.color }}
               className="hover:scale-105 transitiion-all"
+              rel="noreferrer"
             >
               <HiExternalLink className="text-4xl" />
             </a>
@@ -37,6 +44,7 @@ export default function FullProject({ project, stackArr }) {
               target="_blank"
               style={{ color: project.color }}
               className="hover:scale-105 transitiion-all"
+              rel="noreferrer"
             >
               <SiGithub className="text-4xl" />
             </a>
@@ -47,6 +55,7 @@ export default function FullProject({ project, stackArr }) {
               target="_blank"
               style={{ color: project.color }}
               className="hover:scale-105 transitiion-all"
+              rel="noreferrer"
             >
               <SiAppstore className="text-4xl" />
             </a>
@@ -57,6 +66,7 @@ export default function FullProject({ project, stackArr }) {
               target="_blank"
               style={{ color: project.color }}
               className="hover:scale-105 transitiion-all"
+              rel="noreferrer"
             >
               <HiDocumentMagnifyingGlass className="text-4xl" />
             </a>

@@ -3,6 +3,10 @@ import { HiOutlineExternalLink, HiOutlineMail } from "react-icons/hi";
 import { projects } from "@/components/Projects/ProjectDescriptions";
 import { useEffect, useState } from "react";
 
+/**
+ *
+ * @returns {Element}
+ */
 export default function Footer() {
   const [projectsArr, setProjectsArr] = useState([]);
 
@@ -68,6 +72,7 @@ export default function Footer() {
               href={link.link}
               target={link.isExternal ? "_blank" : ""}
               key={index + link}
+              rel="noreferrer"
             >
               {link.name}
               {link.icon}

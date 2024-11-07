@@ -1,6 +1,13 @@
 import { useState } from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
+/**
+ * @typedef {object} ProjectProps
+ * @property {object} project
+ *
+ * @param {ProjectProps} props
+ * @returns {Element}
+ */
 export default function Project({ project }) {
   const [overlay, setOverlay] = useState(false);
 
@@ -48,6 +55,7 @@ export default function Project({ project }) {
                 href={project.repoLink}
                 className="hover:scale-105 transition-all"
                 target="_blank"
+                rel="noreferrer"
               >
                 Repo
               </a>
@@ -60,6 +68,7 @@ export default function Project({ project }) {
                 href={project.deployedLink}
                 className="hover:scale-105 transition-all"
                 target="_blank"
+                rel="noreferrer"
               >
                 Deployed Site
               </a>
