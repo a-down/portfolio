@@ -43,6 +43,35 @@ import portfolioMobile4 from "../../assets/project-visuals/portfolio-mobile-4.pn
 
 export let projects = [
   {
+    title: "Quick Measure - GPS",
+    color: "#6DAB64",
+    slug: "quickmeasure",
+    images: [
+      { img: quickMeasureHome, type: "phone" },
+      { img: quickMeasureAuto, type: "phone" },
+      { img: quickMeasureTap, type: "phone" },
+      { img: quickMeasureSaving, type: "phone" },
+      { img: quickMeasureBrowser1, type: "browser" },
+      { img: quickMeasureBrowser2, type: "browser" },
+    ],
+    repoLink: "https://github.com/a-down/quick-measure-gps-app",
+    deployedLink: "/quickmeasure",
+    appStoreLink:
+      "https://apps.apple.com/us/app/quick-measure-gps/id6473677147",
+    description: `Quick Measure is a quick and simple mobile app to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!`,
+    // description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
+    description2: `I built Quick Measure with React Native, Expo, and React-Native-Maps. React Native allowed me to build a cross-platform mobile app with JavaScript, and Expo provided various plugins/packages, a build environment, version management, and a compiler for the App Store. I styled with Nativewind (TailwindCSS for React Native), provide ads with Google AdMob, and used Revenue Cat to track and manage in-app purchases with their API and package "react-native-purchases".`,
+    techStack: [
+      "React Native",
+      "Expo",
+      "Tailwind",
+      "JavaScript",
+      "App Store",
+      "Google AdMob",
+      "GitHub",
+    ],
+  },
+  {
     title: "Job Notebook",
     color: "#9dd4c7",
     slug: "jobnotebook",
@@ -90,35 +119,6 @@ export let projects = [
     description: `(The current site is a preview link with placeholder images and text as we wait for official materials from church leadership.) I developed the website for Braham Evangelical Lutheran Church. I built the site with Realm, a church management software. Realm has a dedicated website builder, Refresh, that uses rows, columns, flexboxes, grids, and spacing in a no-code environment. I designed the edited images and mockups with Figma.`,
     description2: `I wrote markdown documentation with the Docusaurus framework to provide resources for church staff to update the site.`,
     techStack: ["Refresh", "Figma", "Docusaurus", "Markdown", "Vercel"],
-  },
-  {
-    title: "Quick Measure - GPS",
-    color: "#6DAB64",
-    slug: "quickmeasure",
-    images: [
-      { img: quickMeasureHome, type: "phone" },
-      { img: quickMeasureAuto, type: "phone" },
-      { img: quickMeasureTap, type: "phone" },
-      { img: quickMeasureSaving, type: "phone" },
-      { img: quickMeasureBrowser1, type: "browser" },
-      { img: quickMeasureBrowser2, type: "browser" },
-    ],
-    repoLink: "https://github.com/a-down/quick-measure-gps-app",
-    deployedLink: "/quickmeasure",
-    appStoreLink:
-      "https://apps.apple.com/us/app/quick-measure-gps/id6473677147",
-    description: `Quick Measure is a quick and simple mobile app to find GPS measurements. Use your GPS position to measure distance and area. It only takes two taps and feet to start measuring with your location!`,
-    // description2: `I created this app for my dad, a farmer. Traditional distance and area measurement tools involve clicking on a satellite map to add markers. My dad needed to find measurements for fields that change annually and undefined sections of land. He should not have to guess where to measure when he's back at the computer.`,
-    description2: `I built Quick Measure with React Native, Expo, and React-Native-Maps. React Native allowed me to build a cross-platform mobile app with JavaScript, and Expo provided various plugins/packages, a build environment, version management, and a compiler for the App Store. I styled with Nativewind (TailwindCSS for React Native), provide ads with Google AdMob, and used Revenue Cat to track and manage in-app purchases with their API and package "react-native-purchases".`,
-    techStack: [
-      "React Native",
-      "Expo",
-      "Tailwind",
-      "JavaScript",
-      "App Store",
-      "Google AdMob",
-      "GitHub",
-    ],
   },
   {
     title: "Safe Paws",
