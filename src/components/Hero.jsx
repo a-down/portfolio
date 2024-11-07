@@ -51,7 +51,7 @@ export default function HeroText() {
           </h1>
           <div className=" flex flex-col gap-1 md:gap-0 md:flex-row">
             <h2 className=" text-2xl text-slate-500">
-              Full Stack Web Develoepr
+              Full Stack Web Developer
             </h2>
             <span className="text-2xl text-slate-400 font-thin mx-2 hidden md:inline select-none">
               |
