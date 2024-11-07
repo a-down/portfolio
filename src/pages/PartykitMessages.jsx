@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PartySocket from "partysocket";
 
-export default function Partykit() {
+export default function PartykitMessages() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
@@ -26,7 +26,6 @@ export default function Partykit() {
   return (
     <div className="bg-slate-100">
       <h1>Partykit</h1>
-      {/* <h1 onClick={() => partySocket.send("hello")}>Partykit</h1> */}
       <input type="text" onChange={(e) => setInput(e.target.value)} />
       <button onClick={() => partySocket.send(input)}>Send</button>
       <div>

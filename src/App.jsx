@@ -1,4 +1,4 @@
-import { QuickMeasure, Home, Projects, Partykit } from "./pages";
+import { QuickMeasure, Home, Projects, PartykitMessages } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
             <Route path=":projectSlug?" element={<Projects />} />
           </Route>
           <Route path="/quickmeasure" element={<QuickMeasure />} />
-          <Route path="/partykit" element={<Partykit />} />
+          <Route path="/messages" element={<PartykitMessages />} />
         </Routes>
       </BrowserRouter>
     </>
