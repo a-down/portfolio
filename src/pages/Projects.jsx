@@ -5,6 +5,10 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer } from "@/components";
 
+/**
+ *
+ * @returns {Element}
+ */
 export default function Projects() {
   const { projectSlug } = useParams();
 
