@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Header } from "../components";
-import PartySocket from "partysocket";
 
 /**
  *
