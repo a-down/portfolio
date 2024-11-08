@@ -1,6 +1,10 @@
 import { QuickMeasure, Home, Projects } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+/**
+ *
+ * @returns {Element}
+ */
 export default function App() {
   return (
     <>
