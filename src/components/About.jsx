@@ -67,7 +67,7 @@ export default function About() {
                   CharacterStrong
                 </a>{" "}
                 building curriculum software for educators. I use TypeScript,
-                React, AWS Services, and Mantine UI daily, while also utilizint
+                React, AWS Services, and Mantine UI daily, while also utilizing
                 various AWS service, OpenAPI-specced Lamdba functions, Vitest,
                 Playwright, GitHub, and Docker.
               </p>
