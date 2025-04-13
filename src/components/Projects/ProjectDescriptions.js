@@ -113,8 +113,7 @@ export let projects = [
       { img: belcMobile2, type: "browser" },
       { img: belcMobile3, type: "browser" },
     ],
-    deployedLink:
-      "https://acst.responsivewebsitebuilder.io/preview/a3ab7be5?device=desktop",
+    deployedLink: "https://brahamlutheran.org",
     documentationLink: "https://belc-realm-support.vercel.app/",
     description: `I developed the website for Braham Evangelical Lutheran Church. I built the site with Realm, a church management software. Realm has a dedicated website builder, Refresh, that uses rows, columns, flexboxes, grids, and spacing in a no-code environment. I designed the edited images and mockups with Figma.`,
     description2: `I wrote markdown documentation with the Docusaurus framework to provide resources for church staff to update the site.`,
