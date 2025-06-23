@@ -51,7 +51,7 @@ export default function About() {
               </h3>
               <p className="text-lg font-thin leading-relaxed tracking-wide">
                 I build websites that are easy to view, understand, and
-                navigate. I will communicte and collaborate with designers and
+                navigate. I will communicate and collaborate with designers and
                 stakeholders to create a user-focused and technically-sound
                 product. Applications should never impede the user, so I strive
                 to make every website accessible to all.
@@ -66,10 +66,10 @@ export default function About() {
                 >
                   CharacterStrong
                 </a>{" "}
-                building curriculum software for educators. I use TypeScript,
-                React, AWS Services, and Mantine UI daily, while also utilizing
-                various AWS service, OpenAPI-specced Lamdba functions, Vitest,
-                Playwright, GitHub, and Docker.
+                as a Full Stack Web Developer building curriculum software for
+                educators. I use TypeScript, React, AWS Services, and Mantine UI
+                daily, while also utilizing various AWS service, OpenAPI-specced
+                Lamdba functions, Vitest, Playwright, GitHub, and Docker.
               </p>
               <p className="text-lg font-thin leading-relaxed tracking-wide">
                 I have experience building mobile applications from deploying{" "}
