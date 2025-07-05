@@ -1,17 +1,14 @@
-import { Project, projects } from ".";
 import { HiArrowRight } from "react-icons/hi";
 import {
+  Project,
+  projects,
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../ui";
+} from "@/components";
 
-/**
- *
- * @returns {Element}
- */
 export function ProjectsSection() {
   return (
     <div

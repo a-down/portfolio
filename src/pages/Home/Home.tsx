@@ -1,8 +1,13 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import { Header, ProjectsSection, Footer } from "@/components";
-import { Hero, About, Contact } from "./sections";
+import { Header, Footer } from "@/components";
+import {
+  HeroSection,
+  AboutSection,
+  ContactSection,
+  ProjectsSection,
+} from "./sections";
 
 export function Home() {
   const { section } = useParams();
@@ -14,10 +19,10 @@ export function Home() {
   return (
     <div className="bg-slate-100">
       <Header location={"home"} />
-      <Hero />
-      <About />
+      <HeroSection />
+      <AboutSection />
       <ProjectsSection />
-      <Contact />
+      <ContactSection />
       <Footer />
     </div>
   );

@@ -1,6 +1,6 @@
 import { StackDisplay, ExternalLinks } from "@/components";
 
-export function Hero() {
+export function HeroSection() {
   const heroTechStack = [
     "TypeScript",
     "React",

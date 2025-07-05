@@ -1,3 +1,4 @@
-export { About } from "./About";
-export { Hero } from "./Hero";
-export { Contact } from "./Contact";
+export { AboutSection } from "./AboutSection";
+export { HeroSection } from "./HeroSection";
+export { ContactSection } from "./ContactSection";
+export { ProjectsSection } from "./ProjectsSection";
