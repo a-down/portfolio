@@ -1,4 +1,4 @@
-import StackDisplay from "../StackDisplay/StackDisplay";
+import { StackDisplay } from "../StackDisplay";
 import { HiExternalLink } from "react-icons/hi";
 import { SiGithub, SiAppstore } from "react-icons/si";
 import { HiDocumentMagnifyingGlass } from "react-icons/hi2";
@@ -8,7 +8,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "../ui";
 
 /**
  * @typedef {object} FullProjectProps
@@ -16,7 +16,7 @@ import {
  * @param {FullProjectProps} props
  * @returns {Element}
  */
-export default function FullProject({ project, stackArr }) {
+export function FullProject({ project, stackArr }) {
   return (
     <div className="flex flex-col gap-8 py-12 text-slate-800" id={project.slug}>
       <div className="flex flex-wrap gap-4 justify-between">

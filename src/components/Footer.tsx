@@ -1,13 +1,13 @@
-import StackDisplay from "./StackDisplay/StackDisplay";
+import { StackDisplay } from "./StackDisplay";
 import { HiOutlineExternalLink, HiOutlineMail } from "react-icons/hi";
-import { projects } from "@/components/Projects/ProjectDescriptions";
+import { projects } from "../components";
 import { useEffect, useState } from "react";
 
 /**
  *
  * @returns {Element}
  */
-export default function Footer() {
+export function Footer() {
   const [projectsArr, setProjectsArr] = useState([]);
 
   const footerStack = ["React", "Tailwind", "JavaScript", "Vite", "Vercel"];

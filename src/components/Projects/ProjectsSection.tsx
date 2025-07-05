@@ -1,4 +1,4 @@
-import Project from "./Project";
+import { Project } from "./Project";
 import { projects } from "./ProjectDescriptions";
 import { HiArrowRight } from "react-icons/hi";
 import {
@@ -7,13 +7,13 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "../ui";
 
 /**
  *
  * @returns {Element}
  */
-export default function ProjectSection() {
+export function ProjectsSection() {
   return (
     <div
       className="bg-slate-100 w-full md:py-12 lg:mt-24 lg:pb-36 flex justify-center items-center "

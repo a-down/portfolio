@@ -5,7 +5,7 @@ import StackDisplay from "./StackDisplay/StackDisplay";
  *
  * @returns {Element}
  */
-export default function About() {
+export function About() {
   const myTechStack = [
     "TypeScript",
     "React",

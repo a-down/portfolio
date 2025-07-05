@@ -1,13 +1,13 @@
 import { About, Contact, Header, Hero, ProjectsSection } from "../components";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { Footer } from "@/components";
+import { Footer } from "../components";
 
 /**
  *
  * @returns {Element}
  */
-export default function Home() {
+export function Home() {
   const { section } = useParams();
   useEffect(() => {
     const element = document.getElementById(section);

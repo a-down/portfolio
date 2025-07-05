@@ -1,10 +1,10 @@
-import ContactForm from "./ContactForm";
+import { ContactForm } from "./ContactForm";
 
 /**
  *
  * @returns {Element}
  */
-export default function Contact() {
+export function Contact() {
   return (
     <div className="bg-navy">
       <div>
