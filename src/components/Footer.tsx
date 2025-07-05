@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 export function Footer() {
   const [projectsArr, setProjectsArr] = useState([]);
 
-  const footerStack = ["React", "Tailwind", "JavaScript", "Vite", "Vercel"];
+  const footerStack = ["React", "Tailwind", "TypeScript", "Vite", "Vercel"];
 
   const linksLinks = {
     title: "Links",
