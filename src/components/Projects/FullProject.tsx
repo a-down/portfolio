@@ -14,13 +14,13 @@ type Project = {
   slug: string;
   title: string;
   color: string;
-  deployedLink: string;
-  repoLink: string;
-  appStoreLink: string;
-  documentationLink: string;
+  deployedLink?: string;
+  repoLink?: string;
+  appStoreLink?: string;
+  documentationLink?: string;
   description: string;
-  description2: string;
-  description3: string;
+  description2?: string;
+  description3?: string;
   images: { img: string }[];
 };
 
@@ -94,6 +94,7 @@ export function FullProject({ project, stackArr }: FullProjectProps) {
           <p>{project.description3}</p>
         </div>
 
+        {/* TODO: Ignore Carousel errors and factor out */}
         <Carousel
           className="w-full h-fit aspect-video shadow-xl cursor-grab"
           style={{ backgroundColor: project.color }}

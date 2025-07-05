@@ -31,7 +31,6 @@ export function Projects() {
                 project={project}
                 key={project.title + index}
                 stackArr={project.techStack}
-                isDark={true}
               />
             ))}
           </div>

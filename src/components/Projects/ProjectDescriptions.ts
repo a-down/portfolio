@@ -41,6 +41,7 @@ import portfolioMobile2 from "../../assets/project-visuals/portfolio-mobile-2.pn
 import portfolioMobile3 from "../../assets/project-visuals/portfolio-mobile-3.png";
 import portfolioMobile4 from "../../assets/project-visuals/portfolio-mobile-4.png";
 
+// TODO: Use shared type here and move unneeded to archived file.
 export let projects = [
   {
     title: "Quick Measure - GPS",

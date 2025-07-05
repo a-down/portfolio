@@ -31,16 +31,17 @@ export function ProjectsSection() {
             <HiArrowRight />
           </a>
         </span>
+        {/* TODO: I want to do away with the Carousel, which would remove the need for these type errors! */}
         <Carousel className="w-full h-[calc(100dvh-64px)] md:h-auto md:aspect-video shadow-xl">
           <CarouselContent>
             {projects.map((project, index) => (
               <CarouselItem key={index}>
-                {/* <Project
+                <Project
                   project={project}
                   key={project.title}
                   stackArr={project.techStack}
                   isDark={true}
-                /> */}
+                />
               </CarouselItem>
             ))}
           </CarouselContent>
