@@ -1,4 +1,4 @@
-import { StackDisplay } from "../StackDisplay";
+import { StackDisplay, TechnologyName } from "@/components";
 import { HiExternalLink } from "react-icons/hi";
 import { SiGithub, SiAppstore } from "react-icons/si";
 import { HiDocumentMagnifyingGlass } from "react-icons/hi2";
@@ -10,23 +10,11 @@ import {
   CarouselPrevious,
 } from "../ui";
 
-type Project = {
-  slug: string;
-  title: string;
-  color: string;
-  deployedLink?: string;
-  repoLink?: string;
-  appStoreLink?: string;
-  documentationLink?: string;
-  description: string;
-  description2?: string;
-  description3?: string;
-  images: { img: string }[];
-};
+import { Project } from "./ProjectsTypes";
 
 type FullProjectProps = {
   project: Project;
-  stackArr: string[];
+  stackArr: TechnologyName[];
 };
 
 export function FullProject({ project, stackArr }: FullProjectProps) {
@@ -45,7 +33,7 @@ export function FullProject({ project, stackArr }: FullProjectProps) {
               href={project.deployedLink}
               target="_blank"
               style={{ color: project.color }}
-              className="hover:scale-105 transitiion-all"
+              className="hover:scale-105 transition-all"
               rel="noreferrer"
             >
               <HiExternalLink className="text-4xl" />

@@ -43,22 +43,22 @@ import {
 } from "react-icons/si";
 import clerkDark from "../../assets/clerk-dark.png";
 import refresh from "../../assets/refresh.svg";
-/**
- * @typedef {object} LanguageProps
- * @property {string} stack - name of the language or technology
- * @property {boolean} isDark
- *
- * @param {LanguageProps} props
- * @returns {Element}
- */
-export function Badge({ stack, isDark }) {
+
+import { TechnologyName } from "./StackDisplayTypes";
+
+type BadgeProps = {
+  stack: TechnologyName;
+  isDark?: boolean;
+};
+
+export function Badge({ stack, isDark }: BadgeProps) {
   let badgeColor;
   isDark ? (badgeColor = "") : (badgeColor = "");
 
   // default icon color if isDark === true
   let iconColor = "#64748B";
 
-  const getIcon = (iconName) => {
+  const getIcon = (iconName: TechnologyName) => {
     switch (iconName) {
       case "React":
         if (!isDark) iconColor = "#61DAFB";

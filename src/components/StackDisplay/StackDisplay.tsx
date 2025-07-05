@@ -1,6 +1,17 @@
 import { Badge } from "./Badge";
+import { TechnologyName } from "./StackDisplayTypes";
 
-export function StackDisplay({ stackArr, isDark, centered }) {
+type StackDisplayProps = {
+  stackArr: TechnologyName[];
+  centered?: boolean;
+  isDark?: boolean;
+};
+
+export function StackDisplay({
+  stackArr,
+  isDark,
+  centered,
+}: StackDisplayProps) {
   return (
     <div
       className={`${centered ? "justify-center" : "justify-start"} w-full flex max-w-[1400] flex-wrap gap-4`}

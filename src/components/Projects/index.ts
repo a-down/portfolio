@@ -1,3 +1,3 @@
 export { Project } from "./Project";
 export { FullProject } from "./FullProject";
-export { projects } from "./ProjectDescriptions";
+export { projectDescriptions } from "./ProjectDescriptions";

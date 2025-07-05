@@ -1,6 +1,6 @@
-import { StackDisplay } from "./StackDisplay";
+import { StackDisplay, TechnologyName } from "./StackDisplay";
 import { HiOutlineExternalLink, HiOutlineMail } from "react-icons/hi";
-import { projects } from "../components";
+import { projectDescriptions } from "../components";
 import { useEffect, useState } from "react";
 
 /**
@@ -8,9 +8,17 @@ import { useEffect, useState } from "react";
  * @returns {Element}
  */
 export function Footer() {
-  const [projectsArr, setProjectsArr] = useState([]);
+  const [projectsArr, setProjectsArr] = useState<
+    { name: string; link: string }[]
+  >([]);
 
-  const footerStack = ["React", "Tailwind", "TypeScript", "Vite", "Vercel"];
+  const footerStack: TechnologyName[] = [
+    "React",
+    "Tailwind",
+    "TypeScript",
+    "Vite",
+    "Vercel",
+  ];
 
   const linksLinks = {
     title: "Links",
@@ -51,8 +59,8 @@ export function Footer() {
   };
 
   useEffect(() => {
-    let projectsForState = [];
-    projects.forEach((project) => {
+    let projectsForState: { name: string; link: string }[] = [];
+    projectDescriptions.forEach((project) => {
       projectsForState.push({
         name: project.title,
         link: `/projects/${project.slug}`,
@@ -61,7 +69,19 @@ export function Footer() {
     setProjectsArr(projectsForState);
   }, []);
 
-  const LinkColumn = ({ column }) => {
+  const LinkColumn = ({
+    column,
+  }: {
+    column: {
+      title: string;
+      links: {
+        name: string;
+        link: string;
+        isExternal?: boolean;
+        icon?: React.ReactNode;
+      }[];
+    };
+  }) => {
     return (
       <div className="flex flex-col gap-2">
         <h5 className="text-brand-200 font-semibold">{column.title}</h5>
@@ -71,7 +91,7 @@ export function Footer() {
               className="text-brand-100 hover:scale-[102%] flex gap-1 items-center"
               href={link.link}
               target={link.isExternal ? "_blank" : ""}
-              key={index + link}
+              key={index + link.name}
               rel="noreferrer"
             >
               {link.name}

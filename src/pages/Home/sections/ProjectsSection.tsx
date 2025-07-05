@@ -1,7 +1,7 @@
 import { HiArrowRight } from "react-icons/hi";
 import {
   Project,
-  projects,
+  projectDescriptions,
   Carousel,
   CarouselContent,
   CarouselItem,
@@ -31,7 +31,7 @@ export function ProjectsSection() {
         {/* TODO: I want to do away with the Carousel, which would remove the need for these type errors! */}
         <Carousel className="w-full h-[calc(100dvh-64px)] md:h-auto md:aspect-video shadow-xl">
           <CarouselContent>
-            {projects.map((project, index) => (
+            {projectDescriptions.map((project, index) => (
               <CarouselItem key={index}>
                 <Project
                   project={project}
