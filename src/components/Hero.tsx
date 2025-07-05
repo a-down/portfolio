@@ -1,5 +1,5 @@
 import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import StackDisplay from "./StackDisplay/StackDisplay";
+import { StackDisplay } from "./StackDisplay";
 
 export const ExternalLinks = () => (
   <div className="w-full md:w-auto flex md:flex-col items-end justify-around md:justify-end gap-4">
@@ -30,7 +30,7 @@ export const ExternalLinks = () => (
  *
  * @returns {Element}
  */
-export default function HeroText() {
+export function Hero() {
   const heroTechStack = [
     "TypeScript",
     "React",

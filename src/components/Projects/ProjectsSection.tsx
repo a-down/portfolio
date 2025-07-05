@@ -1,5 +1,4 @@
-import Project from "./Project";
-import { projects } from "./ProjectDescriptions";
+import { Project, projects } from ".";
 import { HiArrowRight } from "react-icons/hi";
 import {
   Carousel,
@@ -7,13 +6,13 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "../ui";
 
 /**
  *
  * @returns {Element}
  */
-export default function ProjectSection() {
+export function ProjectsSection() {
   return (
     <div
       className="bg-slate-100 w-full md:py-12 lg:mt-24 lg:pb-36 flex justify-center items-center "
@@ -32,6 +31,7 @@ export default function ProjectSection() {
             <HiArrowRight />
           </a>
         </span>
+        {/* TODO: I want to do away with the Carousel, which would remove the need for these type errors! */}
         <Carousel className="w-full h-[calc(100dvh-64px)] md:h-auto md:aspect-video shadow-xl">
           <CarouselContent>
             {projects.map((project, index) => (

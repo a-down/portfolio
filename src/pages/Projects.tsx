@@ -1,19 +1,16 @@
-import { Header } from "../components";
-import FullProject from "@/components/Projects/FullProject";
-import { projects } from "@/components/Projects/ProjectDescriptions";
+import { Header, FullProject, projects, Footer } from "../components";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { Footer } from "@/components";
 
 /**
  *
  * @returns {Element}
  */
-export default function Projects() {
+export function Projects() {
   const { projectSlug } = useParams();
 
   useEffect(() => {
-    const element = document.getElementById(projectSlug);
+    const element = projectSlug ? document.getElementById(projectSlug) : null;
     if (element) element.scrollIntoView({ behavior: "smooth" });
   }, [projectSlug]);
 
@@ -34,8 +31,6 @@ export default function Projects() {
                 project={project}
                 key={project.title + index}
                 stackArr={project.techStack}
-                isDark={true}
-                index={index}
               />
             ))}
           </div>

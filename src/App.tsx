@@ -1,3 +1,4 @@
+import React from "react";
 import { QuickMeasure, Home, Projects } from "./pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

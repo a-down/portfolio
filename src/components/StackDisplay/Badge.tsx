@@ -51,7 +51,7 @@ import refresh from "../../assets/refresh.svg";
  * @param {LanguageProps} props
  * @returns {Element}
  */
-export default function Language({ stack, isDark }) {
+export function Badge({ stack, isDark }) {
   let badgeColor;
   isDark ? (badgeColor = "") : (badgeColor = "");
 

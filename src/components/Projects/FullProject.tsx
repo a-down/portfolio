@@ -1,4 +1,4 @@
-import StackDisplay from "../StackDisplay/StackDisplay";
+import { StackDisplay } from "../StackDisplay";
 import { HiExternalLink } from "react-icons/hi";
 import { SiGithub, SiAppstore } from "react-icons/si";
 import { HiDocumentMagnifyingGlass } from "react-icons/hi2";
@@ -8,15 +8,28 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "../ui";
 
-/**
- * @typedef {object} FullProjectProps
- * @property {object} project
- * @param {FullProjectProps} props
- * @returns {Element}
- */
-export default function FullProject({ project, stackArr }) {
+type Project = {
+  slug: string;
+  title: string;
+  color: string;
+  deployedLink?: string;
+  repoLink?: string;
+  appStoreLink?: string;
+  documentationLink?: string;
+  description: string;
+  description2?: string;
+  description3?: string;
+  images: { img: string }[];
+};
+
+type FullProjectProps = {
+  project: Project;
+  stackArr: string[];
+};
+
+export function FullProject({ project, stackArr }: FullProjectProps) {
   return (
     <div className="flex flex-col gap-8 py-12 text-slate-800" id={project.slug}>
       <div className="flex flex-wrap gap-4 justify-between">
@@ -81,6 +94,7 @@ export default function FullProject({ project, stackArr }) {
           <p>{project.description3}</p>
         </div>
 
+        {/* TODO: Ignore Carousel errors and factor out */}
         <Carousel
           className="w-full h-fit aspect-video shadow-xl cursor-grab"
           style={{ backgroundColor: project.color }}

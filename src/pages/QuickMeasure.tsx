@@ -7,7 +7,7 @@ import downloadIcon from "../assets/quick-measure/download.svg";
 import { SiAppstore } from "react-icons/si";
 import { FiArrowLeft } from "react-icons/fi";
 
-export default function QuickMeasure() {
+export function QuickMeasure() {
   const units = [
     "feet",
     "yards",

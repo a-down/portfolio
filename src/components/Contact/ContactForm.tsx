@@ -5,7 +5,7 @@ import { useForm } from "@formspree/react";
  *
  * @returns {Element}
  */
-export default function ContactForm() {
+export function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");

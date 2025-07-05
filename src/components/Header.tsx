@@ -8,7 +8,7 @@ import {
   SheetFooter,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "./ui";
 import { ExternalLinks } from "./Hero";
 
 /**
@@ -18,7 +18,7 @@ import { ExternalLinks } from "./Hero";
  * @param {HeaderProps} props
  * @returns {Element}
  */
-export default function Header({ location }) {
+export function Header({ location }) {
   const Navigation = ({ location }) => {
     return (
       <nav className=" text-base flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-6 text-brand-400">

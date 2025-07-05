@@ -5,7 +5,7 @@ import { Header } from "../components";
  *
  * @returns {Element}
  */
-export default function PartykitMessages() {
+export function PartykitMessages() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
 
