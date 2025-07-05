@@ -16,8 +16,12 @@ export function StackDisplay({
     <div
       className={`${centered ? "justify-center" : "justify-start"} w-full flex max-w-[1400] flex-wrap gap-4`}
     >
-      {stackArr.map((stack) => (
-        <TechnologyBadge stack={stack} isDark={isDark} key={stack} />
+      {stackArr.map((technology, idx) => (
+        <TechnologyBadge
+          technology={technology}
+          isDark={isDark}
+          key={`${technology}-badge-${idx}`}
+        />
       ))}
     </div>
   );
