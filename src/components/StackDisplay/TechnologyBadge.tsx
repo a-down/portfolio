@@ -51,7 +51,7 @@ type BadgeProps = {
   isDark?: boolean;
 };
 
-export function Badge({ stack, isDark }: BadgeProps) {
+export function TechnologyBadge({ stack, isDark }: BadgeProps) {
   let badgeColor;
   isDark ? (badgeColor = "") : (badgeColor = "");
 
