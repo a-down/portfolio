@@ -5,30 +5,49 @@ import { TechnologyName } from "./StackDisplayTypes";
 export default {
   title: "Components/TechnologyBadge",
   component: TechnologyBadge,
-  // tags: ["autodocs"],
+  tags: ["autodocs"],
+  argTypes: {
+    technology: {
+      control: "select",
+    },
+    isDark: {
+      control: "boolean",
+    },
+  },
 };
 
-export const Example = {
+export const Default = {
   args: {
-    stack: "HTML",
-    isDark: true,
+    technology: "HTML",
+    isDark: false,
   },
+};
+
+export const Examples = {
   render: () => (
     <div className="flex gap-8 justify-center items-center">
       <div className="flex flex-col gap-4 items-center">
-        <p>(regular)</p>
-        <TechnologyBadge technology="HTML" />
+        <p className="text-slate-600">(regular)</p>
         <TechnologyBadge technology="TypeScript" />
-        <TechnologyBadge technology="Mantine UI" />
+        <TechnologyBadge technology="React" />
+        <TechnologyBadge technology="Next.js" />
+        <TechnologyBadge technology="AWS" />
+        <TechnologyBadge technology="Figma" />
+        <TechnologyBadge technology="React Native" />
         <TechnologyBadge technology="App Store" />
+        <TechnologyBadge technology="Expo" />
       </div>
 
       <div className="flex flex-col gap-4 items-center">
-        <p>(dark)</p>
-        <TechnologyBadge technology="HTML" isDark />
+        <p className="text-slate-600">(dark)</p>
         <TechnologyBadge technology="TypeScript" isDark />
-        <TechnologyBadge technology="Mantine UI" isDark />
+        <TechnologyBadge technology="React" isDark />
+        <TechnologyBadge technology="Next.js" isDark />
+        <TechnologyBadge technology="AWS" isDark />
+        <TechnologyBadge technology="Figma" isDark />
+        <TechnologyBadge technology="React Native" isDark />
         <TechnologyBadge technology="App Store" isDark />
+        <TechnologyBadge technology="Expo" isDark />
       </div>
     </div>
   ),
