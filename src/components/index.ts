@@ -1,4 +1,3 @@
-export { Contact } from "./Contact/Contact";
 export { Footer } from "./Footer";
 export { Header } from "./Header";
 
