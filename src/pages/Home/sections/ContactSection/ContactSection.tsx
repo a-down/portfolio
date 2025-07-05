@@ -1,10 +1,6 @@
 import { ContactForm } from "./ContactForm";
 
-/**
- *
- * @returns {Element}
- */
-export function Contact() {
+export function ContactSection() {
   return (
     <div className="bg-navy">
       <div>

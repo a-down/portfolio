@@ -1,11 +1,7 @@
-import headshot from "../assets/headshot_cropped.jpg";
-import { StackDisplay } from "./StackDisplay";
+import { StackDisplay } from "@/components";
+import headshot from "@/assets/headshot_cropped.jpg";
 
-/**
- *
- * @returns {Element}
- */
-export function About() {
+export function AboutSection() {
   const myTechStack = [
     "TypeScript",
     "React",

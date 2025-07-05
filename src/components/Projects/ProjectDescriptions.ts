@@ -41,8 +41,9 @@ import portfolioMobile2 from "../../assets/project-visuals/portfolio-mobile-2.pn
 import portfolioMobile3 from "../../assets/project-visuals/portfolio-mobile-3.png";
 import portfolioMobile4 from "../../assets/project-visuals/portfolio-mobile-4.png";
 
-// TODO: Use shared type here and move unneeded to archived file.
-export let projects = [
+import { Project } from "./ProjectsTypes";
+
+export let projectDescriptions: Project[] = [
   {
     title: "Quick Measure - GPS",
     color: "#6DAB64",
@@ -87,8 +88,8 @@ export let projects = [
     repoLink: "https://github.com/a-down/job-notebook-application-tracker",
     deployedLink: "https://jobnotebook.vercel.app",
     description: `Notebook is a tool for job seekers to keep track of their current applications. In today's job market, there are many steps for potential candidates. Applications that take their time can struggle to keep each one straight. Unlike other job trackers, Job Notebook focuses on what the user needs to do BEFORE submitting their application.`,
-    // description2: `I created Job Notebook in the first month after I graduated from my Full Stack Bootcamp. I was searching several job boards and trying to track it all in a spreadsheet. This spreadsheet got pretty long pretty quickly. I needed a tool to keep track of a job's details, links, tasks, contacts, files, and notes.`,
-    description2: `I used Next.js, Tailwind, and MongoDB because I needed a reactive app. The dashboard needed high reactivity, but the other pages were static and coule be server-side rendered. Clerk provides the authentication for Job Notebook. I chose Clerk because it provided third-party sign up, a simple developer experience, and holds user data in their own secure database.`,
+    // description2: `I created Job Notebook in the first month after I graduated from my Full Stack Boot Camp. I was searching several job boards and trying to track it all in a spreadsheet. This spreadsheet got pretty long pretty quickly. I needed a tool to keep track of a job's details, links, tasks, contacts, files, and notes.`,
+    description2: `I used Next.js, Tailwind, and MongoDB because I needed a reactive app. The dashboard needed high reactivity, but the other pages were static and could be server-side rendered. Clerk provides the authentication for Job Notebook. I chose Clerk because it provided third-party sign up, a simple developer experience, and holds user data in their own secure database.`,
     techStack: [
       "Next.js",
       "React",
@@ -116,7 +117,7 @@ export let projects = [
     ],
     deployedLink: "https://brahamlutheran.org",
     documentationLink: "https://belc-realm-support.vercel.app/",
-    description: `I developed the website for Braham Evangelical Lutheran Church. I built the site with Realm, a church management software. Realm has a dedicated website builder, Refresh, that uses rows, columns, flexboxes, grids, and spacing in a no-code environment. I designed the edited images and mockups with Figma.`,
+    description: `I developed the website for Braham Evangelical Lutheran Church. I built the site with Realm, a church management software. Realm has a dedicated website builder, Refresh, that uses rows, columns, flex boxes, grids, and spacing in a no-code environment. I designed the edited images and mockups with Figma.`,
     description2: `I wrote markdown documentation with the Docusaurus framework to provide resources for church staff to update the site.`,
     techStack: ["Refresh", "Figma", "Docusaurus", "Markdown", "Vercel"],
   },
@@ -222,9 +223,9 @@ export let projects = [
   //   deployedLink: 'https://a-down-game-world.vercel.app',
   //   extraLink: 'https://github.com/a-down/GameVerseHub',
   //   extraLinkTitle: 'Original Repo',
-  //   description: 'Game World is a site where users can see featured video games and search for games using the RAWG API. I built Game World to rebuild a group project with an updated techstack (focused around React). ',
-  //   description2: 'GameVerseHub was a team project during my Full-Stack Coding Bootcamp. It was a site built fo rusers to look up video games and see details about the games. When users searched for a games, `JavaScript (jQuery)` would take a search term entered by the user, make a fetch call to the `RAWG API`, and append cards with the search results to the page. Because of the reactive nature of the site, I wanted to build the webpage with React.',
-  //   description3: 'For the origininal GameVerseHub, I built the client-side JavaScript for the search page. I managed the GitHub Repo, resolved merge conflicts, and approved pull requests.',
+  //   description: 'Game World is a site where users can see featured video games and search for games using the RAWG API. I built Game World to rebuild a group project with an updated tech stack (focused around React). ',
+  //   description2: 'GameVerseHub was a team project during my Full-Stack Coding Boot Camp. It was a site built for users to look up video games and see details about the games. When users searched for a games, `JavaScript (jQuery)` would take a search term entered by the user, make a fetch call to the `RAWG API`, and append cards with the search results to the page. Because of the reactive nature of the site, I wanted to build the webpage with React.',
+  //   description3: 'For the original GameVerseHub, I built the client-side JavaScript for the search page. I managed the GitHub Repo, resolved merge conflicts, and approved pull requests.',
   //   techStack: ['React', 'JavaScript', 'Tailwind', 'Radix UI', 'HTML', 'CSS', 'Framer Motion', 'GitHub', 'Vite', 'Vercel']
   // },
   // {
@@ -238,7 +239,7 @@ export let projects = [
   //   extraLink: 'https://a-down.github.io/weather-dashboard/',
   //   extraLinkTitle: 'Original Site',
   //   description: 'WeatherCraft is a weather site built with jQuery (JavaScript), HTML, vanilla CSS, and OpenWeatherMap Weather API. Users can view weather by searching a city or zip code and country. The current location will display current weather, upcoming weather for the night, and an bi-hourly forecast. Users can set a favorite location that defaults on site load, as well as view their last five searches in the search modal. Both pieces of information are stored in local storage.',
-  //   description2: 'WeatherCraft is a rebuild of a project from my Full-Stack Certificate Program. Updates that I made included: building a backend to handle muptiple API calls, designing from scratch using a 4pt grid system and Figma, adding search by zip functionality, appended and removed elements dynamically, utilized href for searches to allow reloads/bookmarks, allowed users to set a favorite/default location',
+  //   description2: 'WeatherCraft is a rebuild of a project from my Full-Stack Certificate Program. Updates that I made included: building a backend to handle multiple API calls, designing from scratch using a 4pt grid system and Figma, adding search by zip functionality, appended and removed elements dynamically, utilized href for searches to allow reloads/bookmarks, allowed users to set a favorite/default location',
   //   techStack: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Node.js', 'Express.js', 'GitHub', 'Render']
   // }
 ];

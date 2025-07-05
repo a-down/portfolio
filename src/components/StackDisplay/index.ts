@@ -1,2 +1,3 @@
 export { StackDisplay } from "./StackDisplay";
-export { Badge } from "./Badge";
+export { TechnologyBadge } from "./TechnologyBadge";
+export type { TechnologyName } from "./StackDisplayTypes";

@@ -1,8 +1,13 @@
 import { useState } from "react";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
-// TODO: Use shared type here
-export function Project({ project }) {
+import { Project as ProjectType } from "./ProjectsTypes";
+
+type ProjectProps = {
+  project: ProjectType;
+};
+
+export function Project({ project }: ProjectProps) {
   const [overlay, setOverlay] = useState(false);
 
   return (

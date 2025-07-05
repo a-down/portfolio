@@ -1,4 +1,9 @@
-import { Header, FullProject, projects, Footer } from "../components";
+import {
+  Header,
+  FullProject,
+  projectDescriptions,
+  Footer,
+} from "../components";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -26,7 +31,7 @@ export function Projects() {
           </div>
 
           <div className="w-full mt-0 md:mt-4 lg:mt-12 mb-24">
-            {projects.map((project, index) => (
+            {projectDescriptions.map((project, index) => (
               <FullProject
                 project={project}
                 key={project.title + index}
