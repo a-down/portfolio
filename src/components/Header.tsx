@@ -9,7 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "./ui";
-import { ExternalLinks } from "./Hero";
+import { ExternalLinks } from "@/components";
 
 /**
  * @typedef {object} HeaderProps

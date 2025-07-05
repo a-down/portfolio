@@ -56,7 +56,7 @@ export function FullProject({ project, stackArr }: FullProjectProps) {
               href={project.repoLink}
               target="_blank"
               style={{ color: project.color }}
-              className="hover:scale-105 transitiion-all"
+              className="hover:scale-105 transition-all"
               rel="noreferrer"
             >
               <SiGithub className="text-4xl" />
@@ -67,7 +67,7 @@ export function FullProject({ project, stackArr }: FullProjectProps) {
               href={project.appStoreLink}
               target="_blank"
               style={{ color: project.color }}
-              className="hover:scale-105 transitiion-all"
+              className="hover:scale-105 transition-all"
               rel="noreferrer"
             >
               <SiAppstore className="text-4xl" />
@@ -78,7 +78,7 @@ export function FullProject({ project, stackArr }: FullProjectProps) {
               href={project.documentationLink}
               target="_blank"
               style={{ color: project.color }}
-              className="hover:scale-105 transitiion-all"
+              className="hover:scale-105 transition-all"
               rel="noreferrer"
             >
               <HiDocumentMagnifyingGlass className="text-4xl" />
