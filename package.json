@@ -20,7 +20,9 @@
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "@types/chroma-js": "^3.1.1",
     "@vercel/analytics": "^1.1.1",
+    "chroma-js": "^3.1.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "embla-carousel-react": "^8.0.0-rc19",
@@ -42,6 +44,8 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.6.0",
+    "@vitest/browser": "^3.2.4",
+    "@vitest/coverage-v8": "^3.2.4",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.45.0",
     "eslint-plugin-jsdoc": "^50.4.3",
@@ -49,6 +53,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^9.0.15",
+    "playwright": "^1.53.2",
     "postcss": "^8.4.29",
     "prettier": "3.2.4",
     "prop-types": "^15.8.1",
@@ -56,9 +61,6 @@
     "tailwindcss": "^3.3.3",
     "typescript": "^5.8.3",
     "vite": "^7.0.2",
-    "vitest": "^3.2.4",
-    "@vitest/browser": "^3.2.4",
-    "playwright": "^1.53.2",
-    "@vitest/coverage-v8": "^3.2.4"
+    "vitest": "^3.2.4"
   }
 }

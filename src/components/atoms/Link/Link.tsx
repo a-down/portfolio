@@ -1,3 +1,5 @@
+import { getAdaFontColor } from "@/lib";
+
 export type LinkProps = {
   href: string;
   children: React.ReactNode;
@@ -23,11 +25,12 @@ export function Link({
   };
 
   if (variant === "button") {
-    // TODO: Auto set the button text
+    const textColor = getAdaFontColor(color);
+
     return (
       <a
         className="py-2 px-4 rounded-md text-slate-50 hover:scale-105 active:scale-[102%] transition-all"
-        style={{ backgroundColor: color }}
+        style={{ backgroundColor: color, color: textColor }}
         {...sharedProps}
       >
         {children}
