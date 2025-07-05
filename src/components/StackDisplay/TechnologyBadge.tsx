@@ -46,15 +46,12 @@ import refresh from "../../assets/refresh.svg";
 
 import { TechnologyName } from "./StackDisplayTypes";
 
-type BadgeProps = {
-  stack: TechnologyName;
+export type TechnologyBadgeProps = {
+  technology: TechnologyName;
   isDark?: boolean;
 };
 
-export function TechnologyBadge({ stack, isDark }: BadgeProps) {
-  let badgeColor;
-  isDark ? (badgeColor = "") : (badgeColor = "");
-
+export function TechnologyBadge({ technology, isDark }: TechnologyBadgeProps) {
   // default icon color if isDark === true
   let iconColor = "#64748B";
 
@@ -444,25 +441,23 @@ export function TechnologyBadge({ stack, isDark }: BadgeProps) {
         if (!isDark) iconColor = "#232F3E";
         return (
           <SiAmazonwebservices
-            className=" w-full h-full p-2 "
+            className=" w-full h-full p-2"
             style={{ color: iconColor }}
           />
         );
     }
   };
 
-  const icon = getIcon(stack);
+  const icon = getIcon(technology);
 
   return (
     <div>
-      <div className={` w-[64px] h-[64px] rounded-xl ${badgeColor} mx-auto`}>
-        {icon}
-      </div>
+      <div className={`w-[64px] h-[64px] rounded-xl mx-auto`}>{icon}</div>
 
       <p
-        className={` text-center text-sm text-slate-${isDark ? "600 font-thin " : "300"} select-none`}
+        className={`text-center text-ms text-slate-${isDark ? "600 font-thin " : "300"} select-none`}
       >
-        {stack}
+        {technology}
       </p>
     </div>
   );
