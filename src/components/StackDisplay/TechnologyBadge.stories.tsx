@@ -26,24 +26,22 @@ export const Default = {
 export const Examples = {
   render: () => (
     <div className="flex gap-8 justify-center items-center">
-      <div className="flex flex-col gap-4 items-center">
-        <p className="text-slate-600">(regular)</p>
+      <div className="flex flex-col gap-4 items-center bg-brand-950 p-4 rounded-lg">
+        <p className="text-slate-300">(regular)</p>
         <TechnologyBadge technology="TypeScript" />
         <TechnologyBadge technology="React" />
         <TechnologyBadge technology="Next.js" />
-        <TechnologyBadge technology="AWS" />
         <TechnologyBadge technology="Figma" />
         <TechnologyBadge technology="React Native" />
         <TechnologyBadge technology="App Store" />
         <TechnologyBadge technology="Expo" />
       </div>
 
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center p-4">
         <p className="text-slate-600">(dark)</p>
         <TechnologyBadge technology="TypeScript" isDark />
         <TechnologyBadge technology="React" isDark />
         <TechnologyBadge technology="Next.js" isDark />
-        <TechnologyBadge technology="AWS" isDark />
         <TechnologyBadge technology="Figma" isDark />
         <TechnologyBadge technology="React Native" isDark />
         <TechnologyBadge technology="App Store" isDark />
