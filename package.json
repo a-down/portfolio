@@ -8,7 +8,9 @@
     "host": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -31,20 +33,32 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.1",
+    "@storybook/addon-a11y": "^9.0.15",
+    "@storybook/addon-docs": "^9.0.15",
+    "@storybook/addon-vitest": "^9.0.15",
+    "@storybook/react-vite": "^9.0.15",
     "@types/node": "^22.8.7",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
-    "@vitejs/plugin-react": "^4.0.3",
+    "@vitejs/plugin-react": "^4.6.0",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.45.0",
     "eslint-plugin-jsdoc": "^50.4.3",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^9.0.15",
     "postcss": "^8.4.29",
     "prettier": "3.2.4",
+    "prop-types": "^15.8.1",
+    "storybook": "^9.0.15",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.8.3",
-    "vite": "^4.4.5"
+    "vite": "^7.0.2",
+    "vitest": "^3.2.4",
+    "@vitest/browser": "^3.2.4",
+    "playwright": "^1.53.2",
+    "@vitest/coverage-v8": "^3.2.4"
   }
 }
