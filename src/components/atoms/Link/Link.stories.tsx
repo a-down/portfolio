@@ -44,7 +44,7 @@ export const ButtonVariant = {
   },
   render: () => (
     <FlexCenterWrapper>
-      <Link href="/" variant="button" target="_blank">
+      <Link href="https://alecdowning.com" variant="button" target="_blank">
         View Portfolio
       </Link>
     </FlexCenterWrapper>

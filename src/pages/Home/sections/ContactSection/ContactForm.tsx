@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useForm } from "@formspree/react";
+import { Button } from "@/components/atoms/Button";
 
 /**
  *
@@ -11,7 +12,7 @@ export function ContactForm() {
   const [message, setMessage] = useState("");
   const [confirmedState, setConfirmedState] = useState(false);
 
-  const [state, handleSubmit] = useForm("xnqenyrj");
+  const [state, handleSubmit] = useForm(`xnqenyrj`);
 
   useEffect(() => {
     if (state.succeeded) {
@@ -44,7 +45,7 @@ export function ContactForm() {
             <input
               className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
               placeholder="John Smith"
-              onChange={(e) => setName(e.value)}
+              onChange={(e) => setName(e.target.value)}
               name="name"
               value={name}
               type="text"
@@ -57,7 +58,7 @@ export function ContactForm() {
             <input
               className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
               placeholder="johnsmith@email.com"
-              onChange={(e) => setEmail(e.value)}
+              onChange={(e) => setEmail(e.target.value)}
               name="email"
               value={email}
               type="email"
@@ -68,23 +69,19 @@ export function ContactForm() {
           <fieldset className="flex flex-col gap-2">
             <label>Message:</label>
             <textarea
-              rows="5"
+              rows={5}
               placeholder="I am in need of..."
               className="border bg-slate-50 border-slate-300 shadow-sm rounded-md py-2 px-3 font-thin"
-              onChange={(e) => setMessage(e.value)}
+              onChange={(e) => setMessage(e.target.value)}
               name="message"
               value={message}
-              type="text"
               required
             />
           </fieldset>
 
-          <button
-            type="submit"
-            className="mt-4 py-4 px-3 bg-brand-950 hover:bg-brand-900 shadow-lg rounded-md text-xl text-brand-100 transition-all"
-          >
+          <Button type="submit">
             {state.submitting ? "Submitting..." : "Submit"}
-          </button>
+          </Button>
         </form>
       ) : (
         <div className="bg-blue-50/50 shadow-lg md:w-[600px] font-sans rounded-xl my-16 mx-8 md:m-auto p-8 flex flex-col gap-6 text-slate-600">

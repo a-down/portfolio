@@ -15,13 +15,19 @@ export function Link({
   color = "#2A3D7E",
   download,
 }: LinkProps) {
+  const sharedProps = {
+    href,
+    download,
+    target,
+  };
+
   if (variant === "button") {
+    // TODO: Auto set the button text
     return (
       <a
-        href={href}
         className="py-2 px-4 rounded-md text-slate-50 hover:scale-105 active:scale-[102%] transition-all"
         style={{ backgroundColor: color }}
-        download={download}
+        {...sharedProps}
       >
         {children}
       </a>
@@ -30,11 +36,9 @@ export function Link({
 
   return (
     <a
-      href={href}
       className="hover:scale-105 transition-all active:scale-[102%] text-navy"
       style={{ color }}
-      download={download}
-      target={target}
+      {...sharedProps}
     >
       {children}
     </a>
