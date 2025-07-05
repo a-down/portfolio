@@ -10,7 +10,7 @@ import { Footer } from "../components";
 export function Home() {
   const { section } = useParams();
   useEffect(() => {
-    const element = document.getElementById(section);
+    const element = section ? document.getElementById(section) : null;
     if (element) element.scrollIntoView({ behavior: "smooth" });
   }, [section]);
 

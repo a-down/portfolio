@@ -10,13 +10,26 @@ import {
   CarouselPrevious,
 } from "../ui";
 
-/**
- * @typedef {object} FullProjectProps
- * @property {object} project
- * @param {FullProjectProps} props
- * @returns {Element}
- */
-export function FullProject({ project, stackArr }) {
+type Project = {
+  slug: string;
+  title: string;
+  color: string;
+  deployedLink: string;
+  repoLink: string;
+  appStoreLink: string;
+  documentationLink: string;
+  description: string;
+  description2: string;
+  description3: string;
+  images: { img: string }[];
+};
+
+type FullProjectProps = {
+  project: Project;
+  stackArr: string[];
+};
+
+export function FullProject({ project, stackArr }: FullProjectProps) {
   return (
     <div className="flex flex-col gap-8 py-12 text-slate-800" id={project.slug}>
       <div className="flex flex-wrap gap-4 justify-between">

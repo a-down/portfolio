@@ -10,7 +10,7 @@ export function Projects() {
   const { projectSlug } = useParams();
 
   useEffect(() => {
-    const element = document.getElementById(projectSlug);
+    const element = projectSlug ? document.getElementById(projectSlug) : null;
     if (element) element.scrollIntoView({ behavior: "smooth" });
   }, [projectSlug]);
 
@@ -32,7 +32,6 @@ export function Projects() {
                 key={project.title + index}
                 stackArr={project.techStack}
                 isDark={true}
-                index={index}
               />
             ))}
           </div>
