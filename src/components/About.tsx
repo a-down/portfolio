@@ -1,5 +1,5 @@
 import headshot from "../assets/headshot_cropped.jpg";
-import StackDisplay from "./StackDisplay/StackDisplay";
+import { StackDisplay } from "./StackDisplay";
 
 /**
  *

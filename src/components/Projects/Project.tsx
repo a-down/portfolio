@@ -8,7 +8,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
  * @param {ProjectProps} props
  * @returns {Element}
  */
-export default function Project({ project }) {
+export function Project({ project }) {
   const [overlay, setOverlay] = useState(false);
 
   return (

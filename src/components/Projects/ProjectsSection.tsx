@@ -1,5 +1,4 @@
-import { Project } from "./Project";
-import { projects } from "./ProjectDescriptions";
+import { Project, projects } from ".";
 import { HiArrowRight } from "react-icons/hi";
 import {
   Carousel,
@@ -36,12 +35,12 @@ export function ProjectsSection() {
           <CarouselContent>
             {projects.map((project, index) => (
               <CarouselItem key={index}>
-                <Project
+                {/* <Project
                   project={project}
                   key={project.title}
                   stackArr={project.techStack}
                   isDark={true}
-                />
+                /> */}
               </CarouselItem>
             ))}
           </CarouselContent>
