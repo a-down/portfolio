@@ -1,7 +1,13 @@
-import { About, Contact, Header, Hero, ProjectsSection } from "../components";
+import {
+  About,
+  Contact,
+  Header,
+  Hero,
+  ProjectsSection,
+  Footer,
+} from "@/components";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { Footer } from "../components";
 
 /**
  *
