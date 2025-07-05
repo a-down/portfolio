@@ -1,18 +1,9 @@
-import {
-  About,
-  Contact,
-  Header,
-  Hero,
-  ProjectsSection,
-  Footer,
-} from "@/components";
-import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-/**
- *
- * @returns {Element}
- */
+import { Contact, Header, ProjectsSection, Footer } from "@/components";
+import { Hero, About } from "./sections";
+
 export function Home() {
   const { section } = useParams();
   useEffect(() => {
