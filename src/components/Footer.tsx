@@ -1,7 +1,9 @@
-import { StackDisplay, TechnologyName } from "./StackDisplay";
-import { HiOutlineExternalLink, HiOutlineMail } from "react-icons/hi";
-import { projectDescriptions } from "../components";
 import { useEffect, useState } from "react";
+import { HiOutlineExternalLink, HiOutlineMail } from "react-icons/hi";
+
+import { Link } from "@/components/atoms";
+import { StackDisplay, TechnologyName } from "./StackDisplay";
+import { projectDescriptions } from "../components";
 
 /**
  *
@@ -87,16 +89,19 @@ export function Footer() {
         <h5 className="text-brand-200 font-semibold">{column.title}</h5>
         {column.links.map((link, index) => {
           return (
-            <a
-              className="text-brand-100 hover:scale-[102%] flex gap-1 items-center"
+            <Link
               href={link.link}
-              target={link.isExternal ? "_blank" : ""}
+              target={link.isExternal ? "_blank" : undefined}
               key={index + link.name}
               rel="noreferrer"
+              color="#DFEAFA"
+              aria-label={link.name}
             >
-              {link.name}
-              {link.icon}
-            </a>
+              <span className="flex gap-1 items-center">
+                {link.name}
+                {link.icon}
+              </span>
+            </Link>
           );
         })}
       </div>

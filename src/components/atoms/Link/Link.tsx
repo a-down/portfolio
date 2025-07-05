@@ -5,6 +5,7 @@ export type LinkProps = {
   variant?: "default" | "button";
   color?: string;
   download?: string;
+  rel?: string;
 };
 
 export function Link({

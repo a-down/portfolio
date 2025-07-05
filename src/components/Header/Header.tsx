@@ -8,6 +8,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui";
+import { Link } from "@/components/atoms";
 import { ExternalLinks } from "@/components";
 import { Navigation } from "./Navigation";
 import { Location } from "./HeaderTypes";
@@ -21,9 +22,9 @@ export function Header({ location }: HeaderProps) {
     <div className="max-w-[1400px] mx-auto px-4 md:px-12 lg:px-24 w-full sticky top-0 left-0 md:static bg-slate-100 shadow-md md:shadow-none md:bg-transparent z-20">
       <header className=" w-full h-[64px] md:h-[100px]">
         <div className="h-full items-center flex justify-between w-full">
-          <a href="/" className="hover:scale-105 active:scale-[102%]">
+          <Link href="/">
             <img src={smileIcon} className="w-8 h-8" />
-          </a>
+          </Link>
 
           <span className="hidden md:flex">
             <Navigation location={location} />
