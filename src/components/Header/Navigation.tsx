@@ -27,8 +27,8 @@ export function Navigation({ location }: NavigationProps) {
       <Link
         href={resume}
         download="alec-downing-resume"
-        color="#699EE8"
-        variant="button"
+        color="#2E459F"
+        variant="button-outline"
       >
         Resume
       </Link>
